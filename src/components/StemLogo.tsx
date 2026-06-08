@@ -20,9 +20,9 @@ export function StemLogo({ size = 'md', variant = 'color', className = '' }: Ste
   const s = sizeMap[size];
 
   const stemColor = variant === 'white' ? '#FFFFFF' : variant === 'dark' ? '#0F172A' : '#87B67B';
-  const accentColor = variant === 'white' ? 'rgba(255,255,255,0.7)' : variant === 'dark' ? '#FF5A1F' : '#A5A4D4';
-  const subColor = variant === 'white' ? 'rgba(255,255,255,0.6)' : variant === 'dark' ? '#64748B' : '#2B4C8C';
-  const dotColor = variant === 'white' ? 'rgba(255,255,255,0.7)' : variant === 'dark' ? '#FF5A1F' : '#A5A4D4';
+  const accentColor = variant === 'white' ? 'rgba(255,255,255,0.7)' : variant === 'dark' ? '#2D4589' : '#A5A4D4';
+  const subColor = variant === 'white' ? 'rgba(255,255,255,0.6)' : variant === 'dark' ? '#64748B' : '#2D4589';
+  const dotColor = variant === 'white' ? 'rgba(255,255,255,0.7)' : variant === 'dark' ? '#2D4589' : '#A5A4D4';
 
   return (
     <span

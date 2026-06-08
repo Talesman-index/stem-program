@@ -182,13 +182,13 @@ export default function Register() {
                   currentStep === 1 
                     ? 'bg-[#5AC87A] text-white ring-4 ring-[#5AC87A]/25' 
                     : currentStep > 1 
-                      ? 'bg-[#4A90D9] text-white shadow-sm' 
+                      ? 'bg-[#2D4589] text-white shadow-sm' 
                       : 'bg-[#FFF9F0] border-2 border-black/10 text-[#7B7B9E]'
                 }`}
               >
                 1
               </button>
-              <div className={`h-[3px] flex-grow rounded transition-colors ${currentStep > 1 ? 'bg-[#4A90D9]' : 'bg-black/5'}`} />
+              <div className={`h-[3px] flex-grow rounded transition-colors ${currentStep > 1 ? 'bg-[#2D4589]' : 'bg-black/5'}`} />
 
               {/* Dot 2 */}
               <button 
@@ -198,13 +198,13 @@ export default function Register() {
                   currentStep === 2 
                     ? 'bg-[#5AC87A] text-white ring-4 ring-[#5AC87A]/25' 
                     : currentStep > 2 
-                      ? 'bg-[#4A90D9] text-white shadow-sm' 
+                      ? 'bg-[#2D4589] text-white shadow-sm' 
                       : 'bg-[#FFF9F0] border-2 border-black/10 text-[#7B7B9E]'
                 } ${isStep1Valid() ? 'cursor-pointer' : 'cursor-not-allowed opacity-50'}`}
               >
                 2
               </button>
-              <div className={`h-[3px] flex-grow rounded transition-colors ${currentStep > 2 ? 'bg-[#4A90D9]' : 'bg-black/5'}`} />
+              <div className={`h-[3px] flex-grow rounded transition-colors ${currentStep > 2 ? 'bg-[#2D4589]' : 'bg-black/5'}`} />
 
               {/* Dot 3 */}
               <button 
@@ -214,13 +214,13 @@ export default function Register() {
                   currentStep === 3 
                     ? 'bg-[#5AC87A] text-white ring-4 ring-[#5AC87A]/25' 
                     : currentStep > 3 
-                      ? 'bg-[#4A90D9] text-white shadow-sm' 
+                      ? 'bg-[#2D4589] text-white shadow-sm' 
                       : 'bg-[#FFF9F0] border-2 border-black/10 text-[#7B7B9E]'
                 } ${isStep2Valid() ? 'cursor-pointer' : 'cursor-not-allowed opacity-50'}`}
               >
                 3
               </button>
-              <div className={`h-[3px] flex-grow rounded transition-colors ${currentStep > 3 ? 'bg-[#4A90D9]' : 'bg-black/5'}`} />
+              <div className={`h-[3px] flex-grow rounded transition-colors ${currentStep > 3 ? 'bg-[#2D4589]' : 'bg-black/5'}`} />
 
               {/* Dot 4 */}
               <button 
@@ -326,7 +326,7 @@ export default function Register() {
             {currentStep === 2 && (
               <div className="space-y-6 animate-slide-up">
                 <h2 className="font-display font-extrabold text-2xl text-[#1A1A2E] flex items-center gap-3 border-b-2 border-black/5 pb-4 mb-6">
-                  <Shield className="w-6 h-6 text-[#4A90D9] stroke-[2.5]" />
+                  <Shield className="w-6 h-6 text-[#2D4589] stroke-[2.5]" />
                   Parent & Safety Contacts
                 </h2>
 
@@ -474,7 +474,7 @@ export default function Register() {
                     <button
                       type="button"
                       onClick={handleAddPickup}
-                      className="mt-4 bg-[#4A90D9] text-white hover:bg-[#3d83cc] font-body font-extrabold text-xs px-6 py-2.5 rounded-full cursor-pointer hover:scale-105 active:scale-95 transition-all shadow-sm"
+                      className="mt-4 bg-[#2D4589] text-white hover:bg-[#3d83cc] font-body font-extrabold text-xs px-6 py-2.5 rounded-full cursor-pointer hover:scale-105 active:scale-95 transition-all shadow-sm"
                     >
                       + Add authorized person
                     </button>
@@ -489,7 +489,7 @@ export default function Register() {
             {currentStep === 3 && (
               <div className="space-y-6 animate-slide-up">
                 <h2 className="font-display font-extrabold text-2xl text-[#1A1A2E] flex items-center gap-3 border-b-2 border-black/5 pb-4 mb-6">
-                  <HeartHandshake className="w-6 h-6 text-[#8B6FE8] stroke-[2.5]" />
+                  <HeartHandshake className="w-6 h-6 text-[#9795CE] stroke-[2.5]" />
                   Medical Information
                 </h2>
 
@@ -746,7 +746,7 @@ export default function Register() {
                       disabled={!waiverScrolled && !agreedWaiver}
                       checked={agreedWaiver}
                       onChange={(e) => setAgreements({ agreedWaiver: e.target.checked })}
-                      className="rounded border-black/15 text-[#4A90D9] focus:ring-[#4A90D9] w-5 h-5 mt-0.5 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+                      className="rounded border-black/15 text-[#2D4589] focus:ring-[#2D4589] w-5 h-5 mt-0.5 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
                     />
                     <label 
                       htmlFor="agreedWaiver" 
@@ -765,7 +765,7 @@ export default function Register() {
                       type="checkbox"
                       checked={agreedConsent}
                       onChange={(e) => setAgreements({ agreedConsent: e.target.checked })}
-                      className="rounded border-black/15 text-[#4A90D9] focus:ring-[#4A90D9] w-5 h-5 mt-0.5 cursor-pointer"
+                      className="rounded border-black/15 text-[#2D4589] focus:ring-[#2D4589] w-5 h-5 mt-0.5 cursor-pointer"
                     />
                     <label htmlFor="agreedConsent" className="font-body text-sm text-[#3D3D5C] font-semibold select-none cursor-pointer leading-normal">
                       I authorize my child's participation in the activities and confirm their availability for the selected week *
@@ -779,7 +779,7 @@ export default function Register() {
                       type="checkbox"
                       checked={agreedImage}
                       onChange={(e) => setAgreements({ agreedImage: e.target.checked })}
-                      className="rounded border-black/15 text-[#4A90D9] focus:ring-[#4A90D9] w-5 h-5 mt-0.5 cursor-pointer"
+                      className="rounded border-black/15 text-[#2D4589] focus:ring-[#2D4589] w-5 h-5 mt-0.5 cursor-pointer"
                     />
                     <label htmlFor="agreedImage" className="font-body text-sm text-[#3D3D5C] font-semibold select-none cursor-pointer leading-normal">
                       I authorize the use of my child's image (photos/videos taken at the camp) on the website and brochures of Livingstone College *
@@ -827,7 +827,7 @@ export default function Register() {
                     (currentStep === 2 && !isStep2Valid()) ||
                     (currentStep === 3 && !isStep3Valid())
                   }
-                  className="px-6 py-2.5 bg-[#4A90D9] text-white hover:bg-[#3b83cc] rounded-full font-body font-extrabold text-sm inline-flex items-center gap-2 cursor-pointer shadow disabled:opacity-50 disabled:cursor-not-allowed hover:scale-105 active:scale-95 transition-all"
+                  className="px-6 py-2.5 bg-[#2D4589] text-white hover:bg-[#3b83cc] rounded-full font-body font-extrabold text-sm inline-flex items-center gap-2 cursor-pointer shadow disabled:opacity-50 disabled:cursor-not-allowed hover:scale-105 active:scale-95 transition-all"
                 >
                   Continue
                   <ChevronRight className="w-5 h-5 stroke-[2.5]" />

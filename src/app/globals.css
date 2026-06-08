@@ -13,38 +13,38 @@
   /* Backgrounds & Colors */
   --bg-cream:       #FCF9F2;
   --bg-white:       #FFFFFF;
-  --bg-dark-forest: #133025;
-  --bg-sage:        #EAEFE3;
-  --accent-orange:  #FF5A1F;
-  --accent-green:   #52B788;
+  --bg-dark-forest: #162248;
+  --bg-sage:        #F1F6EF;
+  --accent-orange:  #2D4589;
+  --accent-green:   #8CB97A;
   --accent-green-bright: #74C69D;
 
   --bg-cream-dark:  #F5EFEB;
   --bg-yellow:      #FFE566;
-  --bg-blue:        #4A90D9;
-  --bg-purple:      #8B6FE8;
+  --bg-blue:        #2D4589;
+  --bg-purple:      #9795CE;
 
   /* Text mapping */
-  --text-dark:      #133025;
+  --text-dark:      #162248;
   --text-mid:       #3D4A3E;
   --text-light:     #7A8C7B;
   --text-white:     #FFFFFF;
 
   /* Brand mappings */
-  --stem-green:     #52B788;
-  --stem-blue:      #4A90D9;
-  --stem-orange:    #FF5A1F;
+  --stem-green:     #8CB97A;
+  --stem-blue:      #2D4589;
+  --stem-orange:    #2D4589;
   --stem-yellow:    #FFE566;
-  --stem-purple:    #8B6FE8;
+  --stem-purple:    #9795CE;
 
   /* Borders */
-  --border-soft:    rgba(19, 48, 37, 0.08);
-  --border-card:    rgba(19, 48, 37, 0.08);
+  --border-soft:    rgba(22, 34, 72, 0.08);
+  --border-card:    rgba(22, 34, 72, 0.08);
 
   /* Shadows */
-  --shadow-card:    0 6px 32px rgba(19, 48, 37, 0.06);
-  --shadow-btn:     0 4px 18px rgba(255, 90, 31, 0.25);
-  --shadow-heavy:   0 12px 48px rgba(19, 48, 37, 0.12);
+  --shadow-card:    0 6px 32px rgba(22, 34, 72, 0.06);
+  --shadow-btn:     0 4px 18px rgba(45, 69, 137, 0.25);
+  --shadow-heavy:   0 12px 48px rgba(22, 34, 72, 0.12);
 
   /* Admin vars (unchanged) */
   --admin-bg:      #F8FAFC;
@@ -97,15 +97,15 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block;
     width: fit-content;
     background-color: #FFD15C;
-    color: #133025;
+    color: #162248;
     font-family: var(--font-accent);
     font-size: 0.72rem;
     padding: 6px 14px;
     text-transform: uppercase;
     letter-spacing: 0.08em;
     border-radius: 8px;
-    border: 2px solid #133025;
-    box-shadow: 2px 2px 0px 0px #133025;
+    border: 2px solid #162248;
+    box-shadow: 2px 2px 0px 0px #162248;
     transform: rotate(-1.5deg);
     user-select: none;
     font-weight: normal;
@@ -178,8 +178,8 @@ h1, h2, h3, h4, h5, h6 {
   }
   .btn-primary:hover {
     transform: translateY(-2px) scale(1.03);
-    box-shadow: 0 8px 28px rgba(255,90,31,0.40);
-    background: #e04a10;
+    box-shadow: 0 8px 28px rgba(45, 69, 137, 0.40);
+    background: #1A315C;
   }
   .btn-outline {
     display: inline-flex;

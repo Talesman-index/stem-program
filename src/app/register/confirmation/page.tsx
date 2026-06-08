@@ -62,7 +62,7 @@ export default function Confirmation() {
       <main className="flex-grow pt-28 bg-[#FFF9F0] flex items-center justify-center py-16 px-4 sm:px-6 relative overflow-hidden">
         {/* Playful background blobs */}
         <div className="absolute top-10 left-10 w-32 h-32 bg-[#FFE566] opacity-30 blob animate-float pointer-events-none" />
-        <div className="absolute bottom-10 right-10 w-40 h-40 bg-[#8B6FE8] opacity-20 blob animate-float pointer-events-none" style={{ animationDelay: '2s' }} />
+        <div className="absolute bottom-10 right-10 w-40 h-40 bg-[#9795CE] opacity-20 blob animate-float pointer-events-none" style={{ animationDelay: '2s' }} />
         
         <section className="max-w-2xl w-full relative z-10">
           <div className="camp-card bg-white border-2 border-black/15 shadow-[8px_8px_0px_0px_rgba(26,26,46,1)] p-8 sm:p-12 text-center flex flex-col items-center gap-8 rounded-[32px]">

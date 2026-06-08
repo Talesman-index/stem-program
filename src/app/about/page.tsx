@@ -152,7 +152,7 @@ export default function About() {
 
         {/* ── Mission Callout ── */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
-          <div className="camp-card text-white p-8 sm:p-14 text-center flex flex-col items-center gap-6 border-2 border-black/10" style={{ backgroundColor: '#133025' }}>
+          <div className="camp-card text-white p-8 sm:p-14 text-center flex flex-col items-center gap-6 border-2 border-black/10" style={{ backgroundColor: '#162248' }}>
             <div className="w-14 h-14 rounded-full bg-[#FFE566] text-[#1A1A2E] flex items-center justify-center shadow-md animate-float">
               <Target className="w-7 h-7" />
             </div>
@@ -203,7 +203,7 @@ export default function About() {
 
               {/* Value 3 */}
               <div className="camp-card p-8 flex flex-col items-start gap-4 border border-black/5" style={{ backgroundColor: '#FFF9F0' }}>
-                <div className="w-12 h-12 rounded-2xl bg-[#133025]/15 text-[#133025] flex items-center justify-center shadow-inner">
+                <div className="w-12 h-12 rounded-2xl bg-[#162248]/15 text-[#162248] flex items-center justify-center shadow-inner">
                   <Eye className="w-6 h-6 stroke-[2.5]" />
                 </div>
                 <h3 className="font-display font-extrabold text-xl text-[#1A1A2E]">Local Excellence</h3>
@@ -214,7 +214,7 @@ export default function About() {
 
               {/* Value 4 */}
               <div className="camp-card p-8 flex flex-col items-start gap-4 border border-black/5" style={{ backgroundColor: '#FFF9F0' }}>
-                <div className="w-12 h-12 rounded-2xl bg-[#52B788]/15 text-[#52B788] flex items-center justify-center shadow-inner">
+                <div className="w-12 h-12 rounded-2xl bg-[#8CB97A]/15 text-[#8CB97A] flex items-center justify-center shadow-inner">
                   <ShieldAlert className="w-6 h-6 stroke-[2.5]" />
                 </div>
                 <h3 className="font-display font-extrabold text-xl text-[#1A1A2E]">Measurable Impact</h3>
@@ -250,7 +250,7 @@ export default function About() {
                   <div className="p-8 flex-grow flex flex-col justify-between">
                     <div>
                       <h3 className="font-display font-extrabold text-2xl text-[#1A1A2E]">{member.name}</h3>
-                      <span className="pill bg-[#E8F3FF] text-[#4A90D9] font-body font-bold text-xs mt-2">
+                      <span className="pill bg-[#E8F3FF] text-[#2D4589] font-body font-bold text-xs mt-2">
                         {member.role}
                       </span>
                       <p className="font-body text-sm text-[#3D3D5C] mt-4 leading-relaxed">

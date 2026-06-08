@@ -57,7 +57,7 @@ export default function Navbar() {
                   style={{
                     color: active ? 'var(--accent-orange)' : 'var(--text-dark)',
                     fontWeight: active ? 800 : 600,
-                    background: active ? 'rgba(255,90,31,0.08)' : undefined,
+                    background: active ? 'rgba(45,69,137,0.08)' : undefined,
                   }}
                 >
                   {item.label}

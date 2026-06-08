@@ -172,7 +172,7 @@ export default function Gallery() {
       <main className="flex-grow pt-24 bg-[#FFF9F0]">
         
         {/* ── Gallery Header ── */}
-        <section className="bg-[#133025] text-white py-20 text-center relative overflow-hidden border-b-2 border-black/10">
+        <section className="bg-[#162248] text-white py-20 text-center relative overflow-hidden border-b-2 border-black/10">
           <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none" />
           <div className="absolute -right-12 -top-12 w-48 h-48 rounded-full bg-white/20 blur-lg pointer-events-none" />
           <div className="absolute -left-12 -bottom-12 w-48 h-48 rounded-full bg-black/15 blur-lg pointer-events-none" />
@@ -198,7 +198,7 @@ export default function Gallery() {
             
             {/* Year Filters */}
             <div className="flex items-center gap-2 flex-wrap justify-center">
-              <span className="font-body text-xs font-extrabold text-[#133025]/60 mr-3 uppercase tracking-wider">
+              <span className="font-body text-xs font-extrabold text-[#162248]/60 mr-3 uppercase tracking-wider">
                 Years:
               </span>
               {['all', '2025', '2026'].map((y) => (
@@ -210,8 +210,8 @@ export default function Gallery() {
                   }}
                   className={`px-5 py-2 rounded-full font-body font-extrabold text-sm border-2 transition-all cursor-pointer hover:scale-105 active:scale-95 ${
                     selectedYear === y
-                      ? 'bg-[#133025] border-[#133025] text-white shadow-md'
-                      : 'bg-white border-[#133025]/15 text-[#133025]/80 hover:bg-[#EAEFE3]/30 hover:border-[#133025]/30 hover:text-[#133025]'
+                      ? 'bg-[#162248] border-[#162248] text-white shadow-md'
+                      : 'bg-white border-[#162248]/15 text-[#162248]/80 hover:bg-[#F1F6EF]/30 hover:border-[#162248]/30 hover:text-[#162248]'
                   }`}
                 >
                   {y === 'all' ? 'All' : y}
@@ -221,7 +221,7 @@ export default function Gallery() {
 
             {/* Discipline Filters */}
             <div className="flex items-center gap-2 flex-wrap justify-center">
-              <span className="font-body text-xs font-extrabold text-[#133025]/60 mr-3 uppercase tracking-wider">
+              <span className="font-body text-xs font-extrabold text-[#162248]/60 mr-3 uppercase tracking-wider">
                 Sectors:
               </span>
               {['all', 'robotics', 'chemistry', 'biology', 'vr', 'math', 'ceremony'].map((d) => (
@@ -233,8 +233,8 @@ export default function Gallery() {
                   }}
                   className={`px-5 py-2 rounded-full font-body font-extrabold text-sm border-2 transition-all cursor-pointer hover:scale-105 active:scale-95 ${
                     selectedDiscipline === d
-                      ? 'bg-[#133025] border-[#133025] text-white shadow-md'
-                      : 'bg-white border-[#133025]/15 text-[#133025]/80 hover:bg-[#EAEFE3]/30 hover:border-[#133025]/30 hover:text-[#133025]'
+                      ? 'bg-[#162248] border-[#162248] text-white shadow-md'
+                      : 'bg-white border-[#162248]/15 text-[#162248]/80 hover:bg-[#F1F6EF]/30 hover:border-[#162248]/30 hover:text-[#162248]'
                   }`}
                 >
                   {d === 'all' ? 'All' : disciplineLabels[d as keyof typeof disciplineLabels]}

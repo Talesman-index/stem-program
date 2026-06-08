@@ -65,7 +65,7 @@ export default function Contact() {
       <main className="flex-grow pt-24 bg-[#FFF9F0]">
         
         {/* ── Contact Hero ── */}
-        <section className="bg-[#133025] text-white py-20 text-center relative overflow-hidden border-b-2 border-black/10">
+        <section className="bg-[#162248] text-white py-20 text-center relative overflow-hidden border-b-2 border-black/10">
           <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none" />
           <div className="absolute -right-12 -top-12 w-48 h-48 rounded-full bg-white/20 blur-lg pointer-events-none" />
           <div className="absolute -left-12 -bottom-12 w-48 h-48 rounded-full bg-black/15 blur-lg pointer-events-none" />
@@ -243,18 +243,18 @@ export default function Contact() {
                     </div>
                   </li>
                   <li className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-2xl bg-[#4A90D9]/15 text-[#4A90D9] flex items-center justify-center shrink-0 shadow-inner">
+                    <div className="w-12 h-12 rounded-2xl bg-[#2D4589]/15 text-[#2D4589] flex items-center justify-center shrink-0 shadow-inner">
                       <Mail className="w-6 h-6 stroke-[2.5]" />
                     </div>
                     <div>
                       <span className="font-display font-extrabold text-sm text-[#1A1A2E] block">Direct Email</span>
-                      <a href="mailto:stem@livingstone.edu" className="font-body text-sm text-[#4A90D9] hover:underline mt-1.5 block font-bold">
+                      <a href="mailto:stem@livingstone.edu" className="font-body text-sm text-[#2D4589] hover:underline mt-1.5 block font-bold">
                         stem@livingstone.edu
                       </a>
                     </div>
                   </li>
                   <li className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-2xl bg-[#8B6FE8]/15 text-[#8B6FE8] flex items-center justify-center shrink-0 shadow-inner">
+                    <div className="w-12 h-12 rounded-2xl bg-[#9795CE]/15 text-[#9795CE] flex items-center justify-center shrink-0 shadow-inner">
                       <Phone className="w-6 h-6 stroke-[2.5]" />
                     </div>
                     <div>

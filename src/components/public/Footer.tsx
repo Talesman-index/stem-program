@@ -29,7 +29,7 @@ export default function Footer() {
     <footer className="w-full mt-auto bg-transparent">
       {/* ── CTA Section (Rounded Card) ── */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12">
-        <div className="relative overflow-hidden rounded-[32px] bg-[#133025] text-white p-8 md:p-14 shadow-lg border-2 border-black/10">
+        <div className="relative overflow-hidden rounded-[32px] bg-[#162248] text-white p-8 md:p-14 shadow-lg border-2 border-black/10">
           {/* Playful blobs */}
           <div className="absolute -top-16 -right-16 w-56 h-56 rounded-full bg-white/10 blur-xl pointer-events-none" />
           <div className="absolute -bottom-16 -left-16 w-56 h-56 rounded-full bg-black/10 blur-xl pointer-events-none" />
@@ -50,7 +50,7 @@ export default function Footer() {
             <div className="relative z-10 flex flex-col sm:flex-row items-center gap-4 shrink-0 w-full sm:w-auto">
               <Link
                 href="/register"
-                className="w-full sm:w-auto text-center bg-[#FF5A1F] text-white hover:bg-[#e04a10] font-body font-extrabold px-8 py-4 rounded-full flex items-center justify-center gap-2 transition-all shadow-md hover:scale-105 active:scale-95 text-base"
+                className="w-full sm:w-auto text-center bg-[#2D4589] text-white hover:bg-[#1D2D5A] font-body font-extrabold px-8 py-4 rounded-full flex items-center justify-center gap-2 transition-all shadow-md hover:scale-105 active:scale-95 text-base"
               >
                 Register for free
                 <ArrowUpRight className="w-5 h-5 stroke-[2.5]" />
@@ -67,7 +67,7 @@ export default function Footer() {
       </div>
 
       {/* ── Main Footer block with rounded top corners ── */}
-      <div className="bg-[#133025] text-[#FFF9F0] rounded-t-[48px] border-t-2 border-black/10">
+      <div className="bg-[#162248] text-[#FFF9F0] rounded-t-[48px] border-t-2 border-black/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12">
           
           {/* Footer Grid */}
@@ -113,7 +113,7 @@ export default function Footer() {
                   href="https://twitter.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-9 h-9 rounded-full bg-white/5 hover:bg-[#4A90D9] text-white flex items-center justify-center transition-all hover:scale-110"
+                  className="w-9 h-9 rounded-full bg-white/5 hover:bg-[#2D4589] text-white flex items-center justify-center transition-all hover:scale-110"
                   aria-label="Twitter"
                 >
                   <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
@@ -166,7 +166,7 @@ export default function Footer() {
             {/* Column 4: Contact info */}
             <div className="flex flex-col gap-6">
               <h4 className="font-display font-extrabold text-base text-white flex items-center gap-2">
-                <span className="w-1.5 h-4 bg-[#4A90D9] rounded-full inline-block" />
+                <span className="w-1.5 h-4 bg-[#2D4589] rounded-full inline-block" />
                 Contact
               </h4>
               <ul className="space-y-4 font-body text-sm text-[#FFF9F0]/80">

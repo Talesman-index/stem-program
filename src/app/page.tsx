@@ -7,7 +7,8 @@ import Image from 'next/image';
 import {
   Leaf, FlaskConical, Sigma, Cpu, Tv, Sprout, Gamepad2,
   ShieldCheck, RefreshCw, Users, Award, Calendar, Utensils,
-  ArrowRight, ChevronLeft, ChevronRight, Star, MapPin, CheckCircle, Map
+  ArrowRight, ChevronLeft, ChevronRight, Star, MapPin, CheckCircle, Map,
+  BadgeCheck, Heart, Quote, Sparkles, GraduationCap
 } from 'lucide-react';
 import Navbar from '../components/public/Navbar';
 import Footer from '../components/public/Footer';
@@ -23,8 +24,8 @@ interface Discipline {
 const disciplines: Discipline[] = [
   { slug: 'biology',          title: 'Biology',            icon: Leaf,        color: '#5AC87A', bgColor: '#DFFBE8', excerpt: 'Explore living things in all their forms: microscopes, cells, and ecosystems.', image: '/assets/images/children-studying-science-using-microscope-in-clas-2026-04-13-23-13-15-utc.jpg' },
   { slug: 'chemistry',        title: 'Chemistry',          icon: FlaskConical,color: '#FF7A3D', bgColor: '#FFF0E8', excerpt: 'Laboratory experiments that illuminate minds through spectacular reactions.', image: '/assets/images/enthusiastic-children-explore-chemistry-in-science-2026-03-25-10-42-26-utc.jpg' },
-  { slug: 'mathematics',      title: 'Mathematics',        icon: Sigma,       color: '#4A90D9', bgColor: '#E8F3FF', excerpt: 'Logic serving real-world problems through collaborative challenges and puzzles.', image: '/assets/images/girl-writing-math-problems-on-a-whiteboard-2026-01-07-02-11-58-utc.jpg' },
-  { slug: 'robotics',         title: 'Robotics',           icon: Cpu,         color: '#8B6FE8', bgColor: '#F0EBFF', excerpt: 'Build and program robots to tackle exciting technical challenges.', image: '/assets/images/children-learn-about-robotics-with-robotics-kit-2026-03-05-11-56-52-utc.jpg' },
+  { slug: 'mathematics',      title: 'Mathematics',        icon: Sigma,       color: '#2D4589', bgColor: '#E8F3FF', excerpt: 'Logic serving real-world problems through collaborative challenges and puzzles.', image: '/assets/images/girl-writing-math-problems-on-a-whiteboard-2026-01-07-02-11-58-utc.jpg' },
+  { slug: 'robotics',         title: 'Robotics',           icon: Cpu,         color: '#9795CE', bgColor: '#F0EBFF', excerpt: 'Build and program robots to tackle exciting technical challenges.', image: '/assets/images/children-learn-about-robotics-with-robotics-kit-2026-03-05-11-56-52-utc.jpg' },
   { slug: 'virtual-reality',  title: 'Virtual Reality',    icon: Tv,          color: '#E84FA0', bgColor: '#FFE8F5', excerpt: 'Dive into the heart of immersive worlds and design custom 3D environments.', image: '/assets/images/child-using-virtual-reality-headset-in-classroom-2026-03-25-01-35-09-utc.jpg' },
   { slug: 'greenhouse-science', title: 'Greenhouse Science', icon: Sprout,    color: '#5AC87A', bgColor: '#DFFBE8', excerpt: 'Combine technology and agronomy to understand sustainable agriculture.', image: '/assets/images/greenhouse_science.png' },
   { slug: 'esports',          title: 'eSports',            icon: Gamepad2,    color: '#FFB800', bgColor: '#FFF8E0', excerpt: 'Team strategy, performance analysis, and exploring gaming careers.', image: '/assets/images/esports_camp.png' },
@@ -88,9 +89,9 @@ function RotatingBadge({ text, size = 110, color = '#fff', bgColor = 'rgba(255,2
 }
 
 const markers = [
-  { id: 'labs', label: 'Science Labs', x: '25%', y: '30%', icon: FlaskConical, color: '#FF5A1F', desc: 'Where chemistry and biology workshops are held in high-tech collegiate laboratories.' },
-  { id: 'vr', label: 'Robotics & VR Arena', x: '55%', y: '45%', icon: Cpu, color: '#8B6FE8', desc: 'Step into virtual worlds and build/program modular robots to solve challenges.' },
-  { id: 'greenhouse', label: 'Greenhouse & Gardens', x: '35%', y: '68%', icon: Sprout, color: '#52B788', desc: 'Combine agronomy and technology inside our automated university greenhouse.' },
+  { id: 'labs', label: 'Science Labs', x: '25%', y: '30%', icon: FlaskConical, color: '#2D4589', desc: 'Where chemistry and biology workshops are held in high-tech collegiate laboratories.' },
+  { id: 'vr', label: 'Robotics & VR Arena', x: '55%', y: '45%', icon: Cpu, color: '#9795CE', desc: 'Step into virtual worlds and build/program modular robots to solve challenges.' },
+  { id: 'greenhouse', label: 'Greenhouse & Gardens', x: '35%', y: '68%', icon: Sprout, color: '#8CB97A', desc: 'Combine agronomy and technology inside our automated university greenhouse.' },
   { id: 'dining', label: 'Dining & Social Hall', x: '75%', y: '60%', icon: Utensils, color: '#FFB800', desc: 'Where students enjoy free chef-prepared daily meals and collaborative activities.' }
 ];
 
@@ -192,7 +193,7 @@ export default function Home() {
               className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 rounded-full"
               style={{ background: 'rgba(255,255,255,0.18)', backdropFilter: 'blur(8px)', border: '1.5px solid rgba(255,255,255,0.3)' }}
             >
-              <span className="w-2.5 h-2.5 rounded-full bg-[#52B788] animate-pulse inline-block" />
+              <span className="w-2.5 h-2.5 rounded-full bg-[#8CB97A] animate-pulse inline-block" />
               <span className="font-body font-extrabold text-white text-xs tracking-widest uppercase">
                 Applications Open · Summer 2026
               </span>
@@ -253,7 +254,7 @@ export default function Home() {
               text="✦ SUMMER 2026 ✦ SALISBURY NC ✦ STEM CAMP ✦ "
               size={120}
               color="rgba(255,255,255,0.75)"
-              bgColor="rgba(255,90,31,0.18)"
+              bgColor="rgba(45,69,137,0.18)"
               textColor="white"
             />
           </div>
@@ -267,23 +268,23 @@ export default function Home() {
           <div className="hidden lg:block absolute inset-0 pointer-events-none z-10">
             {/* Left floaters */}
             <div className="absolute left-[5%] top-[12%] animate-float" style={{ width: 85, height: 85 }}>
-              <img src="/assets/images/children-learn-about-robotics-with-robotics-kit-2026-03-05-11-56-52-utc.jpg" className="w-full h-full rounded-full object-cover border-4 border-[#133025] shadow-md" alt="" />
+              <img src="/assets/images/children-learn-about-robotics-with-robotics-kit-2026-03-05-11-56-52-utc.jpg" className="w-full h-full rounded-full object-cover border-4 border-[#162248] shadow-md" alt="" />
             </div>
             <div className="absolute left-[11%] top-[42%] animate-float" style={{ width: 100, height: 100, animationDelay: '1.5s' }}>
-              <img src="/assets/images/child-using-virtual-reality-headset-in-classroom-2026-03-25-01-35-09-utc.jpg" className="w-full h-full rounded-full object-cover border-4 border-[#133025] shadow-md" alt="" />
+              <img src="/assets/images/child-using-virtual-reality-headset-in-classroom-2026-03-25-01-35-09-utc.jpg" className="w-full h-full rounded-full object-cover border-4 border-[#162248] shadow-md" alt="" />
             </div>
             <div className="absolute left-[6%] top-[72%] animate-float" style={{ width: 80, height: 80, animationDelay: '3s' }}>
-              <img src="/assets/images/enthusiastic-children-explore-chemistry-in-science-2026-03-25-10-42-26-utc.jpg" className="w-full h-full rounded-full object-cover border-4 border-[#133025] shadow-md" alt="" />
+              <img src="/assets/images/enthusiastic-children-explore-chemistry-in-science-2026-03-25-10-42-26-utc.jpg" className="w-full h-full rounded-full object-cover border-4 border-[#162248] shadow-md" alt="" />
             </div>
             {/* Right floaters */}
             <div className="absolute right-[6%] top-[14%] animate-float" style={{ width: 90, height: 90, animationDelay: '0.8s' }}>
-              <img src="/assets/images/portrait-of-male-and-female-students-building-robo-2026-03-10-04-49-54-utc.jpg" className="w-full h-full rounded-full object-cover border-4 border-[#133025] shadow-md" alt="" />
+              <img src="/assets/images/portrait-of-male-and-female-students-building-robo-2026-03-10-04-49-54-utc.jpg" className="w-full h-full rounded-full object-cover border-4 border-[#162248] shadow-md" alt="" />
             </div>
             <div className="absolute right-[12%] top-[45%] animate-float" style={{ width: 105, height: 105, animationDelay: '2.2s' }}>
-              <img src="/assets/images/multiethnic-schoolkids-building-robots-at-stem-eng-2026-01-08-00-20-01-utc.jpg" className="w-full h-full rounded-full object-cover border-4 border-[#133025] shadow-md" alt="" />
+              <img src="/assets/images/multiethnic-schoolkids-building-robots-at-stem-eng-2026-01-08-00-20-01-utc.jpg" className="w-full h-full rounded-full object-cover border-4 border-[#162248] shadow-md" alt="" />
             </div>
             <div className="absolute right-[5%] top-[70%] animate-float" style={{ width: 85, height: 85, animationDelay: '3.6s' }}>
-              <img src="/assets/images/boy-playing-and-building-with-lego-toys-2026-01-05-23-25-50-utc.jpg" className="w-full h-full rounded-full object-cover border-4 border-[#133025] shadow-md" alt="" />
+              <img src="/assets/images/boy-playing-and-building-with-lego-toys-2026-01-05-23-25-50-utc.jpg" className="w-full h-full rounded-full object-cover border-4 border-[#162248] shadow-md" alt="" />
             </div>
           </div>
 
@@ -291,7 +292,7 @@ export default function Home() {
             <span className="section-sticker mb-4">
               Welcome
             </span>
-            <h2 className="font-display text-4xl sm:text-6xl text-[#133025] tracking-tight leading-[1.1] font-extrabold max-w-2xl">
+            <h2 className="font-display text-4xl sm:text-6xl text-[#162248] tracking-tight leading-[1.1] font-extrabold max-w-2xl">
               Discover the wonder, friendship, and life-changing science
             </h2>
             <p className="font-body text-lg text-[#3D4A3E] max-w-xl leading-relaxed">
@@ -325,7 +326,7 @@ export default function Home() {
             </div>
 
             {/* Right: Description & features */}
-            <div className="lg:col-span-6 flex flex-col gap-6 text-[#133025]">
+            <div className="lg:col-span-6 flex flex-col gap-6 text-[#162248]">
               <span className="section-sticker mb-4">
                 Our Campus
               </span>
@@ -337,14 +338,14 @@ export default function Home() {
               </p>
               
               {/* Bullet points */}
-              <ul className="flex flex-col gap-3 font-body font-bold text-sm sm:text-base text-[#133025] mt-2">
+              <ul className="flex flex-col gap-3 font-body font-bold text-sm sm:text-base text-[#162248] mt-2">
                 {[
                   "150+ acres of historic learning spaces",
                   "State-of-the-art laboratory and virtual reality facilities",
                   "Safe environment guided by professional educators",
                 ].map((bullet, idx) => (
                   <li key={idx} className="flex items-center gap-3">
-                    <CheckCircle className="w-5 h-5 text-[#52B788] shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-[#8CB97A] shrink-0" />
                     <span>{bullet}</span>
                   </li>
                 ))}
@@ -372,7 +373,7 @@ export default function Home() {
         {/* ══════════════════════════════════════════════════════════════════
             4. REGISTRATION TIMELINE — dark forest green, dashed timeline
         ══════════════════════════════════════════════════════════════════ */}
-        <section className="py-24 px-6 bg-[#133025] text-white">
+        <section className="py-24 px-6 bg-[#162248] text-white">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16 flex flex-col items-center gap-4">
               <span className="section-sticker mb-4">Steps</span>
@@ -387,20 +388,23 @@ export default function Home() {
               <div className="hidden lg:block step-line" />
               
               {[
-                { n: '01', label: 'Register Online',   desc: 'Fill out the form in under 10 minutes. A confirmation is sent to parents immediately.',        color: '#52B788' },
-                { n: '02', label: 'Prep Time',          desc: 'Receive your welcome pack with schedules, behavior agreements, and camp logistics.',           color: '#4A90D9' },
-                { n: '03', label: 'Welcome to Campus', desc: 'Arrive at Livingstone College ready to meet your group, mentors, and program leaders.',        color: '#8B6FE8' },
-                { n: '04', label: 'Camp Life & Closing', desc: 'Dive into STEM workshops, complete challenges, and celebrate at our closing ceremony.',      color: '#FF5A1F' },
+                { n: '01', label: 'Register Online',   desc: 'Fill out the form in under 10 minutes. A confirmation is sent to parents immediately.',        color: '#8CB97A' },
+                { n: '02', label: 'Prep Time',          desc: 'Receive your welcome pack with schedules, behavior agreements, and camp logistics.',           color: '#2D4589' },
+                { n: '03', label: 'Welcome to Campus', desc: 'Arrive at Livingstone College ready to meet your group, mentors, and program leaders.',        color: '#9795CE' },
+                { n: '04', label: 'Camp Life & Closing', desc: 'Dive into STEM workshops, complete challenges, and celebrate at our closing ceremony.',      color: '#2D4589' },
               ].map((step, idx) => (
-                <div key={idx} className="relative z-10 bg-[#173A2B] border border-white/10 rounded-3xl p-7 flex flex-col gap-4 shadow-lg">
+                <div key={idx} className="relative z-10 bg-[#FCF9F2] border-2 border-[#162248] rounded-[24px] p-7 flex flex-col gap-4 shadow-[4px_4px_0px_0px_#162248]">
                   <div
-                    className="w-12 h-12 rounded-full flex items-center justify-center font-accent text-white text-xl"
-                    style={{ background: step.color }}
+                    className="w-12 h-12 rounded-full flex items-center justify-center font-accent text-xl border-2 border-[#162248] shadow-[1.5px_1.5px_0px_0px_#162248]"
+                    style={{ 
+                      backgroundColor: step.color, 
+                      color: (step.color === '#2D4589' ? '#FFFFFF' : '#162248') 
+                    }}
                   >
                     {step.n}
                   </div>
-                  <h3 className="font-display text-xl font-bold text-white">{step.label}</h3>
-                  <p className="font-body text-sm text-white/80 leading-relaxed">{step.desc}</p>
+                  <h3 className="font-display text-xl font-extrabold text-[#162248]">{step.label}</h3>
+                  <p className="font-body text-sm text-[#3D4A3E] leading-relaxed font-semibold">{step.desc}</p>
                 </div>
               ))}
             </div>
@@ -421,7 +425,7 @@ export default function Home() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16 flex flex-col items-center gap-4">
               <span className="section-sticker mb-4">Facilities</span>
-              <h2 className="font-display text-3xl sm:text-5xl font-extrabold text-[#133025]">
+              <h2 className="font-display text-3xl sm:text-5xl font-extrabold text-[#162248]">
                 Discover the spaces that make camp special
               </h2>
             </div>
@@ -454,7 +458,7 @@ export default function Home() {
                     />
                   </div>
                   <div className="p-7 flex flex-col gap-3 flex-grow">
-                    <h3 className="font-display text-2xl font-bold text-[#133025]">{space.title}</h3>
+                    <h3 className="font-display text-2xl font-bold text-[#162248]">{space.title}</h3>
                     <p className="font-body text-sm text-[#3D4A3E] leading-relaxed">{space.desc}</p>
                   </div>
                 </div>
@@ -466,16 +470,16 @@ export default function Home() {
         {/* ══════════════════════════════════════════════════════════════════
             6. PROGRAMS THAT INSPIRE — circular disciplines grid
         ══════════════════════════════════════════════════════════════════ */}
-        <section id="programs-preview" ref={programsRef} className="py-24 px-6 bg-[#FCF9F2] border-t border-[#133025]/10">
+        <section id="programs-preview" ref={programsRef} className="py-24 px-6 bg-[#FCF9F2] border-t border-[#162248]/10">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16 flex flex-col items-center gap-4">
-              <span className="inline-block bg-[#FFD15C] text-[#133025] font-accent text-xs px-3 py-1 uppercase tracking-widest rounded border-2 border-[#133025] shadow-[1.5px_1.5px_0px_0px_#133025] transform -rotate-1 select-none">
+              <span className="inline-block bg-[#FFD15C] text-[#162248] font-accent text-xs px-3 py-1 uppercase tracking-widest rounded border-2 border-[#162248] shadow-[1.5px_1.5px_0px_0px_#162248] transform -rotate-1 select-none">
                 Disciplines
               </span>
-              <h2 className="font-accent text-4xl sm:text-5.5xl text-[#133025] leading-none tracking-wide">
+              <h2 className="font-accent text-4xl sm:text-5.5xl text-[#162248] leading-none tracking-wide">
                 Programs that inspire
               </h2>
-              <p className="font-body text-base text-[#133025]/80 max-w-xl font-semibold mt-1">
+              <p className="font-body text-base text-[#162248]/80 max-w-xl font-semibold mt-1">
                 We rotate all students through 7 core disciplines, giving them a rich spectrum of experiences.
               </p>
             </div>
@@ -486,10 +490,10 @@ export default function Home() {
                 <div
                   key={d.slug}
                   onClick={() => router.push(`/programs/${d.slug}`)}
-                  className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.33%-16px)] xl:w-[calc(25%-18px)] flex flex-col justify-between bg-[#FFF9F0] border-2 border-[#133025] rounded-[24px] overflow-hidden shadow-[4px_4px_0px_0px_#133025] hover:-translate-y-1 hover:translate-x-[-1px] hover:shadow-[5px_5px_0px_0px_#133025] cursor-pointer transition-all duration-200 group"
+                  className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.33%-16px)] xl:w-[calc(25%-18px)] flex flex-col justify-between bg-[#FFF9F0] border-2 border-[#162248] rounded-[24px] overflow-hidden shadow-[4px_4px_0px_0px_#162248] hover:-translate-y-1 hover:translate-x-[-1px] hover:shadow-[5px_5px_0px_0px_#162248] cursor-pointer transition-all duration-200 group"
                 >
                   {/* Top Image Banner */}
-                  <div className="relative h-40 w-full overflow-hidden border-b-2 border-[#133025] bg-[#EAEFE3]">
+                  <div className="relative h-40 w-full overflow-hidden border-b-2 border-[#162248] bg-[#F1F6EF]">
                     <img
                       src={d.image}
                       alt={d.title}
@@ -497,17 +501,17 @@ export default function Home() {
                     />
                     {/* Icon Container overlay */}
                     <div 
-                      className="absolute bottom-3 right-3 w-10 h-10 rounded-lg flex items-center justify-center border-2 border-[#133025] shadow-[1.5px_1.5px_0px_0px_#133025]"
+                      className="absolute bottom-3 right-3 w-10 h-10 rounded-lg flex items-center justify-center border-2 border-[#162248] shadow-[1.5px_1.5px_0px_0px_#162248]"
                       style={{ backgroundColor: '#FCF9F2' }}
                     >
-                      <d.icon className="w-5 h-5 text-[#FF5A1F]" />
+                      <d.icon className="w-5 h-5 text-[#2D4589]" />
                     </div>
                   </div>
 
                   {/* Card Content */}
                   <div className="p-5 flex-grow flex flex-col justify-between gap-4">
                     <div className="space-y-2">
-                      <h3 className="font-display text-lg font-extrabold text-[#133025] tracking-tight group-hover:text-[#FF5A1F] transition-colors">
+                      <h3 className="font-display text-lg font-extrabold text-[#162248] tracking-tight group-hover:text-[#2D4589] transition-colors">
                         {d.title}
                       </h3>
                       <p className="font-body text-xs text-[#3D4A3E]/90 leading-relaxed font-semibold">
@@ -516,7 +520,7 @@ export default function Home() {
                     </div>
 
                     {/* Read more / Arrow */}
-                    <div className="pt-2 flex items-center gap-1.5 text-[11px] font-accent uppercase tracking-wider text-[#133025] group-hover:text-[#FF5A1F] transition-colors mt-4">
+                    <div className="pt-2 flex items-center gap-1.5 text-[11px] font-accent uppercase tracking-wider text-[#162248] group-hover:text-[#2D4589] transition-colors mt-4">
                       <span>Explore</span>
                       <ArrowRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-1" />
                     </div>
@@ -526,7 +530,7 @@ export default function Home() {
             </div>
 
             <div className="text-center mt-16">
-              <Link href="/programs" className="btn-outline border-2 border-[#133025] hover:bg-[#133025] hover:text-white transition-all shadow-[2px_2px_0px_0px_#133025]">
+              <Link href="/programs" className="btn-outline border-2 border-[#162248] hover:bg-[#162248] hover:text-white transition-all shadow-[2px_2px_0px_0px_#162248]">
                 View all disciplines
                 <ArrowRight className="w-4 h-4 ml-1" />
               </Link>
@@ -537,7 +541,7 @@ export default function Home() {
         {/* ══════════════════════════════════════════════════════════════════
             7. SAFETY BANNER — Care You Can Count On
         ══════════════════════════════════════════════════════════════════ */}
-        <section className="py-24 px-6 bg-[#133025] text-white">
+        <section className="py-24 px-6 bg-[#162248] text-white">
           <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
             
             {/* Left: Arched image of safety/mentor */}
@@ -566,15 +570,15 @@ export default function Home() {
               
               <ul className="flex flex-col gap-3 font-body font-bold text-sm sm:text-base text-white/95">
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-[#52B788] shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-[#8CB97A] shrink-0" />
                   <span>1:8 Mentor to student supervision ratio</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-[#52B788] shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-[#8CB97A] shrink-0" />
                   <span>Licensed nurse present on campus during sessions</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-[#52B788] shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-[#8CB97A] shrink-0" />
                   <span>Strict check-in and authorized pick-up logs</span>
                 </li>
               </ul>
@@ -593,56 +597,192 @@ export default function Home() {
         {/* ══════════════════════════════════════════════════════════════════
             8. TESTIMONIALS — sage green bg, star cards
         ══════════════════════════════════════════════════════════════════ */}
-        <section className="py-24 px-6 bg-[#EAEFE3]">
+        {/* ══════════════════════════════════════════════════════════════════
+            8. TESTIMONIALS — Bento grid, high contrast, parent trust signals
+        ══════════════════════════════════════════════════════════════════ */}
+        <section className="py-24 px-6 bg-[#F1F6EF] border-t-2 border-[#162248]">
           <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16 flex flex-col items-center gap-4">
-              <span className="section-sticker mb-4">Reviews</span>
-              <h2 className="font-display text-3xl sm:text-5xl font-extrabold text-[#133025]">
-                From the parents who trusted us
+            {/* Header Section */}
+            <div className="text-center mb-16 flex flex-col items-center">
+              <span className="inline-block bg-[#FFE566] text-[#162248] font-accent text-xs px-3.5 py-1.5 uppercase tracking-widest rounded-md shadow-[2px_2px_0px_0px_#162248] transform -rotate-1.5 border-2 border-[#162248] mb-5 select-none font-normal">
+                Testimonials
+              </span>
+              <h2 className="font-accent text-4xl sm:text-6xl text-[#162248] tracking-wide leading-none max-w-4xl mx-auto">
+                WHAT OUR COMMUNITY SAYS
               </h2>
             </div>
 
-            {/* Testimonials Filter Tabs */}
-            <div className="flex justify-center gap-2 mb-12">
-              {(['all', 'participant', 'parent'] as const).map(tab => (
-                <button
-                  key={tab}
-                  onClick={() => setActiveTab(tab)}
-                  className="px-5 py-2.5 rounded-full font-body font-bold text-sm transition-all cursor-pointer border"
-                  style={{
-                    background: activeTab === tab ? '#133025' : 'rgba(255,255,255,0.75)',
-                    color:      activeTab === tab ? '#fff' : '#133025',
-                    borderColor: activeTab === tab ? '#133025' : 'rgba(19,48,37,0.1)',
-                  }}
-                >
-                  {tab === 'all' ? 'All Reviews' : tab === 'participant' ? 'Participants' : 'Parents'}
-                </button>
-              ))}
-            </div>
+            {/* Bento Layout Grid */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+              
+              {/* Left: Rating and highlights dashboard card (span 4) */}
+              <div className="lg:col-span-4 bg-[#162248] text-white p-8 rounded-[32px] border-2 border-[#162248] shadow-[6px_6px_0px_0px_#8CB97A] relative overflow-hidden flex flex-col gap-6">
+                <div className="absolute -right-8 -bottom-8 w-32 h-32 bg-[#2D4589] rounded-full opacity-35 blur-xl pointer-events-none" />
+                <div className="absolute -left-6 -top-6 w-24 h-24 bg-[#9795CE] rounded-full opacity-25 blur-lg pointer-events-none" />
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {filtered.map((t, idx) => (
-                <div key={idx} className="camp-card bg-white p-8 flex flex-col gap-4 shadow-sm border border-[#133025]/5">
-                  <div className="flex gap-1 text-yellow-400">
-                    {[...Array(5)].map((_, s) => <Star key={s} className="w-4 h-4 fill-current" />)}
+                <div className="relative z-10 flex flex-col gap-5">
+                  <div className="flex items-center gap-3">
+                    <span className="px-3 py-1.5 text-[9px] font-accent uppercase tracking-wider bg-[#FFE566] text-[#162248] rounded-md border border-[#162248] shadow-[1px_1px_0px_0px_#162248] select-none font-normal">
+                      Parent Verified
+                    </span>
+                    <div className="h-[2px] bg-white/20 flex-grow" />
                   </div>
-                  <p className="font-body text-base text-[#3D4A3E] leading-relaxed italic">
-                    &ldquo;{t.quote}&rdquo;
+
+                  <div className="flex items-baseline gap-2 mt-2">
+                    <span className="font-accent text-6xl text-[#FFE566] leading-none">4.9</span>
+                    <span className="font-body text-white/70 text-lg font-bold">/ 5.0</span>
+                  </div>
+
+                  <div className="flex gap-1">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-5 h-5 fill-[#FFE566] text-[#FFE566]" />
+                    ))}
+                  </div>
+
+                  <p className="font-body text-sm text-white/80 leading-relaxed font-semibold">
+                    Unbiased feedback from middle and high school parents and participants in Gaston, Rowan & Cabarrus counties.
                   </p>
-                  <div className="flex items-center gap-3 pt-4 border-t border-[#133025]/5 mt-2">
-                    <div
-                      className="w-10 h-10 rounded-full flex items-center justify-center font-display font-bold text-white text-base"
-                      style={{ background: '#52B788' }}
-                    >
-                      {t.initial}
+
+                  <div className="space-y-4 pt-5 border-t border-white/10 mt-2">
+                    <div className="flex items-start gap-3">
+                      <div className="p-1 rounded bg-white/10 text-[#8CB97A] shrink-0 mt-0.5">
+                        <BadgeCheck className="w-4 h-4" />
+                      </div>
+                      <div>
+                        <h4 className="font-display font-extrabold text-sm text-white">100% Free STEM Camp</h4>
+                        <p className="font-body text-xs text-white/65">Covers all course tools, snacks, lunch and field trips.</p>
+                      </div>
                     </div>
-                    <div>
-                      <div className="font-display font-bold text-sm text-[#133025]">{t.name}</div>
-                      <div className="font-body text-xs text-[#7A8C7B]">{t.role}</div>
+                    
+                    <div className="flex items-start gap-3">
+                      <div className="p-1 rounded bg-white/10 text-[#8CB97A] shrink-0 mt-0.5">
+                        <BadgeCheck className="w-4 h-4" />
+                      </div>
+                      <div>
+                        <h4 className="font-display font-extrabold text-sm text-white">Inspiring & Safe Campus</h4>
+                        <p className="font-body text-xs text-white/65">Full safety check-in, on-campus health coordinator.</p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start gap-3">
+                      <div className="p-1 rounded bg-white/10 text-[#8CB97A] shrink-0 mt-0.5">
+                        <BadgeCheck className="w-4 h-4" />
+                      </div>
+                      <div>
+                        <h4 className="font-display font-extrabold text-sm text-white">Hands-on College Labs</h4>
+                        <p className="font-body text-xs text-white/65">Robotics arenas, organic greenhouses & VR studios.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex justify-center pt-6 relative mt-2">
+                    <RotatingBadge text="★ PARENT TRUSTED ★ STEM CAMP ★" size={115} color="#8CB97A" bgColor="rgba(255,255,255,0.03)" textColor="#fff" />
+                    <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                      <Heart className="w-6 h-6 text-[#8CB97A] fill-[#8CB97A]" />
                     </div>
                   </div>
                 </div>
-              ))}
+              </div>
+
+              {/* Right: Filter tabs & Reviews List (span 8) */}
+              <div className="lg:col-span-8 flex flex-col gap-8">
+                
+                {/* Custom Filter Bar with a neat label */}
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-white/50 p-3 rounded-2xl border border-[#162248]/10 backdrop-blur-sm">
+                  <span className="font-display font-extrabold text-sm text-[#162248] px-2 flex items-center gap-2">
+                    <Sparkles className="w-4 h-4 text-[#9795CE]" />
+                    Filter feedback:
+                  </span>
+                  
+                  <div className="flex flex-wrap gap-2">
+                    {(['all', 'participant', 'parent'] as const).map(tab => (
+                      <button
+                        key={tab}
+                        onClick={() => setActiveTab(tab)}
+                        className="px-5 py-2.5 rounded-xl font-accent text-xs tracking-wider uppercase transition-all duration-150 border-2 border-[#162248] cursor-pointer font-normal"
+                        style={{
+                          background: activeTab === tab ? '#2D4589' : '#FFFFFF',
+                          color:      activeTab === tab ? '#FFFFFF' : '#162248',
+                          boxShadow:  activeTab === tab ? '3px 3px 0px 0px #162248' : '0px 0px 0px 0px #162248',
+                          transform:  activeTab === tab ? 'translate(1px, 1px)' : 'none',
+                        }}
+                      >
+                        {tab === 'all' ? 'All Reviews' : tab === 'participant' ? 'Participants' : 'Parents'}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Reviews Cards Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {filtered.map((t, idx) => {
+                    const accentColor = ['#9795CE', '#8CB97A', '#2D4589', '#FFE566'][idx % 4];
+                    const isParent = t.category === 'parent';
+                    
+                    return (
+                      <div 
+                        key={idx} 
+                        className="relative bg-white p-7 flex flex-col justify-between gap-6 border-2 border-[#162248] rounded-[24px] transition-all duration-300 hover:-translate-y-1 hover:shadow-[7px_7px_0px_0px_var(--hover-shadow)] shadow-[4px_4px_0px_0px_var(--init-shadow)]"
+                        style={{ 
+                          ['--init-shadow' as any]: accentColor,
+                          ['--hover-shadow' as any]: '#162248'
+                        }}
+                      >
+                        {/* Quote Mark background decoration */}
+                        <div 
+                          className="absolute -top-2 right-6 font-serif text-8xl select-none pointer-events-none opacity-[0.06] text-[#162248]"
+                        >
+                          “
+                        </div>
+
+                        <div className="space-y-4 relative z-10">
+                          {/* Card Top Label & Stars */}
+                          <div className="flex items-center justify-between gap-2">
+                            <span 
+                              className="px-2.5 py-1 text-[9px] font-accent uppercase tracking-wider rounded-md border border-[#162248] shadow-[1px_1px_0px_0px_#162248] font-normal"
+                              style={{ 
+                                backgroundColor: isParent ? '#F0EBFF' : '#E8F3FF',
+                                color: '#162248'
+                              }}
+                            >
+                              {isParent ? 'Parent Note' : 'Camper Story'}
+                            </span>
+                            
+                            <div className="flex gap-0.5 text-yellow-400">
+                              {[...Array(5)].map((_, s) => <Star key={s} className="w-3.5 h-3.5 fill-current" />)}
+                            </div>
+                          </div>
+
+                          {/* Quote Content */}
+                          <p className="font-body text-base text-[#162248] leading-relaxed italic font-bold">
+                            &ldquo;{t.quote}&rdquo;
+                          </p>
+                        </div>
+
+                        {/* Author Info */}
+                        <div className="flex items-center gap-3 pt-4 border-t border-[#162248]/10 mt-1 relative z-10">
+                          {/* Letter Avatar - styled as squircle */}
+                          <div
+                            className="w-10 h-10 rounded-xl flex items-center justify-center font-display font-black text-[#162248] text-base border-2 border-[#162248] shadow-[2px_2px_0px_0px_#162248]"
+                            style={{ backgroundColor: accentColor }}
+                          >
+                            {t.initial}
+                          </div>
+                          
+                          <div className="flex-grow">
+                            <div className="flex items-center gap-1.5">
+                              <span className="font-display font-extrabold text-sm text-[#162248]">{t.name}</span>
+                              <BadgeCheck className="w-4 h-4 text-[#2D4589] fill-[#E8F3FF] shrink-0" />
+                            </div>
+                            <div className="font-body text-xs text-[#6D7B9E] font-semibold">{t.role}</div>
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+
             </div>
           </div>
         </section>
@@ -653,7 +793,7 @@ export default function Home() {
         <section className="py-24 px-6 bg-[#FCF9F2]">
           <div className="max-w-4xl mx-auto text-center flex flex-col items-center gap-6">
             <span className="section-sticker mb-4">Visual Map</span>
-            <h2 className="font-display text-3xl sm:text-5xl font-extrabold text-[#133025]">
+            <h2 className="font-display text-3xl sm:text-5xl font-extrabold text-[#162248]">
               Explore our camp map
             </h2>
             <p className="font-body text-base text-[#3D4A3E] max-w-xl leading-relaxed">
@@ -661,10 +801,10 @@ export default function Home() {
             </p>
             
             {/* Interactive Campus Map Container */}
-            <div className="relative w-full aspect-[16/10] border-4 border-[#133025] rounded-[32px] overflow-hidden shadow-lg mt-4 bg-[#EAEFE3]">
+            <div className="relative w-full aspect-[16/10] border-4 border-[#162248] rounded-[32px] overflow-hidden shadow-lg mt-4 bg-[#F1F6EF]">
               {/* Background Image of Livingstone College */}
               <Image
-                src="/assets/images/livingstone college.jpg"
+                src="/assets/images/duncan building.jpg"
                 alt="Livingstone College Campus"
                 fill
                 className="object-cover brightness-[0.85] contrast-[1.05]"
@@ -698,7 +838,7 @@ export default function Home() {
                     </div>
 
                     {/* Tooltip label */}
-                    <span className="absolute bottom-full mb-2 bg-[#133025] text-white text-[11px] font-bold py-1 px-2.5 rounded-lg opacity-0 group-hover/pin:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap shadow-md border border-white/10">
+                    <span className="absolute bottom-full mb-2 bg-[#162248] text-white text-[11px] font-bold py-1 px-2.5 rounded-lg opacity-0 group-hover/pin:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap shadow-md border border-white/10">
                       {marker.label}
                     </span>
                   </button>
@@ -748,22 +888,74 @@ export default function Home() {
         </section>
 
         {/* ══════════════════════════════════════════════════════════════════
+            9b. OUR PARTNERS & SUPPORTERS
+        ══════════════════════════════════════════════════════════════════ */}
+        <section className="py-24 px-6 bg-[#FCF9F2] border-t-2 border-[#162248]">
+          <div className="max-w-6xl mx-auto text-center flex flex-col items-center gap-6">
+            <span className="section-sticker mb-4 font-normal">Camp Sponsors</span>
+            <h2 className="font-accent text-3xl sm:text-5xl text-[#162248] tracking-wide leading-none uppercase">
+              Empowered by local partners
+            </h2>
+            <p className="font-body text-base text-[#3D4A3E] max-w-xl leading-relaxed">
+              Our camp is 100% free for all students thanks to the generous support of corporate sponsors and local community leaders.
+            </p>
+
+            {/* Logo Grid */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-4xl mt-6">
+              {partners.map((partner, i) => {
+                const borderColors = ['#9795CE', '#8CB97A', '#2D4589', '#FFE566'];
+                const cardColor = borderColors[i % 4];
+                return (
+                  <div
+                    key={i}
+                    className="bg-white p-6 rounded-2xl border-2 border-[#162248] flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-[5px_5px_0px_0px_var(--shadow-color)]"
+                    style={{ 
+                      ['--shadow-color' as any]: cardColor,
+                      boxShadow: `3px 3px 0px 0px ${cardColor}` 
+                    }}
+                  >
+                    <div className="relative w-20 h-20 rounded-xl overflow-hidden border border-[#162248]/10 flex items-center justify-center bg-gray-50">
+                      <Image
+                        src={partner.logo}
+                        alt={partner.name}
+                        fill
+                        className="object-cover scale-90"
+                      />
+                    </div>
+                    <span className="font-display font-extrabold text-sm text-[#162248] text-center">
+                      {partner.name}
+                    </span>
+                  </div>
+                );
+              })}
+            </div>
+
+            <div className="mt-10">
+              <Link href="/funding" className="btn-primary" style={{ background: '#2D4589' }}>
+                View Partnership Tiers & Support
+                <ArrowRight className="w-5 h-5" />
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* ══════════════════════════════════════════════════════════════════
             10. DATES & RATES — bright green schedule bar
         ══════════════════════════════════════════════════════════════════ */}
-        <section id="dates-rates" className="py-16 px-6 bg-[#52B788] text-white">
+        <section id="dates-rates" className="py-16 px-6 bg-[#8CB97A]">
           <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-10">
             <div>
-              <h2 className="font-display text-3xl sm:text-5.5xl text-white font-extrabold tracking-tight">
+              <h2 className="font-display text-3xl sm:text-5.5xl text-[#162248] font-extrabold tracking-tight">
                 Dates to look forward to for Camp 2026
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
-                <div className="bg-white/10 rounded-2xl p-4 border border-white/20">
-                  <span className="block font-display font-bold text-base text-[#FFE566]">Middle Schoolers (MS)</span>
-                  <span className="font-body text-sm text-white/90">June 15 — 19, 2026 (9:00 AM - 3:00 PM)</span>
+                <div className="bg-white border-2 border-[#162248] rounded-2xl p-5 shadow-[3px_3px_0px_0px_#162248]">
+                  <span className="block font-display font-extrabold text-lg text-[#2D4589]">Middle Schoolers (MS)</span>
+                  <span className="font-body text-sm text-[#162248] font-bold mt-1 block">June 15 — 19, 2026 (9:00 AM - 3:00 PM)</span>
                 </div>
-                <div className="bg-white/10 rounded-2xl p-4 border border-white/20">
-                  <span className="block font-display font-bold text-base text-[#FFE566]">High Schoolers (HS)</span>
-                  <span className="font-body text-sm text-white/90">June 22 — 26, 2026 (9:00 AM - 3:00 PM)</span>
+                <div className="bg-white border-2 border-[#162248] rounded-2xl p-5 shadow-[3px_3px_0px_0px_#162248]">
+                  <span className="block font-display font-extrabold text-lg text-[#2D4589]">High Schoolers (HS)</span>
+                  <span className="font-body text-sm text-[#162248] font-bold mt-1 block">June 22 — 26, 2026 (9:00 AM - 3:00 PM)</span>
                 </div>
               </div>
             </div>
@@ -776,7 +968,7 @@ export default function Home() {
                 Register Now
                 <ArrowRight className="w-5 h-5 stroke-[2.5]" />
               </Link>
-              <span className="font-body text-xs text-white/80 font-bold uppercase tracking-wider">
+              <span className="font-body text-xs text-[#162248] font-bold uppercase tracking-wider">
                 100% Free • Space is limited
               </span>
             </div>
@@ -786,7 +978,7 @@ export default function Home() {
         {/* ══════════════════════════════════════════════════════════════════
             11. INSTAGRAM MEDIA STRIP — marquee
         ══════════════════════════════════════════════════════════════════ */}
-        <section className="py-8 bg-[#FCF9F2] overflow-hidden border-t border-[#133025]/5">
+        <section className="py-8 bg-[#FCF9F2] overflow-hidden border-t border-[#162248]/5">
           <div className="relative flex overflow-hidden">
             <div className="flex animate-marquee whitespace-nowrap">
               {[
@@ -795,7 +987,7 @@ export default function Home() {
                 '/assets/images/enthusiastic-children-explore-chemistry-in-science-2026-03-25-10-42-26-utc.jpg',
                 '/assets/images/students-and-teacher-constructing-robots-in-school-2026-01-08-23-48-20-utc.jpg',
               ].map((src, i) => (
-                <div key={i} className="w-64 h-48 relative overflow-hidden rounded-2xl mx-3 shrink-0 shadow-sm border border-[#133025]/10">
+                <div key={i} className="w-64 h-48 relative overflow-hidden rounded-2xl mx-3 shrink-0 shadow-sm border border-[#162248]/10">
                   <Image src={src} alt="STEM activity" fill className="object-cover hover:scale-105 transition-transform duration-300" />
                 </div>
               ))}
@@ -805,7 +997,7 @@ export default function Home() {
                 '/assets/images/enthusiastic-children-explore-chemistry-in-science-2026-03-25-10-42-26-utc.jpg',
                 '/assets/images/students-and-teacher-constructing-robots-in-school-2026-01-08-23-48-20-utc.jpg',
               ].map((src, i) => (
-                <div key={i + 4} className="w-64 h-48 relative overflow-hidden rounded-2xl mx-3 shrink-0 shadow-sm border border-[#133025]/10">
+                <div key={i + 4} className="w-64 h-48 relative overflow-hidden rounded-2xl mx-3 shrink-0 shadow-sm border border-[#162248]/10">
                   <Image src={src} alt="STEM activity" fill className="object-cover hover:scale-105 transition-transform duration-300" />
                 </div>
               ))}
