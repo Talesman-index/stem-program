@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Luckiest+Guy&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* ── Starlight-Camp-inspired palette ── */
+  --font-display: 'Gabarito', sans-serif;
+  --font-body:    'Nunito', sans-serif;
+  --font-accent:  'Luckiest Guy', cursive;
+
+  /* Backgrounds & Colors */
+  --bg-cream:       #FCF9F2;
+  --bg-white:       #FFFFFF;
+  --bg-dark-forest: #133025;
+  --bg-sage:        #EAEFE3;
+  --accent-orange:  #FF5A1F;
+  --accent-green:   #52B788;
+  --accent-green-bright: #74C69D;
+
+  --bg-cream-dark:  #F5EFEB;
+  --bg-yellow:      #FFE566;
+  --bg-blue:        #4A90D9;
+  --bg-purple:      #8B6FE8;
+
+  /* Text mapping */
+  --text-dark:      #133025;
+  --text-mid:       #3D4A3E;
+  --text-light:     #7A8C7B;
+  --text-white:     #FFFFFF;
+
+  /* Brand mappings */
+  --stem-green:     #52B788;
+  --stem-blue:      #4A90D9;
+  --stem-orange:    #FF5A1F;
+  --stem-yellow:    #FFE566;
+  --stem-purple:    #8B6FE8;
+
+  /* Borders */
+  --border-soft:    rgba(19, 48, 37, 0.08);
+  --border-card:    rgba(19, 48, 37, 0.08);
+
+  /* Shadows */
+  --shadow-card:    0 6px 32px rgba(19, 48, 37, 0.06);
+  --shadow-btn:     0 4px 18px rgba(255, 90, 31, 0.25);
+  --shadow-heavy:   0 12px 48px rgba(19, 48, 37, 0.12);
+
+  /* Admin vars (unchanged) */
+  --admin-bg:      #F8FAFC;
+  --admin-sidebar: #0D1B2A;
+  --admin-header:  #ffffff;
+  --admin-text:    #1E293B;
+}
+
+/* ── Reset & Base ── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  color: var(--text-dark);
+  background: var(--bg-cream);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  color: var(--text-dark);
+  line-height: 1.15;
+}
+
+/* ── Typography helpers ── */
+.font-display  { font-family: var(--font-display); }
+.font-body     { font-family: var(--font-body); }
+.font-accent   { font-family: var(--font-accent); }
+
+@layer components {
+  /* ── Pill / Badge ── */
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 18px;
+    border-radius: 999px;
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  .section-sticker {
+    display: inline-block;
+    width: fit-content;
+    background-color: #FFD15C;
+    color: #133025;
+    font-family: var(--font-accent);
+    font-size: 0.72rem;
+    padding: 6px 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    border-radius: 8px;
+    border: 2px solid #133025;
+    box-shadow: 2px 2px 0px 0px #133025;
+    transform: rotate(-1.5deg);
+    user-select: none;
+    font-weight: normal;
+  }
+
+  /* ── Starlight-style Cards ── */
+  .camp-card {
+    background-color: var(--bg-white);
+    border-radius: 24px;
+    box-shadow: var(--shadow-card);
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border: 2px solid var(--border-card);
+  }
+  .camp-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-heavy);
+  }
+
+  /* ── Arched Photo Frames ── */
+  .arched-frame {
+    border-radius: 120px 120px 24px 24px;
+    overflow: hidden;
+    border: 2.5px solid var(--text-dark);
+  }
+  .arched-frame-sm {
+    border-radius: 80px 80px 16px 16px;
+    overflow: hidden;
+    border: 2px solid var(--text-dark);
+  }
+
+  /* ── Wavy/Curved Dividers ── */
+  .curve-divider {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    z-index: 20;
+  }
+
+  /* ── Floating Navbar ── */
+  .navbar-floating {
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1.5px solid rgba(255,255,255,0.7);
+    box-shadow: var(--shadow-card);
+    border-radius: 999px;
+  }
+
+  /* ── Buttons ── */
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 32px;
+    border-radius: 999px;
+    font-family: var(--font-body);
+    font-weight: 800;
+    font-size: 1rem;
+    background: var(--accent-orange);
+    color: #fff;
+    box-shadow: var(--shadow-btn);
+    transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+  }
+  .btn-primary:hover {
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 8px 28px rgba(255,90,31,0.40);
+    background: #e04a10;
+  }
+  .btn-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 13px 30px;
+    border-radius: 999px;
+    font-family: var(--font-body);
+    font-weight: 800;
+    font-size: 1rem;
+    background: transparent;
+    color: var(--text-dark);
+    border: 2.5px solid var(--text-dark);
+    transition: transform 0.2s, background 0.2s, color 0.2s;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .btn-outline:hover {
+    background: var(--text-dark);
+    color: #fff;
+    transform: translateY(-2px);
+  }
+
+  /* ── Section BG colors ── */
+  .section-yellow  { background: var(--bg-yellow); }
+  .section-green   { background: var(--bg-sage); }
+  .section-sage    { background: var(--bg-sage); }
+  .section-orange  { background: var(--bg-cream-dark); }
+  .section-blue    { background: var(--bg-cream); }
+  .section-purple  { background: var(--bg-purple); }
+  .section-cream   { background: var(--bg-cream); }
+  .section-dark    { background: var(--bg-dark-forest); }
+  .section-white   { background: var(--bg-white); }
+}
+
+/* ── Stats circle badge ── */
+.stat-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-card);
+}
+
+/* ── Animations ── */
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50%       { transform: translateY(-12px) rotate(3deg); }
+}
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-3deg); }
+  50%       { transform: rotate(3deg); }
+}
+@keyframes bounceIn {
+  0%   { opacity: 0; transform: scale(0.7); }
+  60%  { transform: scale(1.05); }
+  100% { opacity: 1; transform: scale(1); }
+}
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.animate-float     { animation: float 7s ease-in-out infinite; }
+.animate-wiggle    { animation: wiggle 3s ease-in-out infinite; }
+.animate-bounce-in { animation: bounceIn 0.6s cubic-bezier(.36,.07,.19,.97) both; }
+.animate-slide-up  { animation: slideUp 0.7s ease both; }
+.animate-marquee   { animation: marquee 28s linear infinite; }
+
+/* ── Decorative blob shapes ── */
+.blob {
+  border-radius: 60% 40% 55% 45% / 45% 60% 40% 55%;
+}
+
+/* ── Glassmorphism (kept for admin) ── */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.70);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.5);
+}
+.glass-panel-dark {
+  background: rgba(13,27,42,0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* ── Scrollbar ── */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* ── Marquee strip ── */
+.marquee-track {
+  display: flex;
+  width: max-content;
+}
+
+/* ── Step line ── */
+.step-line-container { position: relative; }
+.step-line {
+  position: absolute;
+  top: 1rem; left: 2rem; right: 2rem;
+  height: 2px;
+  background-image: linear-gradient(to right, var(--stem-green) 50%, transparent 50%);
+  background-size: 12px 100%;
+  z-index: 0;
+}
