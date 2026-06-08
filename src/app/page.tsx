@@ -38,11 +38,97 @@ const testimonials = [
   { quote: "This program allowed my daughter to regain her self-confidence. The mentors listened to her and guided her. An incredible opportunity!", name: 'Robert D.', role: 'Father of a 2025 participant', category: 'parent', initial: 'R' },
 ];
 
+// ── Partner SVG Logotypes ─────────────────────────────────────────────────────
+function LogoRowanChamber() {
+  return (
+    <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
+      <rect width="80" height="80" rx="14" fill="#F5F7FA"/>
+      {/* Shield shape */}
+      <path d="M40 10 L62 20 L62 46 C62 58 52 66 40 70 C28 66 18 58 18 46 L18 20 Z" fill="#1B3A6B" stroke="#1B3A6B" strokeWidth="0.5"/>
+      {/* Inner shield highlight */}
+      <path d="M40 16 L57 24 L57 45 C57 55 49 62 40 65 C31 62 23 55 23 45 L23 24 Z" fill="none" stroke="rgba(255,255,255,0.2)" strokeWidth="1"/>
+      {/* RC Monogram */}
+      <text x="40" y="39" textAnchor="middle" fill="#FFD15C" fontSize="16" fontFamily="Georgia, serif" fontWeight="bold" letterSpacing="1">RC</text>
+      {/* Stars */}
+      <text x="40" y="52" textAnchor="middle" fill="#FFD15C" fontSize="8" fontFamily="sans-serif">★ ★ ★</text>
+      {/* Bottom label */}
+      <text x="40" y="72" textAnchor="middle" fill="#1B3A6B" fontSize="5.5" fontFamily="Arial, sans-serif" fontWeight="bold" letterSpacing="0.5">CHAMBER OF COMMERCE</text>
+    </svg>
+  );
+}
+
+function LogoDukeEnergy() {
+  return (
+    <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
+      <rect width="80" height="80" rx="14" fill="#F5F7FA"/>
+      {/* D shape background */}
+      <path d="M22 18 L22 62 L42 62 C56 62 63 53 63 40 C63 27 56 18 42 18 Z" fill="#003087"/>
+      {/* D inner cutout */}
+      <path d="M30 26 L30 54 L41 54 C51 54 55 48 55 40 C55 32 51 26 41 26 Z" fill="#F5F7FA"/>
+      {/* Lightning bolt */}
+      <path d="M43 30 L37 41 L42 41 L38 52 L48 38 L43 38 Z" fill="#FF6B00"/>
+      {/* DUKE text */}
+      <text x="40" y="74" textAnchor="middle" fill="#003087" fontSize="7.5" fontFamily="Arial Black, sans-serif" fontWeight="900" letterSpacing="2">DUKE</text>
+    </svg>
+  );
+}
+
+function LogoNovantHealth() {
+  return (
+    <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
+      <rect width="80" height="80" rx="14" fill="#F5F7FA"/>
+      {/* Cross shape */}
+      <rect x="34" y="14" width="12" height="52" rx="4" fill="#00A499"/>
+      <rect x="14" y="34" width="52" height="12" rx="4" fill="#00A499"/>
+      {/* Inner cross highlight */}
+      <rect x="34" y="14" width="12" height="52" rx="4" fill="none" stroke="rgba(255,255,255,0.4)" strokeWidth="1"/>
+      <rect x="14" y="34" width="52" height="12" rx="4" fill="none" stroke="rgba(255,255,255,0.4)" strokeWidth="1"/>
+      {/* Center circle */}
+      <circle cx="40" cy="40" r="6" fill="white"/>
+      {/* N monogram */}
+      <text x="40" y="44" textAnchor="middle" fill="#00A499" fontSize="8" fontFamily="Arial, sans-serif" fontWeight="bold">N</text>
+    </svg>
+  );
+}
+
+function LogoFoodLion() {
+  return (
+    <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
+      <rect width="80" height="80" rx="14" fill="#F5F7FA"/>
+      {/* Red banner */}
+      <rect x="8" y="48" width="64" height="18" rx="4" fill="#CC0000"/>
+      {/* Lion head silhouette (simplified) */}
+      <ellipse cx="40" cy="34" rx="16" ry="14" fill="#CC0000"/>
+      {/* Mane */}
+      <ellipse cx="40" cy="36" rx="20" ry="16" fill="#AA0000"/>
+      <ellipse cx="40" cy="34" rx="14" ry="12" fill="#CC0000"/>
+      {/* Face */}
+      <ellipse cx="40" cy="35" rx="10" ry="9" fill="#E8A040"/>
+      {/* Eyes */}
+      <ellipse cx="36.5" cy="32" rx="2" ry="2.2" fill="#1A1A1A"/>
+      <ellipse cx="43.5" cy="32" rx="2" ry="2.2" fill="#1A1A1A"/>
+      <circle cx="37.2" cy="31.3" r="0.7" fill="white"/>
+      <circle cx="44.2" cy="31.3" r="0.7" fill="white"/>
+      {/* Nose */}
+      <path d="M38.5 36 Q40 37.5 41.5 36 Q40 38.5 38.5 36Z" fill="#8B4513"/>
+      {/* Mouth */}
+      <path d="M37 38 Q40 40 43 38" fill="none" stroke="#8B4513" strokeWidth="1" strokeLinecap="round"/>
+      {/* Ears */}
+      <ellipse cx="27" cy="26" rx="4.5" ry="5" fill="#CC0000"/>
+      <ellipse cx="53" cy="26" rx="4.5" ry="5" fill="#CC0000"/>
+      <ellipse cx="27" cy="26" rx="2.5" ry="3" fill="#E8A040"/>
+      <ellipse cx="53" cy="26" rx="2.5" ry="3" fill="#E8A040"/>
+      {/* Text */}
+      <text x="40" y="60" textAnchor="middle" fill="white" fontSize="7" fontFamily="Arial Black, sans-serif" fontWeight="900" letterSpacing="1.5">FOOD LION</text>
+    </svg>
+  );
+}
+
 const partners = [
-  { name: 'Rowan County Chamber', logo: '/assets/images/livingstone.jpg' },
-  { name: 'Duke Energy',           logo: '/assets/images/livingstone college.jpg' },
-  { name: 'Novant Health',         logo: '/assets/images/livingstone.jpg' },
-  { name: 'Food Lion',             logo: '/assets/images/livingstone college.jpg' },
+  { name: 'Rowan County Chamber', LogoComponent: LogoRowanChamber },
+  { name: 'Duke Energy',           LogoComponent: LogoDukeEnergy },
+  { name: 'Novant Health',         LogoComponent: LogoNovantHealth },
+  { name: 'Food Lion',             LogoComponent: LogoFoodLion },
 ];
 
 // Circular rotating text badge component
@@ -908,19 +994,14 @@ export default function Home() {
                 return (
                   <div
                     key={i}
-                    className="bg-white p-6 rounded-2xl border-2 border-[#162248] flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-[5px_5px_0px_0px_var(--shadow-color)]"
+                    className="bg-white p-4 rounded-2xl border-2 border-[#162248] flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-[5px_5px_0px_0px_var(--shadow-color)]"
                     style={{ 
                       ['--shadow-color' as any]: cardColor,
                       boxShadow: `3px 3px 0px 0px ${cardColor}` 
                     }}
                   >
-                    <div className="relative w-20 h-20 rounded-xl overflow-hidden border border-[#162248]/10 flex items-center justify-center bg-gray-50">
-                      <Image
-                        src={partner.logo}
-                        alt={partner.name}
-                        fill
-                        className="object-cover scale-90"
-                      />
+                    <div className="w-20 h-20 flex items-center justify-center">
+                      <partner.LogoComponent />
                     </div>
                     <span className="font-display font-extrabold text-sm text-[#162248] text-center">
                       {partner.name}
