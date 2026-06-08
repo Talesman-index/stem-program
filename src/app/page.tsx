@@ -897,71 +897,7 @@ export default function Home() {
               />
               
               {/* Dark gradient overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/30 pointer-events-none" />
-
-              {/* Pulsing markers */}
-              {markers.map((marker) => {
-                const MarkerIcon = marker.icon;
-                const isSelected = selectedMarker === marker.id;
-                return (
-                  <button
-                    key={marker.id}
-                    onClick={() => setSelectedMarker(marker.id)}
-                    className="absolute z-20 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center group/pin transition-all duration-300 cursor-pointer"
-                    style={{ left: marker.x, top: marker.y }}
-                  >
-                    {/* Outer glowing pulsing ring */}
-                    <span 
-                      className="absolute inline-flex h-10 w-10 rounded-full opacity-75 animate-ping"
-                      style={{ backgroundColor: marker.color }}
-                    />
-                    {/* Inner circle */}
-                    <div 
-                      className={`relative flex items-center justify-center w-8 h-8 rounded-full border-2 border-white shadow-md transition-transform duration-300 ${isSelected ? 'scale-125' : 'group-hover/pin:scale-110'}`}
-                      style={{ backgroundColor: marker.color }}
-                    >
-                      <MarkerIcon className="w-4 h-4 text-white" />
-                    </div>
-
-                    {/* Tooltip label */}
-                    <span className="absolute bottom-full mb-2 bg-[#162248] text-white text-[11px] font-bold py-1 px-2.5 rounded-lg opacity-0 group-hover/pin:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap shadow-md border border-white/10">
-                      {marker.label}
-                    </span>
-                  </button>
-                );
-              })}
-
-              {/* Interactive panel overlay (bottom left glassmorphic card) */}
-              <div 
-                className="absolute bottom-4 left-4 right-4 sm:right-auto sm:max-w-sm z-30 p-5 rounded-2xl border backdrop-blur-md shadow-xl transition-all duration-300 text-left"
-                style={{ 
-                  background: 'rgba(19, 48, 37, 0.88)', 
-                  borderColor: 'rgba(255, 255, 255, 0.15)' 
-                }}
-              >
-                {(() => {
-                  const active = markers.find(m => m.id === selectedMarker) || markers[0];
-                  const ActiveIcon = active.icon;
-                  return (
-                    <div className="flex flex-col gap-2">
-                      <div className="flex items-center gap-3">
-                        <div 
-                          className="w-8 h-8 rounded-lg flex items-center justify-center border border-white/20"
-                          style={{ backgroundColor: active.color }}
-                        >
-                          <ActiveIcon className="w-4 h-4 text-white" />
-                        </div>
-                        <h4 className="font-display font-extrabold text-white text-base sm:text-lg">
-                          {active.label}
-                        </h4>
-                      </div>
-                      <p className="font-body text-xs sm:text-sm text-white/90 leading-relaxed">
-                        {active.desc}
-                      </p>
-                    </div>
-                  );
-                })()}
-              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/10 pointer-events-none" />
             </div>
 
             <div className="mt-4">
