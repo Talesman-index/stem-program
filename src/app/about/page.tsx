@@ -74,7 +74,7 @@ export default function About() {
               className="w-full h-full object-cover"
             />
             {/* Orange leaf spray decoration */}
-            <svg className="w-14 h-14 text-[#FF7A3D] absolute -top-10 -left-6 transform -rotate-45 opacity-90 drop-shadow-sm pointer-events-none" viewBox="0 0 100 100" fill="currentColor">
+            <svg className="w-14 h-14 text-[#2D4589] absolute -top-10 -left-6 transform -rotate-45 opacity-90 drop-shadow-sm pointer-events-none" viewBox="0 0 100 100" fill="currentColor">
               <path d="M20,80 C40,60 60,50 85,25 C70,45 60,65 20,80 Z" />
               <path d="M50,55 C65,40 75,35 80,25 C70,35 60,50 50,55 Z" />
               <path d="M35,68 C50,53 60,48 65,38 C55,48 45,63 35,68 Z" />
@@ -92,11 +92,11 @@ export default function About() {
 
           {/* Main central container */}
           <div className="max-w-4xl w-full text-center relative z-10 flex flex-col items-center gap-6 md:gap-8 px-4">
-            <h1 className="font-accent text-[#1E3F20] text-3xl sm:text-5xl md:text-6.5xl uppercase tracking-wide leading-[1.1] relative max-w-3xl">
+            <h1 className="font-accent text-[#162248] text-3xl sm:text-5xl md:text-6.5xl uppercase tracking-wide leading-[1.1] relative max-w-3xl">
               Discovering Wonder, Friendship, Adventure, and Life-long Memories
               
               {/* Green leaf spray branch */}
-              <svg className="w-12 h-12 text-[#5AC87A] absolute -top-6 -right-10 transform rotate-12 opacity-90 drop-shadow-sm hidden md:block pointer-events-none" viewBox="0 0 100 100" fill="currentColor">
+              <svg className="w-12 h-12 text-[#8CB97A] absolute -top-6 -right-10 transform rotate-12 opacity-90 drop-shadow-sm hidden md:block pointer-events-none" viewBox="0 0 100 100" fill="currentColor">
                 <path d="M20,80 C40,60 60,50 85,25 C70,45 60,65 20,80 Z" />
                 <path d="M50,55 C65,40 75,35 80,25 C70,35 60,50 50,55 Z" />
                 <path d="M35,68 C50,53 60,48 65,38 C55,48 45,63 35,68 Z" />
@@ -110,7 +110,7 @@ export default function About() {
             <div className="mt-4">
               <Link
                 href="/programs"
-                className="inline-flex bg-[#FF7A3D] hover:bg-[#ff8e57] text-white font-body font-extrabold px-10 py-4 rounded-full shadow-[0_4px_18px_rgba(255,122,61,0.3)] transition-all hover:scale-105 active:scale-95 text-base md:text-lg"
+                className="inline-flex bg-[#2D4589] hover:bg-[#1A315C] text-white font-body font-extrabold px-10 py-4 rounded-full shadow-[0_4px_18px_rgba(45,69,137,0.3)] transition-all hover:scale-105 active:scale-95 text-base md:text-lg"
               >
                 Explore Our Programs
               </Link>
@@ -135,7 +135,7 @@ export default function About() {
                 <span className="section-sticker mb-4 self-start">
                   Our Journey
                 </span>
-                <h2 className="font-display font-extrabold text-3xl sm:text-4.5xl text-[#1A1A2E] leading-tight">
+                <h2 className="font-display font-extrabold text-3xl sm:text-4.5xl text-[#162248] leading-tight">
                   How it all started
                 </h2>
                 <p className="font-body text-[#3D3D5C] text-base sm:text-lg leading-relaxed">
@@ -170,7 +170,7 @@ export default function About() {
               <span className="section-sticker mb-4">
                 Foundations
               </span>
-              <h2 className="font-display font-extrabold text-3xl sm:text-4.5xl text-[#1A1A2E]">
+              <h2 className="font-display font-extrabold text-3xl sm:text-4.5xl text-[#162248]">
                 Our Guiding Values
               </h2>
               <p className="font-body text-[#7B7B9E] text-base mt-3 max-w-2xl mx-auto">
@@ -181,10 +181,10 @@ export default function About() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {/* Value 1 */}
               <div className="camp-card p-8 flex flex-col items-start gap-4 border border-black/5" style={{ backgroundColor: '#FFF9F0' }}>
-                <div className="w-12 h-12 rounded-2xl bg-[#5AC87A]/15 text-[#5AC87A] flex items-center justify-center shadow-inner">
+                <div className="w-12 h-12 rounded-2xl bg-[#8CB97A]/20 text-[#8CB97A] flex items-center justify-center shadow-inner">
                   <Heart className="w-6 h-6 stroke-[2.5]" />
                 </div>
-                <h3 className="font-display font-extrabold text-xl text-[#1A1A2E]">Equitable Access</h3>
+                <h3 className="font-display font-extrabold text-xl text-[#162248]">Equitable Access</h3>
                 <p className="font-body text-sm text-[#3D3D5C] leading-relaxed">
                   The camp is and will remain entirely free for all. We eliminate financial barriers to open every possible pathway.
                 </p>
@@ -192,10 +192,10 @@ export default function About() {
 
               {/* Value 2 */}
               <div className="camp-card p-8 flex flex-col items-start gap-4 border border-black/5" style={{ backgroundColor: '#FFF9F0' }}>
-                <div className="w-12 h-12 rounded-2xl bg-[#FF7A3D]/15 text-[#FF7A3D] flex items-center justify-center shadow-inner">
+                <div className="w-12 h-12 rounded-2xl bg-[#9795CE]/20 text-[#9795CE] flex items-center justify-center shadow-inner">
                   <Target className="w-6 h-6 stroke-[2.5]" />
                 </div>
-                <h3 className="font-display font-extrabold text-xl text-[#1A1A2E]">Hands-on Learning</h3>
+                <h3 className="font-display font-extrabold text-xl text-[#162248]">Hands-on Learning</h3>
                 <p className="font-body text-sm text-[#3D3D5C] leading-relaxed">
                   No theoretical lectures. We learn by testing, designing, and building with professional tools and projects.
                 </p>
@@ -203,10 +203,10 @@ export default function About() {
 
               {/* Value 3 */}
               <div className="camp-card p-8 flex flex-col items-start gap-4 border border-black/5" style={{ backgroundColor: '#FFF9F0' }}>
-                <div className="w-12 h-12 rounded-2xl bg-[#162248]/15 text-[#162248] flex items-center justify-center shadow-inner">
+                <div className="w-12 h-12 rounded-2xl bg-[#162248]/10 text-[#162248] flex items-center justify-center shadow-inner">
                   <Eye className="w-6 h-6 stroke-[2.5]" />
                 </div>
-                <h3 className="font-display font-extrabold text-xl text-[#1A1A2E]">Local Excellence</h3>
+                <h3 className="font-display font-extrabold text-xl text-[#162248]">Local Excellence</h3>
                 <p className="font-body text-sm text-[#3D3D5C] leading-relaxed">
                   Our strength comes from the diversity of our local participants, mentored at the historic campus of Livingstone College.
                 </p>
@@ -214,10 +214,10 @@ export default function About() {
 
               {/* Value 4 */}
               <div className="camp-card p-8 flex flex-col items-start gap-4 border border-black/5" style={{ backgroundColor: '#FFF9F0' }}>
-                <div className="w-12 h-12 rounded-2xl bg-[#8CB97A]/15 text-[#8CB97A] flex items-center justify-center shadow-inner">
+                <div className="w-12 h-12 rounded-2xl bg-[#8CB97A]/20 text-[#8CB97A] flex items-center justify-center shadow-inner">
                   <ShieldAlert className="w-6 h-6 stroke-[2.5]" />
                 </div>
-                <h3 className="font-display font-extrabold text-xl text-[#1A1A2E]">Measurable Impact</h3>
+                <h3 className="font-display font-extrabold text-xl text-[#162248]">Measurable Impact</h3>
                 <p className="font-body text-sm text-[#3D3D5C] leading-relaxed">
                   We report our results through transparent annual impact assessments for our donors and official sponsors.
                 </p>
@@ -233,7 +233,7 @@ export default function About() {
               <span className="section-sticker mb-4">
                 Mentors
               </span>
-              <h2 className="font-display font-extrabold text-3xl sm:text-4.5xl text-[#1A1A2E]">
+              <h2 className="font-display font-extrabold text-3xl sm:text-4.5xl text-[#162248]">
                 Leadership Team
               </h2>
               <p className="font-body text-[#7B7B9E] text-base mt-3 max-w-2xl mx-auto">
@@ -249,7 +249,7 @@ export default function About() {
                   </div>
                   <div className="p-8 flex-grow flex flex-col justify-between">
                     <div>
-                      <h3 className="font-display font-extrabold text-2xl text-[#1A1A2E]">{member.name}</h3>
+                      <h3 className="font-display font-extrabold text-2xl text-[#162248]">{member.name}</h3>
                       <span className="pill bg-[#E8F3FF] text-[#2D4589] font-body font-bold text-xs mt-2">
                         {member.role}
                       </span>
