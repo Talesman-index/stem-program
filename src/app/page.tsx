@@ -890,7 +890,7 @@ export default function Home() {
             <div className="relative w-full aspect-[16/10] border-4 border-[#162248] rounded-[32px] overflow-hidden shadow-lg mt-4 bg-[#F1F6EF]">
               {/* Background Image of Livingstone College */}
               <Image
-                src="/assets/images/duncan building.jpg"
+                src="/assets/images/livingstone college.jpg"
                 alt="Livingstone College Campus"
                 fill
                 className="object-cover brightness-[0.85] contrast-[1.05]"
