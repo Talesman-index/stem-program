@@ -19,10 +19,10 @@ const sizeMap: Record<LogoSize, { outer: string; stem: string; sub: string; dot:
 export function StemLogo({ size = 'md', variant = 'color', className = '' }: StemLogoProps) {
   const s = sizeMap[size];
 
-  const stemColor = variant === 'white' ? '#FFFFFF' : variant === 'dark' ? '#0F172A' : '#133025';
-  const accentColor = variant === 'white' ? 'rgba(255,255,255,0.7)' : '#FF5A1F';
-  const subColor = variant === 'white' ? 'rgba(255,255,255,0.6)' : variant === 'dark' ? '#64748B' : '#4A90D9';
-  const dotColor = '#FF5A1F';
+  const stemColor = variant === 'white' ? '#FFFFFF' : variant === 'dark' ? '#0F172A' : '#87B67B';
+  const accentColor = variant === 'white' ? 'rgba(255,255,255,0.7)' : variant === 'dark' ? '#FF5A1F' : '#A5A4D4';
+  const subColor = variant === 'white' ? 'rgba(255,255,255,0.6)' : variant === 'dark' ? '#64748B' : '#2B4C8C';
+  const dotColor = variant === 'white' ? 'rgba(255,255,255,0.7)' : variant === 'dark' ? '#FF5A1F' : '#A5A4D4';
 
   return (
     <span
