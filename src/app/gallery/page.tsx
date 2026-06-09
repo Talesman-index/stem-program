@@ -25,7 +25,7 @@ const galleryData: GalleryItem[] = [
   },
   {
     id: 'g-2',
-    src: '/assets/images/child-using-virtual-reality-headset-in-classroom-2026-03-25-01-35-09-utc.jpg',
+    src: '/assets/images/VR_stem.png',
     alt: 'Student using VR headset',
     year: '2026',
     discipline: 'vr',
@@ -33,7 +33,7 @@ const galleryData: GalleryItem[] = [
   },
   {
     id: 'g-3',
-    src: '/assets/images/enthusiastic-children-explore-chemistry-in-science-2026-03-25-10-42-26-utc.jpg',
+    src: '/assets/images/Labo_stem.png',
     alt: 'Chemistry experiments in lab',
     year: '2025',
     discipline: 'chemistry',

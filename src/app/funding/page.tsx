@@ -52,7 +52,7 @@ const TIERS: PartnershipTier[] = [
     color: '#FF7A3D',
     featured: false,
     perks: ['Logo displayed on the website', 'Full annual impact report', 'Recognition during the closing ceremony'],
-    impact: 'Covers daily balanced hot lunches for five participants.',
+    impact: 'Covers daily nutritious snacks and learning materials for ten participants.',
     image: '/assets/images/young-school-kids-eating-lunch-talking-at-a-table-2026-01-05-06-28-36-utc.jpg'
   },
   {
@@ -63,7 +63,7 @@ const TIERS: PartnershipTier[] = [
     featured: false,
     perks: ['Bronze perks', 'Logo visibility on camp t-shirts', 'VIP invitation for 2 to the ceremony'],
     impact: 'Funds hardware kits (Robotics/VR) for an entire workgroup.',
-    image: '/assets/images/child-using-virtual-reality-headset-in-classroom-2026-03-25-01-35-09-utc.jpg'
+    image: '/assets/images/VR_stem.png'
   },
   {
     id: 'gold',
@@ -73,7 +73,7 @@ const TIERS: PartnershipTier[] = [
     featured: true,
     perks: ['Silver perks', 'Physical banner display at the camp', 'Round table with college leadership', 'Exclusive sponsorship of a STEM discipline'],
     impact: 'Provides full-immersion training resources, specialized lab experiments, and mentor stipends.',
-    image: '/assets/images/enthusiastic-children-explore-chemistry-in-science-2026-03-25-10-42-26-utc.jpg'
+    image: '/assets/images/Labo_stem.png'
   }
 ];
 
@@ -206,7 +206,7 @@ export default function Funding() {
               A program of community impact
             </h2>
             <p className="font-body text-[#1A1A2E]/90 text-base sm:text-lg leading-relaxed max-w-4xl">
-              The Livingstone College Summer STEM Camp is not an ordinary summer camp. It is a real lever for social equality. Your funding allows for the purchase of laboratory equipment, reusable robotics kits, virtual reality headsets, as well as covering daily balanced lunches and transportation for young participants.
+              The Livingstone College Summer STEM Camp is not an ordinary summer camp. It is a real lever for social equality. Your funding allows for the purchase of laboratory equipment, reusable robotics kits, virtual reality headsets, as well as covering daily complimentary snacks, learning materials, and transportation for young participants.
             </p>
           </div>
         </section>

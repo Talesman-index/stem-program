@@ -14,7 +14,7 @@ interface FAQItem {
 const faqs: FAQItem[] = [
   {
     q: "Is the camp really free?",
-    r: "Yes, completely. Registration fees, materials, laboratory equipment, robotics kits, and daily hot lunch are all fully covered. There are no hidden fees for families.",
+    r: "Yes, completely. Registration fees, materials, laboratory equipment, robotics kits, and complimentary daily snacks are all fully covered. There are no hidden fees for families.",
     category: "general"
   },
   {
@@ -29,7 +29,12 @@ const faqs: FAQItem[] = [
   },
   {
     q: "What is the daily schedule?",
-    r: "Activities run from 9:00 AM to 3:15 PM, Monday through Friday. Drop-off starts at 8:30 AM. A hot, balanced lunch is offered free of charge every day.",
+    r: "Activities run from 9:00 AM to 3:15 PM, Monday through Friday. Drop-off begins at 8:30 AM. Each day includes hands-on STEM activities, projects, and interactive challenges.",
+    category: "practical"
+  },
+  {
+    q: "Are meals provided?",
+    r: "Lunch is held at 12:00 PM. Families are encouraged to pack a lunch for their child. Complimentary snacks are provided throughout the day.",
     category: "practical"
   },
   {
@@ -43,9 +48,14 @@ const faqs: FAQItem[] = [
     category: "general"
   },
   {
-    q: "How many participants are there per session?",
-    r: "Capacity is limited to 30 participants per session (with sub-groups of 10 to 15 students maximum per workshop) to ensure quality mentoring by our professors.",
+    q: "How many participants?",
+    r: "Enrollment capacity is determined annually based on available funding, staffing, and program resources to ensure a high-quality experience for all participants.",
     category: "admission"
+  },
+  {
+    q: "Are there prizes or awards?",
+    r: "Yes! Students have opportunities to win prizes every day through STEM knowledge competitions, challenges, and participation activities. All participants also receive a certificate of completion at the end of the program.",
+    category: "general"
   },
   {
     q: "Is a certificate of participation awarded?",

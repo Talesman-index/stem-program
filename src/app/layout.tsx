@@ -6,12 +6,12 @@ export const metadata: Metadata = {
     default: "Summer STEM Camp | Livingstone College",
     template: "%s | Livingstone College STEM"
   },
-  description: "Join the Livingstone College Summer STEM Camp. A free one-week science and technology camp for middle and high school students. Robotics, VR, chemistry, and more.",
+  description: "Join the Livingstone College Summer STEM Camp. A free one-week science and technology program for middle and high school students, designed to inspire the next generation of innovators.",
   keywords: ["STEM", "Camp", "Livingstone College", "Robotics", "VR", "Chemistry", "Salisbury", "Science", "Education"],
   authors: [{ name: "Livingstone College" }],
   openGraph: {
     title: "Summer STEM Camp | Livingstone College",
-    description: "A free one-week program for middle and high school students — hands-on experiences and mentoring.",
+    description: "A free one-week science and technology program for middle and high school students, designed to inspire the next generation of innovators.",
     url: "https://livingstonestem.org",
     siteName: "Livingstone College STEM Program",
     locale: "en_US",

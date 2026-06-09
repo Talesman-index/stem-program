@@ -45,7 +45,7 @@ export const disciplinesData: Record<string, DisciplineData> = {
     title: 'Chemistry',
     color: '#FB923C',
     iconName: 'FlaskConical',
-    heroImage: '/assets/images/enthusiastic-children-explore-chemistry-in-science-2026-03-25-10-42-26-utc.jpg',
+    heroImage: '/assets/images/Labo_stem.png',
     description: "Chemistry studies the molecules and reactions that make up the universe. Participants discover how chemical bonds create dramatic changes in color, temperature, and physical state. Supervised by instructors in our college laboratories, they perform reactive mixtures, discover chromatography, measure pH of common solutions, and explore the fundamental physical principles of thermodynamics in a fun and safe way.",
     activities: [
       "Creating controlled exothermic reactions (heat generation)",
@@ -117,7 +117,7 @@ export const disciplinesData: Record<string, DisciplineData> = {
     title: 'Virtual Reality',
     color: '#F472B6',
     iconName: 'Tv',
-    heroImage: '/assets/images/child-using-virtual-reality-headset-in-classroom-2026-03-25-01-35-09-utc.jpg',
+    heroImage: '/assets/images/VR_stem.png',
     description: "Virtual Reality (VR) pushes the limits of sensory and technological experience. Students not only explore immersive worlds using standalone headsets, but also learn the basics of 3D modeling by creating their own interactive virtual spaces. It is a unique immersion at the convergence of graphic creation, spatial geometry, and environment programming.",
     activities: [
       "3D modeling of a room or a fantasy island",
@@ -165,7 +165,7 @@ export const disciplinesData: Record<string, DisciplineData> = {
     title: 'eSports',
     color: '#FBBF24',
     iconName: 'Gamepad2',
-    heroImage: '/assets/images/teen-with-vr-headset-experiencing-virtual-reality-2026-03-16-22-39-31-utc.jpg',
+    heroImage: '/assets/images/gamincg.png',
     description: "Modern eSports goes far beyond simply playing video games. It is a complex competitive technology industry. In this module, participants discover eSports through team strategy, performance physiology, and technical mastery. They analyze their game statistics to optimize their paths, learn live video broadcasting tools (streaming), and explore event management.",
     activities: [
       "Statistical data analysis of a team game match",

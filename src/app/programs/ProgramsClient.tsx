@@ -29,7 +29,7 @@ const programsList = [
     title: 'Chemistry',
     iconName: 'FlaskConical',
     color: '#FF7A3D', // Keep original Bronze/Chemistry color
-    image: '/assets/images/enthusiastic-children-explore-chemistry-in-science-2026-03-25-10-42-26-utc.jpg',
+    image: '/assets/images/Labo_stem.png',
     desc: "Discover the science of transformation. Through safe hands-on experiments, students study thermal reactions, molecular structures, and color science."
   },
   {
@@ -53,7 +53,7 @@ const programsList = [
     title: 'Virtual Reality',
     iconName: 'Tv',
     color: '#9795CE', // Use Lavender for VR too as per brand colors or another matching color
-    image: '/assets/images/child-using-virtual-reality-headset-in-classroom-2026-03-25-01-35-09-utc.jpg',
+    image: '/assets/images/VR_stem.png',
     desc: "Explore the frontiers of the virtual. Students learn the basics of 3D modeling and use VR headsets to explore the universe or travel inside the human body."
   },
   {
@@ -69,7 +69,7 @@ const programsList = [
     title: 'eSports',
     iconName: 'Gamepad2',
     color: '#FFE566', // Keep Yellow for eSports
-    image: '/assets/images/teen-with-vr-headset-experiencing-virtual-reality-2026-03-16-22-39-31-utc.jpg',
+    image: '/assets/images/gamincg.png',
     desc: "Learn teamwork and strategy. Beyond gaming, we cover statistical performance analysis, media project management, and live broadcasting technologies."
   }
 ];

@@ -23,12 +23,12 @@ interface Discipline {
 
 const disciplines: Discipline[] = [
   { slug: 'biology',          title: 'Biology',            icon: Leaf,        color: '#5AC87A', bgColor: '#DFFBE8', excerpt: 'Explore living things in all their forms: microscopes, cells, and ecosystems.', image: '/assets/images/children-studying-science-using-microscope-in-clas-2026-04-13-23-13-15-utc.jpg' },
-  { slug: 'chemistry',        title: 'Chemistry',          icon: FlaskConical,color: '#FF7A3D', bgColor: '#FFF0E8', excerpt: 'Laboratory experiments that illuminate minds through spectacular reactions.', image: '/assets/images/enthusiastic-children-explore-chemistry-in-science-2026-03-25-10-42-26-utc.jpg' },
+  { slug: 'chemistry',        title: 'Chemistry',          icon: FlaskConical,color: '#FF7A3D', bgColor: '#FFF0E8', excerpt: 'Laboratory experiments that illuminate minds through spectacular reactions.', image: '/assets/images/Labo_stem.png' },
   { slug: 'mathematics',      title: 'Mathematics',        icon: Sigma,       color: '#2D4589', bgColor: '#E8F3FF', excerpt: 'Logic serving real-world problems through collaborative challenges and puzzles.', image: '/assets/images/girl-writing-math-problems-on-a-whiteboard-2026-01-07-02-11-58-utc.jpg' },
   { slug: 'robotics',         title: 'Robotics',           icon: Cpu,         color: '#9795CE', bgColor: '#F0EBFF', excerpt: 'Build and program robots to tackle exciting technical challenges.', image: '/assets/images/children-learn-about-robotics-with-robotics-kit-2026-03-05-11-56-52-utc.jpg' },
-  { slug: 'virtual-reality',  title: 'Virtual Reality',    icon: Tv,          color: '#E84FA0', bgColor: '#FFE8F5', excerpt: 'Dive into the heart of immersive worlds and design custom 3D environments.', image: '/assets/images/child-using-virtual-reality-headset-in-classroom-2026-03-25-01-35-09-utc.jpg' },
+  { slug: 'virtual-reality',  title: 'Virtual Reality',    icon: Tv,          color: '#E84FA0', bgColor: '#FFE8F5', excerpt: 'Dive into the heart of immersive worlds and design custom 3D environments.', image: '/assets/images/VR_stem.png' },
   { slug: 'greenhouse-science', title: 'Greenhouse Science', icon: Sprout,    color: '#5AC87A', bgColor: '#DFFBE8', excerpt: 'Combine technology and agronomy to understand sustainable agriculture.', image: '/assets/images/greenhouse_science.png' },
-  { slug: 'esports',          title: 'eSports',            icon: Gamepad2,    color: '#FFB800', bgColor: '#FFF8E0', excerpt: 'Team strategy, performance analysis, and exploring gaming careers.', image: '/assets/images/esports_camp.png' },
+  { slug: 'esports',          title: 'eSports',            icon: Gamepad2,    color: '#FFB800', bgColor: '#FFF8E0', excerpt: 'Team strategy, performance analysis, and exploring gaming careers.', image: '/assets/images/gamincg.png' },
 ];
 
 const testimonials = [
@@ -178,7 +178,7 @@ const markers = [
   { id: 'labs', label: 'Science Labs', x: '25%', y: '30%', icon: FlaskConical, color: '#2D4589', desc: 'Where chemistry and biology workshops are held in high-tech collegiate laboratories.' },
   { id: 'vr', label: 'Robotics & VR Arena', x: '55%', y: '45%', icon: Cpu, color: '#9795CE', desc: 'Step into virtual worlds and build/program modular robots to solve challenges.' },
   { id: 'greenhouse', label: 'Greenhouse & Gardens', x: '35%', y: '68%', icon: Sprout, color: '#8CB97A', desc: 'Combine agronomy and technology inside our automated university greenhouse.' },
-  { id: 'dining', label: 'Dining & Social Hall', x: '75%', y: '60%', icon: Utensils, color: '#FFB800', desc: 'Where students enjoy free chef-prepared daily meals and collaborative activities.' }
+  { id: 'dining', label: 'Dining & Social Hall', x: '75%', y: '60%', icon: Utensils, color: '#FFB800', desc: 'Where students enjoy their lunches, complimentary daily snacks, and collaborative activities.' }
 ];
 
 // ─── Main Page ────────────────────────────────────────────────────────────────
@@ -302,7 +302,7 @@ export default function Home() {
                 className="font-body text-white/95 text-base sm:text-lg max-w-xl leading-relaxed"
                 style={{ textShadow: '0 2px 10px rgba(19,48,37,0.6)' }}
               >
-                A free one-week science and technology program for middle and high school students at Livingstone College. Explore coding, robotics, VR, and biochemistry.
+                A free one-week science and technology program for middle and high school students, designed to inspire the next generation of innovators. Explore coding, robotics, virtual reality, biochemistry, and mathematics through hands-on learning experiences.
               </p>
               <Link
                 href="/register"
@@ -382,7 +382,7 @@ export default function Home() {
               Discover the wonder, friendship, and life-changing science
             </h2>
             <p className="font-body text-lg text-[#3D4A3E] max-w-xl leading-relaxed">
-              Livingstone STEM Camp brings Salisbury youth together for one incredible, free week. We build confidence, foster local friendships, and unlock career paths.
+              Livingstone Stem Camp brings youth together for one incredible free week, helps them believe in themselves, build local friendships, expose them to new opportunities, and create a positive experience.
             </p>
             <div className="mt-4">
               <Link href="#dates-rates" className="btn-primary" style={{ background: 'var(--accent-orange)' }}>
@@ -474,10 +474,10 @@ export default function Home() {
               <div className="hidden lg:block step-line" />
               
               {[
-                { n: '01', label: 'Register Online',   desc: 'Fill out the form in under 10 minutes. A confirmation is sent to parents immediately.',        color: '#8CB97A' },
-                { n: '02', label: 'Prep Time',          desc: 'Receive your welcome pack with schedules, behavior agreements, and camp logistics.',           color: '#2D4589' },
-                { n: '03', label: 'Welcome to Campus', desc: 'Arrive at Livingstone College ready to meet your group, mentors, and program leaders.',        color: '#9795CE' },
-                { n: '04', label: 'Camp Life & Closing', desc: 'Dive into STEM workshops, complete challenges, and celebrate at our closing ceremony.',      color: '#2D4589' },
+                { n: '01', label: 'Register Online',   desc: 'Fill out the registration form in under 10 minutes. A confirmation is sent to parents immediately.',        color: '#8CB97A' },
+                { n: '02', label: 'Arrive & Check In',  desc: 'Students are welcomed by our team, checked in safely, and receive their STEM Camp bag, materials, and important camp information.', color: '#2D4589' },
+                { n: '03', label: 'Meet Your Group',   desc: 'Students join their groups, meet instructors and mentors, and get ready for a week of learning, creativity, and discovery.',        color: '#9795CE' },
+                { n: '04', label: 'Learn, Explore & Celebrate', desc: 'Dive into hands-on STEM activities, challenges, and projects throughout the week, then celebrate achievements at our closing ceremony.', color: '#2D4589' },
               ].map((step, idx) => (
                 <div key={idx} className="relative z-10 bg-[#FCF9F2] border-2 border-[#162248] rounded-[24px] p-7 flex flex-col gap-4 shadow-[4px_4px_0px_0px_#162248]">
                   <div
@@ -521,7 +521,7 @@ export default function Home() {
                 {
                   title: 'Science Labs',
                   desc: 'Equipped chemistry and biology workspaces where students perform safe hands-on experiments.',
-                  image: '/assets/images/enthusiastic-children-explore-chemistry-in-science-2026-03-25-10-42-26-utc.jpg'
+                  image: '/assets/images/Labo_stem.png'
                 },
                 {
                   title: 'Robotics Arena',
@@ -651,17 +651,13 @@ export default function Home() {
                 Care you can count on every step of the way!
               </h2>
               <p className="font-body text-base sm:text-lg text-white/80 leading-relaxed">
-                Nothing is more important to us than your child's well-being. Our camp has strict supervision ratios, licensed health professionals on staff, and clean modern classrooms.
+                Nothing is more important to us than your child's well-being. Our camp has strict supervision ratios, first-aid trained staff, and clean modern classrooms.
               </p>
               
               <ul className="flex flex-col gap-3 font-body font-bold text-sm sm:text-base text-white/95">
                 <li className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-[#8CB97A] shrink-0" />
                   <span>1:8 Mentor to student supervision ratio</span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-[#8CB97A] shrink-0" />
-                  <span>Licensed nurse present on campus during sessions</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-[#8CB97A] shrink-0" />
@@ -736,7 +732,7 @@ export default function Home() {
                       </div>
                       <div>
                         <h4 className="font-display font-extrabold text-sm text-white">100% Free STEM Camp</h4>
-                        <p className="font-body text-xs text-white/65">Covers all course tools, snacks, lunch and field trips.</p>
+                        <p className="font-body text-xs text-white/65">Covers all course tools, daily snacks, and field trips.</p>
                       </div>
                     </div>
                     
@@ -746,7 +742,7 @@ export default function Home() {
                       </div>
                       <div>
                         <h4 className="font-display font-extrabold text-sm text-white">Inspiring & Safe Campus</h4>
-                        <p className="font-body text-xs text-white/65">Full safety check-in, on-campus health coordinator.</p>
+                        <p className="font-body text-xs text-white/65">Full safety check-in and secure campus supervision.</p>
                       </div>
                     </div>
 
