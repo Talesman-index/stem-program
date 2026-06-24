@@ -172,7 +172,7 @@ export default function Gallery() {
       <main className="flex-grow pt-24 bg-[#FFF9F0]">
         
         {/* ── Gallery Header ── */}
-        <section className="bg-[#162248] text-white py-20 text-center relative overflow-hidden border-b-2 border-black/10">
+        <section className="bg-[#241765] text-white py-20 text-center relative overflow-hidden border-b-2 border-black/10">
           <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none" />
           <div className="absolute -right-12 -top-12 w-48 h-48 rounded-full bg-white/20 blur-lg pointer-events-none" />
           <div className="absolute -left-12 -bottom-12 w-48 h-48 rounded-full bg-black/15 blur-lg pointer-events-none" />
@@ -198,7 +198,7 @@ export default function Gallery() {
             
             {/* Year Filters */}
             <div className="flex items-center gap-2 flex-wrap justify-center">
-              <span className="font-body text-xs font-extrabold text-[#162248]/60 mr-3 uppercase tracking-wider">
+              <span className="font-body text-xs font-extrabold text-[#241765]/60 mr-3 uppercase tracking-wider">
                 Years:
               </span>
               {['all', '2025', '2026'].map((y) => (
@@ -210,8 +210,8 @@ export default function Gallery() {
                   }}
                   className={`px-5 py-2 rounded-full font-body font-extrabold text-sm border-2 transition-all cursor-pointer hover:scale-105 active:scale-95 ${
                     selectedYear === y
-                      ? 'bg-[#162248] border-[#162248] text-white shadow-md'
-                      : 'bg-white border-[#162248]/15 text-[#162248]/80 hover:bg-[#F1F6EF]/30 hover:border-[#162248]/30 hover:text-[#162248]'
+                      ? 'bg-[#241765] border-[#241765] text-white shadow-md'
+                      : 'bg-white border-[#241765]/15 text-[#241765]/80 hover:bg-[#F1F6EF]/30 hover:border-[#241765]/30 hover:text-[#241765]'
                   }`}
                 >
                   {y === 'all' ? 'All' : y}
@@ -221,7 +221,7 @@ export default function Gallery() {
 
             {/* Discipline Filters */}
             <div className="flex items-center gap-2 flex-wrap justify-center">
-              <span className="font-body text-xs font-extrabold text-[#162248]/60 mr-3 uppercase tracking-wider">
+              <span className="font-body text-xs font-extrabold text-[#241765]/60 mr-3 uppercase tracking-wider">
                 Sectors:
               </span>
               {['all', 'robotics', 'chemistry', 'biology', 'vr', 'math', 'ceremony'].map((d) => (
@@ -233,8 +233,8 @@ export default function Gallery() {
                   }}
                   className={`px-5 py-2 rounded-full font-body font-extrabold text-sm border-2 transition-all cursor-pointer hover:scale-105 active:scale-95 ${
                     selectedDiscipline === d
-                      ? 'bg-[#162248] border-[#162248] text-white shadow-md'
-                      : 'bg-white border-[#162248]/15 text-[#162248]/80 hover:bg-[#F1F6EF]/30 hover:border-[#162248]/30 hover:text-[#162248]'
+                      ? 'bg-[#241765] border-[#241765] text-white shadow-md'
+                      : 'bg-white border-[#241765]/15 text-[#241765]/80 hover:bg-[#F1F6EF]/30 hover:border-[#241765]/30 hover:text-[#241765]'
                   }`}
                 >
                   {d === 'all' ? 'All' : disciplineLabels[d as keyof typeof disciplineLabels]}
@@ -258,12 +258,12 @@ export default function Gallery() {
                 />
                 
                 {/* Overlay hover details */}
-                <div className="absolute inset-2 bg-[#1A1A2E]/75 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-6 text-white rounded-[16px]">
+                <div className="absolute inset-2 bg-[#241765]/75 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-6 text-white rounded-[16px]">
                   <div className="self-end p-2.5 bg-white/10 rounded-full border border-white/20">
                     <Maximize2 className="w-4 h-4 text-white" />
                   </div>
                   <div>
-                    <span className="pill bg-[#FFE566] text-[#1A1A2E] text-[10px] font-accent uppercase">
+                    <span className="pill bg-[#FFE566] text-[#241765] text-[10px] font-accent uppercase">
                       {item.year} · {disciplineLabels[item.discipline as keyof typeof disciplineLabels] || item.discipline}
                     </span>
                     <h3 className="font-display font-extrabold text-lg sm:text-xl mt-3 text-white leading-tight">
@@ -300,11 +300,11 @@ export default function Gallery() {
 
       {/* Lightbox Modal */}
       {lightboxIndex !== null && (
-        <div className="fixed inset-0 z-50 bg-[#1A1A2E]/96 flex flex-col justify-between p-4 sm:p-8">
+        <div className="fixed inset-0 z-50 bg-[#241765]/96 flex flex-col justify-between p-4 sm:p-8">
           {/* Header toolbar */}
           <div className="flex items-center justify-between text-white border-b border-white/10 pb-4 relative z-10">
             <div className="flex flex-col text-left">
-              <span className="pill bg-[#FFE566] text-[#1A1A2E] text-[10px] font-accent uppercase w-fit mb-1">
+              <span className="pill bg-[#FFE566] text-[#241765] text-[10px] font-accent uppercase w-fit mb-1">
                 {filteredItems[lightboxIndex].year} · {disciplineLabels[filteredItems[lightboxIndex].discipline as keyof typeof disciplineLabels] || filteredItems[lightboxIndex].discipline}
               </span>
               <h3 className="font-display font-extrabold text-lg sm:text-2xl mt-1 text-white">

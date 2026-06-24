@@ -29,7 +29,7 @@ export default function Footer() {
     <footer className="w-full mt-auto bg-transparent">
       {/* ── CTA Section (Rounded Card) ── */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12">
-        <div className="relative overflow-hidden rounded-[32px] bg-[#162248] text-white p-8 md:p-14 shadow-lg border-2 border-black/10">
+        <div className="relative overflow-hidden rounded-[32px] bg-[#241765] text-white p-8 md:p-14 shadow-lg border-2 border-black/10">
           {/* Playful blobs */}
           <div className="absolute -top-16 -right-16 w-56 h-56 rounded-full bg-white/10 blur-xl pointer-events-none" />
           <div className="absolute -bottom-16 -left-16 w-56 h-56 rounded-full bg-black/10 blur-xl pointer-events-none" />
@@ -50,7 +50,7 @@ export default function Footer() {
             <div className="relative z-10 flex flex-col sm:flex-row items-center gap-4 shrink-0 w-full sm:w-auto">
               <Link
                 href="/register"
-                className="w-full sm:w-auto text-center bg-[#2D4589] text-white hover:bg-[#1D2D5A] font-body font-extrabold px-8 py-4 rounded-full flex items-center justify-center gap-2 transition-all shadow-md hover:scale-105 active:scale-95 text-base"
+                className="w-full sm:w-auto text-center bg-[#AB80FF] text-white hover:bg-[#8b5ce6] font-body font-extrabold px-8 py-4 rounded-full flex items-center justify-center gap-2 transition-all shadow-md hover:scale-105 active:scale-95 text-base"
               >
                 Register for free
                 <ArrowUpRight className="w-5 h-5 stroke-[2.5]" />
@@ -67,7 +67,7 @@ export default function Footer() {
       </div>
 
       {/* ── Main Footer block with rounded top corners ── */}
-      <div className="bg-[#162248] text-[#FFF9F0] rounded-t-[48px] border-t-2 border-black/10">
+      <div className="bg-[#241765] text-[#FFF9F0] rounded-t-[48px] border-t-2 border-black/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12">
           
           {/* Footer Grid */}
@@ -89,7 +89,7 @@ export default function Footer() {
                   href="https://facebook.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-9 h-9 rounded-full bg-white/5 hover:bg-[#5AC87A] text-white flex items-center justify-center transition-all hover:scale-110"
+                  className="w-9 h-9 rounded-full bg-white/5 hover:bg-[#6CAB53] text-white flex items-center justify-center transition-all hover:scale-110"
                   aria-label="Facebook"
                 >
                   <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
@@ -100,7 +100,7 @@ export default function Footer() {
                   href="https://instagram.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-9 h-9 rounded-full bg-white/5 hover:bg-[#FF7A3D] text-white flex items-center justify-center transition-all hover:scale-110"
+                  className="w-9 h-9 rounded-full bg-white/5 hover:bg-[#AB80FF] text-white flex items-center justify-center transition-all hover:scale-110"
                   aria-label="Instagram"
                 >
                   <svg className="w-4 h-4 stroke-current fill-none stroke-2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
@@ -113,7 +113,7 @@ export default function Footer() {
                   href="https://twitter.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-9 h-9 rounded-full bg-white/5 hover:bg-[#2D4589] text-white flex items-center justify-center transition-all hover:scale-110"
+                  className="w-9 h-9 rounded-full bg-white/5 hover:bg-[#241765] text-white flex items-center justify-center transition-all hover:scale-110"
                   aria-label="Twitter"
                 >
                   <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
@@ -126,7 +126,7 @@ export default function Footer() {
             {/* Column 2: Navigation Links */}
             <div className="lg:pl-8">
               <h4 className="font-display font-extrabold text-base text-white mb-6 flex items-center gap-2">
-                <span className="w-1.5 h-4 bg-[#5AC87A] rounded-full inline-block" />
+                <span className="w-1.5 h-4 bg-[#6CAB53] rounded-full inline-block" />
                 Navigation
               </h4>
               <ul className="space-y-3 font-body text-sm">
@@ -134,7 +134,7 @@ export default function Footer() {
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="text-[#FFF9F0]/70 hover:text-[#5AC87A] hover:pl-1 transition-all duration-200"
+                      className="text-[#FFF9F0]/70 hover:text-[#6CAB53] hover:pl-1 transition-all duration-200"
                     >
                       {link.name}
                     </Link>
@@ -146,7 +146,7 @@ export default function Footer() {
             {/* Column 3: Disciplines */}
             <div>
               <h4 className="font-display font-extrabold text-base text-white mb-6 flex items-center gap-2">
-                <span className="w-1.5 h-4 bg-[#FF7A3D] rounded-full inline-block" />
+                <span className="w-1.5 h-4 bg-[#AB80FF] rounded-full inline-block" />
                 Disciplines
               </h4>
               <ul className="space-y-3 font-body text-sm">
@@ -154,7 +154,7 @@ export default function Footer() {
                   <li key={disc.href}>
                     <Link
                       href={disc.href}
-                      className="text-[#FFF9F0]/70 hover:text-[#FF7A3D] hover:pl-1 transition-all duration-200"
+                      className="text-[#FFF9F0]/70 hover:text-[#AB80FF] hover:pl-1 transition-all duration-200"
                     >
                       {disc.name}
                     </Link>
@@ -166,26 +166,26 @@ export default function Footer() {
             {/* Column 4: Contact info */}
             <div className="flex flex-col gap-6">
               <h4 className="font-display font-extrabold text-base text-white flex items-center gap-2">
-                <span className="w-1.5 h-4 bg-[#2D4589] rounded-full inline-block" />
+                <span className="w-1.5 h-4 bg-[#241765] rounded-full inline-block" />
                 Contact
               </h4>
               <ul className="space-y-4 font-body text-sm text-[#FFF9F0]/80">
                 <li className="flex items-start gap-3">
-                  <MapPin className="w-5 h-5 text-[#5AC87A] shrink-0 mt-0.5" />
+                  <MapPin className="w-5 h-5 text-[#6CAB53] shrink-0 mt-0.5" />
                   <span className="leading-relaxed">
                     Livingstone College<br />
                     Salisbury, NC 28144
                   </span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <Mail className="w-5 h-5 text-[#5AC87A] shrink-0" />
-                  <a href="mailto:stem@livingstone.edu" className="hover:text-[#5AC87A] transition-colors">
+                  <Mail className="w-5 h-5 text-[#6CAB53] shrink-0" />
+                  <a href="mailto:stem@livingstone.edu" className="hover:text-[#6CAB53] transition-colors">
                     stem@livingstone.edu
                   </a>
                 </li>
                 <li className="flex items-center gap-3">
-                  <Phone className="w-5 h-5 text-[#5AC87A] shrink-0" />
-                  <a href="tel:+17042166000" className="hover:text-[#5AC87A] transition-colors">
+                  <Phone className="w-5 h-5 text-[#6CAB53] shrink-0" />
+                  <a href="tel:+17042166000" className="hover:text-[#6CAB53] transition-colors">
                     +1 (704) 216-6000
                   </a>
                 </li>

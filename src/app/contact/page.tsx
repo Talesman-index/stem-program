@@ -65,7 +65,7 @@ export default function Contact() {
       <main className="flex-grow pt-24 bg-[#FFF9F0]">
         
         {/* ── Contact Hero ── */}
-        <section className="bg-[#162248] text-white py-20 text-center relative overflow-hidden border-b-2 border-black/10">
+        <section className="bg-[#241765] text-white py-20 text-center relative overflow-hidden border-b-2 border-black/10">
           <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none" />
           <div className="absolute -right-12 -top-12 w-48 h-48 rounded-full bg-white/20 blur-lg pointer-events-none" />
           <div className="absolute -left-12 -bottom-12 w-48 h-48 rounded-full bg-black/15 blur-lg pointer-events-none" />
@@ -90,11 +90,11 @@ export default function Contact() {
             {/* Form Column (Left - 7 cols) */}
             <div className="lg:col-span-7 camp-card bg-white p-8 sm:p-12 border border-black/5 flex flex-col justify-between">
               <div>
-                <h2 className="font-display font-extrabold text-2.5xl text-[#1A1A2E] mb-6">Send a Message</h2>
+                <h2 className="font-display font-extrabold text-2.5xl text-[#241765] mb-6">Send a Message</h2>
                 
                 {status === 'success' && (
-                  <div className="mb-8 p-6 bg-[#DFFBE8] border-2 border-[#5AC87A] rounded-3xl text-green-900 flex items-start gap-4 animate-bounce-in">
-                    <CheckCircle2 className="w-6 h-6 text-[#5AC87A] shrink-0 mt-0.5 stroke-[2.5]" />
+                  <div className="mb-8 p-6 bg-[#DFFBE8] border-2 border-[#6CAB53] rounded-3xl text-green-900 flex items-start gap-4 animate-bounce-in">
+                    <CheckCircle2 className="w-6 h-6 text-[#6CAB53] shrink-0 mt-0.5 stroke-[2.5]" />
                     <div>
                       <span className="font-display font-extrabold block text-base">Message sent!</span>
                       <span className="font-body text-sm mt-1.5 block">Your request has been successfully sent. Our team will get back to you within 48 hours.</span>
@@ -123,7 +123,7 @@ export default function Contact() {
                       type="text"
                       disabled={status === 'loading'}
                       {...register('name')}
-                      className={`w-full bg-white border-2 rounded-full px-5 py-3.5 font-body text-sm text-[#1A1A2E] focus:outline-none focus:ring-2 focus:ring-[#FF7A3D]/10 transition-all ${
+                      className={`w-full bg-white border-2 rounded-full px-5 py-3.5 font-body text-sm text-[#241765] focus:outline-none focus:ring-2 focus:ring-[#FF7A3D]/10 transition-all ${
                         errors.name ? 'border-[#FF6B6B] focus:border-[#FF6B6B]' : 'border-black/10 focus:border-[#FF7A3D]'
                       }`}
                       placeholder="e.g. John Doe"
@@ -143,7 +143,7 @@ export default function Contact() {
                       type="email"
                       disabled={status === 'loading'}
                       {...register('email')}
-                      className={`w-full bg-white border-2 rounded-full px-5 py-3.5 font-body text-sm text-[#1A1A2E] focus:outline-none focus:ring-2 focus:ring-[#FF7A3D]/10 transition-all ${
+                      className={`w-full bg-white border-2 rounded-full px-5 py-3.5 font-body text-sm text-[#241765] focus:outline-none focus:ring-2 focus:ring-[#FF7A3D]/10 transition-all ${
                         errors.email ? 'border-[#FF6B6B] focus:border-[#FF6B6B]' : 'border-black/10 focus:border-[#FF7A3D]'
                       }`}
                       placeholder="e.g. john.doe@example.com"
@@ -163,7 +163,7 @@ export default function Contact() {
                         id="subject"
                         disabled={status === 'loading'}
                         {...register('subject')}
-                        className={`w-full bg-white border-2 rounded-full px-5 py-3.5 font-body text-sm text-[#1A1A2E] focus:outline-none focus:ring-2 focus:ring-[#FF7A3D]/10 transition-all appearance-none bg-[url('data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%234B5563%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E')] bg-[length:1.25em] bg-[right_1.25rem_center] bg-no-repeat ${
+                        className={`w-full bg-white border-2 rounded-full px-5 py-3.5 font-body text-sm text-[#241765] focus:outline-none focus:ring-2 focus:ring-[#FF7A3D]/10 transition-all appearance-none bg-[url('data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%234B5563%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E')] bg-[length:1.25em] bg-[right_1.25rem_center] bg-no-repeat ${
                           errors.subject ? 'border-[#FF6B6B] focus:border-[#FF6B6B]' : 'border-black/10 focus:border-[#FF7A3D]'
                         }`}
                       >
@@ -188,7 +188,7 @@ export default function Contact() {
                       rows={5}
                       disabled={status === 'loading'}
                       {...register('message')}
-                      className={`w-full bg-white border-2 rounded-[24px] px-5 py-4 font-body text-sm text-[#1A1A2E] focus:outline-none focus:ring-2 focus:ring-[#FF7A3D]/10 transition-all ${
+                      className={`w-full bg-white border-2 rounded-[24px] px-5 py-4 font-body text-sm text-[#241765] focus:outline-none focus:ring-2 focus:ring-[#FF7A3D]/10 transition-all ${
                         errors.message ? 'border-[#FF6B6B] focus:border-[#FF6B6B]' : 'border-black/10 focus:border-[#FF7A3D]'
                       }`}
                       placeholder="Write your message here..."
@@ -202,7 +202,7 @@ export default function Contact() {
                   <button
                     type="submit"
                     disabled={status === 'loading'}
-                    className="w-full bg-[#5AC87A] text-white hover:bg-[#4eb96d] font-body font-extrabold py-4 rounded-full flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer disabled:opacity-50 shadow-md"
+                    className="w-full bg-[#6CAB53] text-white hover:bg-[#4eb96d] font-body font-extrabold py-4 rounded-full flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer disabled:opacity-50 shadow-md"
                   >
                     {status === 'loading' ? (
                       <>
@@ -225,40 +225,40 @@ export default function Contact() {
               
               {/* Card 1: Contact Details */}
               <div className="camp-card bg-white border border-black/5 p-8 flex flex-col gap-6">
-                <h3 className="font-display font-extrabold text-xl text-[#1A1A2E] mb-2 flex items-center gap-2">
-                  <span className="w-1.5 h-4 bg-[#5AC87A] rounded-full inline-block" />
+                <h3 className="font-display font-extrabold text-xl text-[#241765] mb-2 flex items-center gap-2">
+                  <span className="w-1.5 h-4 bg-[#6CAB53] rounded-full inline-block" />
                   Contact Information
                 </h3>
                 
                 <ul className="space-y-6">
                   <li className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-2xl bg-[#5AC87A]/15 text-[#5AC87A] flex items-center justify-center shrink-0 shadow-inner">
+                    <div className="w-12 h-12 rounded-2xl bg-[#6CAB53]/15 text-[#6CAB53] flex items-center justify-center shrink-0 shadow-inner">
                       <MapPin className="w-6 h-6 stroke-[2.5]" />
                     </div>
                     <div>
-                      <span className="font-display font-extrabold text-sm text-[#1A1A2E] block">Address</span>
+                      <span className="font-display font-extrabold text-sm text-[#241765] block">Address</span>
                       <span className="font-body text-sm text-[#3D3D5C] mt-1.5 block leading-relaxed">
                         Livingstone College<br />Salisbury, NC 28144
                       </span>
                     </div>
                   </li>
                   <li className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-2xl bg-[#2D4589]/15 text-[#2D4589] flex items-center justify-center shrink-0 shadow-inner">
+                    <div className="w-12 h-12 rounded-2xl bg-[#241765]/15 text-[#241765] flex items-center justify-center shrink-0 shadow-inner">
                       <Mail className="w-6 h-6 stroke-[2.5]" />
                     </div>
                     <div>
-                      <span className="font-display font-extrabold text-sm text-[#1A1A2E] block">Direct Email</span>
-                      <a href="mailto:stem@livingstone.edu" className="font-body text-sm text-[#2D4589] hover:underline mt-1.5 block font-bold">
+                      <span className="font-display font-extrabold text-sm text-[#241765] block">Direct Email</span>
+                      <a href="mailto:stem@livingstone.edu" className="font-body text-sm text-[#241765] hover:underline mt-1.5 block font-bold">
                         stem@livingstone.edu
                       </a>
                     </div>
                   </li>
                   <li className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-2xl bg-[#9795CE]/15 text-[#9795CE] flex items-center justify-center shrink-0 shadow-inner">
+                    <div className="w-12 h-12 rounded-2xl bg-[#AB80FF]/15 text-[#AB80FF] flex items-center justify-center shrink-0 shadow-inner">
                       <Phone className="w-6 h-6 stroke-[2.5]" />
                     </div>
                     <div>
-                      <span className="font-display font-extrabold text-sm text-[#1A1A2E] block">Phone</span>
+                      <span className="font-display font-extrabold text-sm text-[#241765] block">Phone</span>
                       <a href="tel:+17042166000" className="font-body text-sm text-[#3D3D5C] mt-1.5 block font-bold">
                         +1 (704) 216-6000
                       </a>
@@ -279,7 +279,7 @@ export default function Contact() {
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-dark/30 flex items-center justify-center">
-                    <div className="bg-white text-[#1A1A2E] font-body font-extrabold text-xs px-4 py-2.5 rounded-full shadow-md border-2 border-black/10 flex items-center gap-1.5">
+                    <div className="bg-white text-[#241765] font-body font-extrabold text-xs px-4 py-2.5 rounded-full shadow-md border-2 border-black/10 flex items-center gap-1.5">
                       <MapPin className="w-4 h-4 text-[#FF7A3D] stroke-[2.5]" />
                       Livingstone Campus
                     </div>

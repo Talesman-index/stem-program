@@ -163,7 +163,7 @@ export default function Register() {
             <span className="section-sticker mb-4">
               Join Us
             </span>
-            <h1 className="font-accent text-3xl sm:text-5xl text-[#1A1A2E] mt-3 leading-none">
+            <h1 className="font-accent text-3xl sm:text-5xl text-[#241765] mt-3 leading-none">
               STEM Camp Registration
             </h1>
             <p className="font-body text-[#7B7B9E] text-base mt-2">
@@ -180,15 +180,15 @@ export default function Register() {
                 onClick={() => setStep(1)}
                 className={`w-10 h-10 rounded-full flex items-center justify-center font-display font-extrabold text-sm transition-all cursor-pointer ${
                   currentStep === 1 
-                    ? 'bg-[#5AC87A] text-white ring-4 ring-[#5AC87A]/25' 
+                    ? 'bg-[#6CAB53] text-white ring-4 ring-[#6CAB53]/25' 
                     : currentStep > 1 
-                      ? 'bg-[#2D4589] text-white shadow-sm' 
+                      ? 'bg-[#241765] text-white shadow-sm' 
                       : 'bg-[#FFF9F0] border-2 border-black/10 text-[#7B7B9E]'
                 }`}
               >
                 1
               </button>
-              <div className={`h-[3px] flex-grow rounded transition-colors ${currentStep > 1 ? 'bg-[#2D4589]' : 'bg-black/5'}`} />
+              <div className={`h-[3px] flex-grow rounded transition-colors ${currentStep > 1 ? 'bg-[#241765]' : 'bg-black/5'}`} />
 
               {/* Dot 2 */}
               <button 
@@ -196,15 +196,15 @@ export default function Register() {
                 onClick={() => setStep(2)}
                 className={`w-10 h-10 rounded-full flex items-center justify-center font-display font-extrabold text-sm transition-all ${
                   currentStep === 2 
-                    ? 'bg-[#5AC87A] text-white ring-4 ring-[#5AC87A]/25' 
+                    ? 'bg-[#6CAB53] text-white ring-4 ring-[#6CAB53]/25' 
                     : currentStep > 2 
-                      ? 'bg-[#2D4589] text-white shadow-sm' 
+                      ? 'bg-[#241765] text-white shadow-sm' 
                       : 'bg-[#FFF9F0] border-2 border-black/10 text-[#7B7B9E]'
                 } ${isStep1Valid() ? 'cursor-pointer' : 'cursor-not-allowed opacity-50'}`}
               >
                 2
               </button>
-              <div className={`h-[3px] flex-grow rounded transition-colors ${currentStep > 2 ? 'bg-[#2D4589]' : 'bg-black/5'}`} />
+              <div className={`h-[3px] flex-grow rounded transition-colors ${currentStep > 2 ? 'bg-[#241765]' : 'bg-black/5'}`} />
 
               {/* Dot 3 */}
               <button 
@@ -212,15 +212,15 @@ export default function Register() {
                 onClick={() => setStep(3)}
                 className={`w-10 h-10 rounded-full flex items-center justify-center font-display font-extrabold text-sm transition-all ${
                   currentStep === 3 
-                    ? 'bg-[#5AC87A] text-white ring-4 ring-[#5AC87A]/25' 
+                    ? 'bg-[#6CAB53] text-white ring-4 ring-[#6CAB53]/25' 
                     : currentStep > 3 
-                      ? 'bg-[#2D4589] text-white shadow-sm' 
+                      ? 'bg-[#241765] text-white shadow-sm' 
                       : 'bg-[#FFF9F0] border-2 border-black/10 text-[#7B7B9E]'
                 } ${isStep2Valid() ? 'cursor-pointer' : 'cursor-not-allowed opacity-50'}`}
               >
                 3
               </button>
-              <div className={`h-[3px] flex-grow rounded transition-colors ${currentStep > 3 ? 'bg-[#2D4589]' : 'bg-black/5'}`} />
+              <div className={`h-[3px] flex-grow rounded transition-colors ${currentStep > 3 ? 'bg-[#241765]' : 'bg-black/5'}`} />
 
               {/* Dot 4 */}
               <button 
@@ -228,7 +228,7 @@ export default function Register() {
                 onClick={() => setStep(4)}
                 className={`w-10 h-10 rounded-full flex items-center justify-center font-display font-extrabold text-sm transition-all ${
                   currentStep === 4 
-                    ? 'bg-[#5AC87A] text-white ring-4 ring-[#5AC87A]/25' 
+                    ? 'bg-[#6CAB53] text-white ring-4 ring-[#6CAB53]/25' 
                     : 'bg-[#FFF9F0] border-2 border-black/10 text-[#7B7B9E]'
                 } ${isStep3Valid() ? 'cursor-pointer' : 'cursor-not-allowed opacity-50'}`}
               >
@@ -240,7 +240,7 @@ export default function Register() {
           {/* Form Content Wrapper */}
           <div className="camp-card bg-white border border-black/5 overflow-hidden p-8 sm:p-14">
             {submitStatus === 'error' && (
-              <div className="mb-8 p-5 bg-[#FFF0E8] border-2 border-[#FF7A3D] text-[#1A1A2E] rounded-3xl flex items-start gap-3 text-sm animate-bounce-in">
+              <div className="mb-8 p-5 bg-[#FFF0E8] border-2 border-[#FF7A3D] text-[#241765] rounded-3xl flex items-start gap-3 text-sm animate-bounce-in">
                 <AlertTriangle className="w-6 h-6 text-[#FF7A3D] shrink-0 stroke-[2.5]" />
                 <span className="font-body font-bold">{errorMessage}</span>
               </div>
@@ -251,8 +251,8 @@ export default function Register() {
                ========================================== */}
             {currentStep === 1 && (
               <div className="space-y-6 animate-slide-up">
-                <h2 className="font-display font-extrabold text-2xl text-[#1A1A2E] flex items-center gap-3 border-b-2 border-black/5 pb-4 mb-6">
-                  <User className="w-6 h-6 text-[#5AC87A] stroke-[2.5]" />
+                <h2 className="font-display font-extrabold text-2xl text-[#241765] flex items-center gap-3 border-b-2 border-black/5 pb-4 mb-6">
+                  <User className="w-6 h-6 text-[#6CAB53] stroke-[2.5]" />
                   Student Profile
                 </h2>
 
@@ -263,7 +263,7 @@ export default function Register() {
                       type="text"
                       value={student.first_name}
                       onChange={(e) => updateStudent({ first_name: e.target.value })}
-                      className="w-full bg-white border-2 border-black/10 rounded-full px-5 py-3.5 font-body text-sm text-[#1A1A2E] focus:outline-none focus:border-[#5AC87A] transition-all"
+                      className="w-full bg-white border-2 border-black/10 rounded-full px-5 py-3.5 font-body text-sm text-[#241765] focus:outline-none focus:border-[#6CAB53] transition-all"
                       placeholder="e.g., Marcus"
                     />
                   </div>
@@ -273,7 +273,7 @@ export default function Register() {
                       type="text"
                       value={student.last_name}
                       onChange={(e) => updateStudent({ last_name: e.target.value })}
-                      className="w-full bg-white border-2 border-black/10 rounded-full px-5 py-3.5 font-body text-sm text-[#1A1A2E] focus:outline-none focus:border-[#5AC87A] transition-all"
+                      className="w-full bg-white border-2 border-black/10 rounded-full px-5 py-3.5 font-body text-sm text-[#241765] focus:outline-none focus:border-[#6CAB53] transition-all"
                       placeholder="e.g., Tatum"
                     />
                   </div>
@@ -286,7 +286,7 @@ export default function Register() {
                       type="date"
                       value={student.date_of_birth}
                       onChange={(e) => updateStudent({ date_of_birth: e.target.value })}
-                      className="w-full bg-white border-2 border-black/10 rounded-full px-5 py-3.5 font-body text-sm text-[#1A1A2E] focus:outline-none focus:border-[#5AC87A] transition-all"
+                      className="w-full bg-white border-2 border-black/10 rounded-full px-5 py-3.5 font-body text-sm text-[#241765] focus:outline-none focus:border-[#6CAB53] transition-all"
                     />
                     {student.date_of_birth && !validateAge(student.date_of_birth) && (
                       <p className="text-[#FF6B6B] text-xs mt-2 pl-3 font-extrabold">Student must be between 10 and 18 years old.</p>
@@ -298,7 +298,7 @@ export default function Register() {
                       <select
                         value={student.school_level}
                         onChange={(e) => updateStudent({ school_level: e.target.value as any })}
-                        className="w-full bg-white border-2 border-black/10 rounded-full px-5 py-3.5 font-body text-sm text-[#1A1A2E] focus:outline-none focus:border-[#5AC87A] transition-all appearance-none bg-[url('data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%234B5563%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E')] bg-[length:1.25em] bg-[right_1.25rem_center] bg-no-repeat"
+                        className="w-full bg-white border-2 border-black/10 rounded-full px-5 py-3.5 font-body text-sm text-[#241765] focus:outline-none focus:border-[#6CAB53] transition-all appearance-none bg-[url('data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%234B5563%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E')] bg-[length:1.25em] bg-[right_1.25rem_center] bg-no-repeat"
                       >
                         <option value="middle">Middle School</option>
                         <option value="high">High School</option>
@@ -313,7 +313,7 @@ export default function Register() {
                     type="text"
                     value={student.school_name}
                     onChange={(e) => updateStudent({ school_name: e.target.value })}
-                    className="w-full bg-white border-2 border-black/10 rounded-full px-5 py-3.5 font-body text-sm text-[#1A1A2E] focus:outline-none focus:border-[#5AC87A] transition-all"
+                    className="w-full bg-white border-2 border-black/10 rounded-full px-5 py-3.5 font-body text-sm text-[#241765] focus:outline-none focus:border-[#6CAB53] transition-all"
                     placeholder="e.g., Salisbury High School"
                   />
                 </div>
@@ -325,8 +325,8 @@ export default function Register() {
                ========================================== */}
             {currentStep === 2 && (
               <div className="space-y-6 animate-slide-up">
-                <h2 className="font-display font-extrabold text-2xl text-[#1A1A2E] flex items-center gap-3 border-b-2 border-black/5 pb-4 mb-6">
-                  <Shield className="w-6 h-6 text-[#2D4589] stroke-[2.5]" />
+                <h2 className="font-display font-extrabold text-2xl text-[#241765] flex items-center gap-3 border-b-2 border-black/5 pb-4 mb-6">
+                  <Shield className="w-6 h-6 text-[#241765] stroke-[2.5]" />
                   Parent & Safety Contacts
                 </h2>
 
@@ -337,7 +337,7 @@ export default function Register() {
                       type="text"
                       value={parent.full_name}
                       onChange={(e) => updateParent({ full_name: e.target.value })}
-                      className="w-full bg-white border-2 border-black/10 rounded-full px-5 py-3.5 font-body text-sm text-[#1A1A2E] focus:outline-none focus:border-[#5AC87A] transition-all"
+                      className="w-full bg-white border-2 border-black/10 rounded-full px-5 py-3.5 font-body text-sm text-[#241765] focus:outline-none focus:border-[#6CAB53] transition-all"
                       placeholder="e.g., Tyrone Tatum"
                     />
                   </div>
@@ -347,7 +347,7 @@ export default function Register() {
                       type="email"
                       value={parent.email}
                       onChange={(e) => updateParent({ email: e.target.value })}
-                      className="w-full bg-white border-2 border-black/10 rounded-full px-5 py-3.5 font-body text-sm text-[#1A1A2E] focus:outline-none focus:border-[#5AC87A] transition-all"
+                      className="w-full bg-white border-2 border-black/10 rounded-full px-5 py-3.5 font-body text-sm text-[#241765] focus:outline-none focus:border-[#6CAB53] transition-all"
                       placeholder="e.g., tyrone@example.com"
                     />
                   </div>
@@ -360,7 +360,7 @@ export default function Register() {
                       type="text"
                       value={parent.phone}
                       onChange={(e) => updateParent({ phone: e.target.value })}
-                      className="w-full bg-white border-2 border-black/10 rounded-full px-5 py-3.5 font-body text-sm text-[#1A1A2E] focus:outline-none focus:border-[#5AC87A] transition-all"
+                      className="w-full bg-white border-2 border-black/10 rounded-full px-5 py-3.5 font-body text-sm text-[#241765] focus:outline-none focus:border-[#6CAB53] transition-all"
                       placeholder="e.g., 704-555-0192"
                     />
                   </div>
@@ -370,7 +370,7 @@ export default function Register() {
                       type="text"
                       value={parent.phone_alt}
                       onChange={(e) => updateParent({ phone_alt: e.target.value })}
-                      className="w-full bg-white border-2 border-black/10 rounded-full px-5 py-3.5 font-body text-sm text-[#1A1A2E] focus:outline-none focus:border-[#5AC87A] transition-all"
+                      className="w-full bg-white border-2 border-black/10 rounded-full px-5 py-3.5 font-body text-sm text-[#241765] focus:outline-none focus:border-[#6CAB53] transition-all"
                       placeholder="e.g., 704-555-0193"
                     />
                   </div>
@@ -378,7 +378,7 @@ export default function Register() {
 
                 {/* Emergency Contact */}
                 <div className="border-t border-black/5 pt-6">
-                  <h3 className="font-display font-extrabold text-sm text-[#1A1A2E] uppercase tracking-wider mb-4 pl-1">Alternative Emergency Contact</h3>
+                  <h3 className="font-display font-extrabold text-sm text-[#241765] uppercase tracking-wider mb-4 pl-1">Alternative Emergency Contact</h3>
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                     <div>
                       <label className="block text-xs font-extrabold text-[#3D3D5C] mb-2 pl-2">Full Name *</label>
@@ -386,7 +386,7 @@ export default function Register() {
                         type="text"
                         value={parent.emergency_name}
                         onChange={(e) => updateParent({ emergency_name: e.target.value })}
-                        className="w-full bg-white border-2 border-black/10 rounded-full px-4 py-2.5 font-body text-sm text-[#1A1A2E] focus:outline-none focus:border-[#5AC87A] transition-all"
+                        className="w-full bg-white border-2 border-black/10 rounded-full px-4 py-2.5 font-body text-sm text-[#241765] focus:outline-none focus:border-[#6CAB53] transition-all"
                         placeholder="e.g., Latoya Tatum"
                       />
                     </div>
@@ -396,7 +396,7 @@ export default function Register() {
                         type="text"
                         value={parent.emergency_relation}
                         onChange={(e) => updateParent({ emergency_relation: e.target.value })}
-                        className="w-full bg-white border-2 border-black/10 rounded-full px-4 py-2.5 font-body text-sm text-[#1A1A2E] focus:outline-none focus:border-[#5AC87A] transition-all"
+                        className="w-full bg-white border-2 border-black/10 rounded-full px-4 py-2.5 font-body text-sm text-[#241765] focus:outline-none focus:border-[#6CAB53] transition-all"
                         placeholder="e.g., Mother"
                       />
                     </div>
@@ -406,7 +406,7 @@ export default function Register() {
                         type="text"
                         value={parent.emergency_phone}
                         onChange={(e) => updateParent({ emergency_phone: e.target.value })}
-                        className="w-full bg-white border-2 border-black/10 rounded-full px-4 py-2.5 font-body text-sm text-[#1A1A2E] focus:outline-none focus:border-[#5AC87A] transition-all"
+                        className="w-full bg-white border-2 border-black/10 rounded-full px-4 py-2.5 font-body text-sm text-[#241765] focus:outline-none focus:border-[#6CAB53] transition-all"
                         placeholder="e.g., 704-555-0193"
                       />
                     </div>
@@ -415,7 +415,7 @@ export default function Register() {
 
                 {/* Whitelisted Pickup People */}
                 <div className="border-t border-black/5 pt-6">
-                  <h3 className="font-display font-extrabold text-sm text-[#1A1A2E] uppercase tracking-wider mb-2 pl-1">
+                  <h3 className="font-display font-extrabold text-sm text-[#241765] uppercase tracking-wider mb-2 pl-1">
                     Authorized Pickup Persons (Minimum 1)
                   </h3>
                   <p className="font-body text-xs text-[#7B7B9E] mb-4">
@@ -428,7 +428,7 @@ export default function Register() {
                       {pickups.map((p, idx) => (
                         <div key={idx} className="flex items-center justify-between bg-white px-5 py-3.5 border-2 border-black/5 rounded-full shadow-sm hover:border-black/10 transition-all">
                           <div className="flex flex-col text-left">
-                            <span className="font-body font-bold text-sm text-[#1A1A2E]">{p.full_name}</span>
+                            <span className="font-body font-bold text-sm text-[#241765]">{p.full_name}</span>
                             <span className="font-body text-xs text-[#7B7B9E] font-medium">{p.relationship} · {p.phone}</span>
                           </div>
                           <button
@@ -451,21 +451,21 @@ export default function Register() {
                         placeholder="Full Name"
                         value={newPickup.full_name}
                         onChange={(e) => setNewPickup({ ...newPickup, full_name: e.target.value })}
-                        className="bg-white border-2 border-black/10 rounded-full px-4 py-2.5 font-body text-sm text-[#1A1A2E] focus:outline-none focus:border-[#5AC87A] transition-all"
+                        className="bg-white border-2 border-black/10 rounded-full px-4 py-2.5 font-body text-sm text-[#241765] focus:outline-none focus:border-[#6CAB53] transition-all"
                       />
                       <input
                         type="text"
                         placeholder="Relationship (e.g., Father, Mother)"
                         value={newPickup.relationship}
                         onChange={(e) => setNewPickup({ ...newPickup, relationship: e.target.value })}
-                        className="bg-white border-2 border-black/10 rounded-full px-4 py-2.5 font-body text-sm text-[#1A1A2E] focus:outline-none focus:border-[#5AC87A] transition-all"
+                        className="bg-white border-2 border-black/10 rounded-full px-4 py-2.5 font-body text-sm text-[#241765] focus:outline-none focus:border-[#6CAB53] transition-all"
                       />
                       <input
                         type="text"
                         placeholder="Phone"
                         value={newPickup.phone}
                         onChange={(e) => setNewPickup({ ...newPickup, phone: e.target.value })}
-                        className="bg-white border-2 border-black/10 rounded-full px-4 py-2.5 font-body text-sm text-[#1A1A2E] focus:outline-none focus:border-[#5AC87A] transition-all"
+                        className="bg-white border-2 border-black/10 rounded-full px-4 py-2.5 font-body text-sm text-[#241765] focus:outline-none focus:border-[#6CAB53] transition-all"
                       />
                     </div>
                     {pickupError && (
@@ -474,7 +474,7 @@ export default function Register() {
                     <button
                       type="button"
                       onClick={handleAddPickup}
-                      className="mt-4 bg-[#2D4589] text-white hover:bg-[#3d83cc] font-body font-extrabold text-xs px-6 py-2.5 rounded-full cursor-pointer hover:scale-105 active:scale-95 transition-all shadow-sm"
+                      className="mt-4 bg-[#241765] text-white hover:bg-[#3d83cc] font-body font-extrabold text-xs px-6 py-2.5 rounded-full cursor-pointer hover:scale-105 active:scale-95 transition-all shadow-sm"
                     >
                       + Add authorized person
                     </button>
@@ -488,21 +488,21 @@ export default function Register() {
                ========================================== */}
             {currentStep === 3 && (
               <div className="space-y-6 animate-slide-up">
-                <h2 className="font-display font-extrabold text-2xl text-[#1A1A2E] flex items-center gap-3 border-b-2 border-black/5 pb-4 mb-6">
-                  <HeartHandshake className="w-6 h-6 text-[#9795CE] stroke-[2.5]" />
+                <h2 className="font-display font-extrabold text-2xl text-[#241765] flex items-center gap-3 border-b-2 border-black/5 pb-4 mb-6">
+                  <HeartHandshake className="w-6 h-6 text-[#AB80FF] stroke-[2.5]" />
                   Medical Information
                 </h2>
 
                 {/* Allergies Toggle */}
                 <div className="space-y-4">
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-                    <span className="font-body font-extrabold text-sm text-[#1A1A2E] pl-2">Does the student have any food or drug allergies?</span>
+                    <span className="font-body font-extrabold text-sm text-[#241765] pl-2">Does the student have any food or drug allergies?</span>
                     <div className="flex gap-2">
                       <button
                         type="button"
                         onClick={() => updateMedical({ has_allergies: true })}
                         className={`px-5 py-2 rounded-full font-body font-extrabold text-xs transition-all cursor-pointer hover:scale-105 active:scale-95 border-2 ${
-                          medical.has_allergies ? 'bg-[#5AC87A] border-[#1A1A2E] text-white shadow-md' : 'bg-white border-black/5 text-[#3D3D5C]'
+                          medical.has_allergies ? 'bg-[#6CAB53] border-[#241765] text-white shadow-md' : 'bg-white border-black/5 text-[#3D3D5C]'
                         }`}
                       >
                         Yes
@@ -511,7 +511,7 @@ export default function Register() {
                         type="button"
                         onClick={() => updateMedical({ has_allergies: false, allergies_detail: '' })}
                         className={`px-5 py-2 rounded-full font-body font-extrabold text-xs transition-all cursor-pointer hover:scale-105 active:scale-95 border-2 ${
-                          !medical.has_allergies ? 'bg-[#1A1A2E] border-[#1A1A2E] text-white shadow-md' : 'bg-white border-black/5 text-[#3D3D5C]'
+                          !medical.has_allergies ? 'bg-[#241765] border-[#241765] text-white shadow-md' : 'bg-white border-black/5 text-[#3D3D5C]'
                         }`}
                       >
                         No
@@ -523,7 +523,7 @@ export default function Register() {
                       value={medical.allergies_detail}
                       onChange={(e) => updateMedical({ allergies_detail: e.target.value })}
                       placeholder="Please detail allergies and required treatments (e.g., EpiPen)..."
-                      className="w-full bg-white border-2 border-black/10 rounded-[24px] px-5 py-4 font-body text-sm text-[#1A1A2E] focus:outline-none focus:border-[#5AC87A] transition-all"
+                      className="w-full bg-white border-2 border-black/10 rounded-[24px] px-5 py-4 font-body text-sm text-[#241765] focus:outline-none focus:border-[#6CAB53] transition-all"
                       rows={2}
                     />
                   )}
@@ -532,13 +532,13 @@ export default function Register() {
                 {/* Dietary Restrictions Toggle */}
                 <div className="space-y-4 border-t-2 border-black/5 pt-6">
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-                    <span className="font-body font-extrabold text-sm text-[#1A1A2E] pl-2">Does the student follow a specific diet?</span>
+                    <span className="font-body font-extrabold text-sm text-[#241765] pl-2">Does the student follow a specific diet?</span>
                     <div className="flex gap-2">
                       <button
                         type="button"
                         onClick={() => updateMedical({ has_dietary: true })}
                         className={`px-5 py-2 rounded-full font-body font-extrabold text-xs transition-all cursor-pointer hover:scale-105 active:scale-95 border-2 ${
-                          medical.has_dietary ? 'bg-[#5AC87A] border-[#1A1A2E] text-white shadow-md' : 'bg-white border-black/5 text-[#3D3D5C]'
+                          medical.has_dietary ? 'bg-[#6CAB53] border-[#241765] text-white shadow-md' : 'bg-white border-black/5 text-[#3D3D5C]'
                         }`}
                       >
                         Yes
@@ -547,7 +547,7 @@ export default function Register() {
                         type="button"
                         onClick={() => updateMedical({ has_dietary: false, dietary_detail: '' })}
                         className={`px-5 py-2 rounded-full font-body font-extrabold text-xs transition-all cursor-pointer hover:scale-105 active:scale-95 border-2 ${
-                          !medical.has_dietary ? 'bg-[#1A1A2E] border-[#1A1A2E] text-white shadow-md' : 'bg-white border-black/5 text-[#3D3D5C]'
+                          !medical.has_dietary ? 'bg-[#241765] border-[#241765] text-white shadow-md' : 'bg-white border-black/5 text-[#3D3D5C]'
                         }`}
                       >
                         No
@@ -559,7 +559,7 @@ export default function Register() {
                       value={medical.dietary_detail}
                       onChange={(e) => updateMedical({ dietary_detail: e.target.value })}
                       placeholder="Please detail any dietary restrictions (e.g., Vegetarian, Pork-free, Gluten-free)..."
-                      className="w-full bg-white border-2 border-black/10 rounded-[24px] px-5 py-4 font-body text-sm text-[#1A1A2E] focus:outline-none focus:border-[#5AC87A] transition-all"
+                      className="w-full bg-white border-2 border-black/10 rounded-[24px] px-5 py-4 font-body text-sm text-[#241765] focus:outline-none focus:border-[#6CAB53] transition-all"
                       rows={2}
                     />
                   )}
@@ -568,13 +568,13 @@ export default function Register() {
                 {/* Medication Toggle */}
                 <div className="space-y-4 border-t-2 border-black/5 pt-6">
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-                    <span className="font-body font-extrabold text-sm text-[#1A1A2E] pl-2">Does the student take daily medical treatments that need to be administered at the camp?</span>
+                    <span className="font-body font-extrabold text-sm text-[#241765] pl-2">Does the student take daily medical treatments that need to be administered at the camp?</span>
                     <div className="flex gap-2">
                       <button
                         type="button"
                         onClick={() => updateMedical({ has_medication: true })}
                         className={`px-5 py-2 rounded-full font-body font-extrabold text-xs transition-all cursor-pointer hover:scale-105 active:scale-95 border-2 ${
-                          medical.has_medication ? 'bg-[#5AC87A] border-[#1A1A2E] text-white shadow-md' : 'bg-white border-black/5 text-[#3D3D5C]'
+                          medical.has_medication ? 'bg-[#6CAB53] border-[#241765] text-white shadow-md' : 'bg-white border-black/5 text-[#3D3D5C]'
                         }`}
                       >
                         Yes
@@ -583,7 +583,7 @@ export default function Register() {
                         type="button"
                         onClick={() => updateMedical({ has_medication: false, medication_detail: '' })}
                         className={`px-5 py-2 rounded-full font-body font-extrabold text-xs transition-all cursor-pointer hover:scale-105 active:scale-95 border-2 ${
-                          !medical.has_medication ? 'bg-[#1A1A2E] border-[#1A1A2E] text-white shadow-md' : 'bg-white border-black/5 text-[#3D3D5C]'
+                          !medical.has_medication ? 'bg-[#241765] border-[#241765] text-white shadow-md' : 'bg-white border-black/5 text-[#3D3D5C]'
                         }`}
                       >
                         No
@@ -595,7 +595,7 @@ export default function Register() {
                       value={medical.medication_detail}
                       onChange={(e) => updateMedical({ medication_detail: e.target.value })}
                       placeholder="Please detail the treatment and dosages..."
-                      className="w-full bg-white border-2 border-black/10 rounded-[24px] px-5 py-4 font-body text-sm text-[#1A1A2E] focus:outline-none focus:border-[#5AC87A] transition-all"
+                      className="w-full bg-white border-2 border-black/10 rounded-[24px] px-5 py-4 font-body text-sm text-[#241765] focus:outline-none focus:border-[#6CAB53] transition-all"
                       rows={2}
                     />
                   )}
@@ -604,13 +604,13 @@ export default function Register() {
                 {/* Conditions Toggle */}
                 <div className="space-y-4 border-t-2 border-black/5 pt-6">
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-                    <span className="font-body font-extrabold text-sm text-[#1A1A2E] pl-2">Does the student have any other medical conditions?</span>
+                    <span className="font-body font-extrabold text-sm text-[#241765] pl-2">Does the student have any other medical conditions?</span>
                     <div className="flex gap-2">
                       <button
                         type="button"
                         onClick={() => updateMedical({ has_conditions: true })}
                         className={`px-5 py-2 rounded-full font-body font-extrabold text-xs transition-all cursor-pointer hover:scale-105 active:scale-95 border-2 ${
-                          medical.has_conditions ? 'bg-[#5AC87A] border-[#1A1A2E] text-white shadow-md' : 'bg-white border-black/5 text-[#3D3D5C]'
+                          medical.has_conditions ? 'bg-[#6CAB53] border-[#241765] text-white shadow-md' : 'bg-white border-black/5 text-[#3D3D5C]'
                         }`}
                       >
                         Yes
@@ -619,7 +619,7 @@ export default function Register() {
                         type="button"
                         onClick={() => updateMedical({ has_conditions: false, conditions_detail: '' })}
                         className={`px-5 py-2 rounded-full font-body font-extrabold text-xs transition-all cursor-pointer hover:scale-105 active:scale-95 border-2 ${
-                          !medical.has_conditions ? 'bg-[#1A1A2E] border-[#1A1A2E] text-white shadow-md' : 'bg-white border-black/5 text-[#3D3D5C]'
+                          !medical.has_conditions ? 'bg-[#241765] border-[#241765] text-white shadow-md' : 'bg-white border-black/5 text-[#3D3D5C]'
                         }`}
                       >
                         No
@@ -631,7 +631,7 @@ export default function Register() {
                       value={medical.conditions_detail}
                       onChange={(e) => updateMedical({ conditions_detail: e.target.value })}
                       placeholder="Please detail the condition (e.g., Diabetes, Asthma)..."
-                      className="w-full bg-white border-2 border-black/10 rounded-[24px] px-5 py-4 font-body text-sm text-[#1A1A2E] focus:outline-none focus:border-[#5AC87A] transition-all"
+                      className="w-full bg-white border-2 border-black/10 rounded-[24px] px-5 py-4 font-body text-sm text-[#241765] focus:outline-none focus:border-[#6CAB53] transition-all"
                       rows={2}
                     />
                   )}
@@ -639,7 +639,7 @@ export default function Register() {
 
                 {/* Doctor details */}
                 <div className="border-t-2 border-black/5 pt-6">
-                  <h3 className="font-display font-extrabold text-sm text-[#1A1A2E] uppercase tracking-wider mb-4 pl-1">Primary Care Physician</h3>
+                  <h3 className="font-display font-extrabold text-sm text-[#241765] uppercase tracking-wider mb-4 pl-1">Primary Care Physician</h3>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div>
                       <label className="block text-sm font-extrabold text-[#3D3D5C] mb-2 pl-2">Doctor's Name</label>
@@ -647,7 +647,7 @@ export default function Register() {
                         type="text"
                         value={medical.doctor_name || ''}
                         onChange={(e) => updateMedical({ doctor_name: e.target.value })}
-                        className="w-full bg-white border-2 border-black/10 rounded-full px-5 py-3.5 font-body text-sm text-[#1A1A2E] focus:outline-none focus:border-[#5AC87A]"
+                        className="w-full bg-white border-2 border-black/10 rounded-full px-5 py-3.5 font-body text-sm text-[#241765] focus:outline-none focus:border-[#6CAB53]"
                         placeholder="e.g., Dr. Roberts"
                       />
                     </div>
@@ -657,7 +657,7 @@ export default function Register() {
                         type="text"
                         value={medical.doctor_phone || ''}
                         onChange={(e) => updateMedical({ doctor_phone: e.target.value })}
-                        className="w-full bg-white border-2 border-black/10 rounded-full px-5 py-3.5 font-body text-sm text-[#1A1A2E] focus:outline-none focus:border-[#5AC87A]"
+                        className="w-full bg-white border-2 border-black/10 rounded-full px-5 py-3.5 font-body text-sm text-[#241765] focus:outline-none focus:border-[#6CAB53]"
                         placeholder="e.g., 704-555-0150"
                       />
                     </div>
@@ -674,14 +674,14 @@ export default function Register() {
                 
                 {/* 4a. Summary Review */}
                 <div>
-                  <h2 className="font-display font-extrabold text-2xl text-[#1A1A2E] flex items-center gap-3 border-b-2 border-black/5 pb-4 mb-6">
-                    <CheckCircle2 className="w-6 h-6 text-[#5AC87A] stroke-[2.5]" />
+                  <h2 className="font-display font-extrabold text-2xl text-[#241765] flex items-center gap-3 border-b-2 border-black/5 pb-4 mb-6">
+                    <CheckCircle2 className="w-6 h-6 text-[#6CAB53] stroke-[2.5]" />
                     Registration Summary
                   </h2>
                   
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-6">
                     <div className="camp-card bg-[#FFF9F0] border border-black/5 p-6 sm:p-8">
-                      <span className="font-display font-extrabold text-sm text-[#1A1A2E] uppercase tracking-wider block border-b-2 border-black/5 pb-2 mb-3">
+                      <span className="font-display font-extrabold text-sm text-[#241765] uppercase tracking-wider block border-b-2 border-black/5 pb-2 mb-3">
                         Student
                       </span>
                       <ul className="space-y-2.5 text-sm font-body text-[#3D3D5C] font-semibold">
@@ -693,7 +693,7 @@ export default function Register() {
                     </div>
 
                     <div className="camp-card bg-[#FFF9F0] border border-black/5 p-6 sm:p-8">
-                      <span className="font-display font-extrabold text-sm text-[#1A1A2E] uppercase tracking-wider block border-b-2 border-black/5 pb-2 mb-3">
+                      <span className="font-display font-extrabold text-sm text-[#241765] uppercase tracking-wider block border-b-2 border-black/5 pb-2 mb-3">
                         Parent / Guardian
                       </span>
                       <ul className="space-y-2.5 text-sm font-body text-[#3D3D5C] font-semibold">
@@ -708,7 +708,7 @@ export default function Register() {
 
                 {/* 4b. Waiver Legal document block (scroll check) */}
                 <div className="border-t-2 border-black/5 pt-8">
-                  <h2 className="font-display font-extrabold text-2xl text-[#1A1A2E] mb-4">
+                  <h2 className="font-display font-extrabold text-2xl text-[#241765] mb-4">
                     Waiver of Liability & Consents
                   </h2>
                   <p className="font-body text-xs text-[#7B7B9E] mb-4">
@@ -720,7 +720,7 @@ export default function Register() {
                     onScroll={handleWaiverScroll}
                     className="camp-card border-2 border-black/10 rounded-[24px] p-6 max-h-48 overflow-y-auto font-body text-xs text-[#3D3D5C] bg-[#FFF9F0] leading-relaxed select-none"
                   >
-                    <h4 className="font-display font-extrabold text-[#1A1A2E] mb-3 text-sm">PARENTAL AUTHORIZATION AND LIABILITY WAIVER</h4>
+                    <h4 className="font-display font-extrabold text-[#241765] mb-3 text-sm">PARENTAL AUTHORIZATION AND LIABILITY WAIVER</h4>
                     <p className="mb-3">
                       By registering my child for the Livingstone College Summer STEM Camp, I expressly authorize their participation in all scientific, technological, and outdoor activities organized as part of this program.
                     </p>
@@ -746,7 +746,7 @@ export default function Register() {
                       disabled={!waiverScrolled && !agreedWaiver}
                       checked={agreedWaiver}
                       onChange={(e) => setAgreements({ agreedWaiver: e.target.checked })}
-                      className="rounded border-black/15 text-[#2D4589] focus:ring-[#2D4589] w-5 h-5 mt-0.5 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+                      className="rounded border-black/15 text-[#241765] focus:ring-[#241765] w-5 h-5 mt-0.5 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
                     />
                     <label 
                       htmlFor="agreedWaiver" 
@@ -765,7 +765,7 @@ export default function Register() {
                       type="checkbox"
                       checked={agreedConsent}
                       onChange={(e) => setAgreements({ agreedConsent: e.target.checked })}
-                      className="rounded border-black/15 text-[#2D4589] focus:ring-[#2D4589] w-5 h-5 mt-0.5 cursor-pointer"
+                      className="rounded border-black/15 text-[#241765] focus:ring-[#241765] w-5 h-5 mt-0.5 cursor-pointer"
                     />
                     <label htmlFor="agreedConsent" className="font-body text-sm text-[#3D3D5C] font-semibold select-none cursor-pointer leading-normal">
                       I authorize my child's participation in the activities and confirm their availability for the selected week *
@@ -779,7 +779,7 @@ export default function Register() {
                       type="checkbox"
                       checked={agreedImage}
                       onChange={(e) => setAgreements({ agreedImage: e.target.checked })}
-                      className="rounded border-black/15 text-[#2D4589] focus:ring-[#2D4589] w-5 h-5 mt-0.5 cursor-pointer"
+                      className="rounded border-black/15 text-[#241765] focus:ring-[#241765] w-5 h-5 mt-0.5 cursor-pointer"
                     />
                     <label htmlFor="agreedImage" className="font-body text-sm text-[#3D3D5C] font-semibold select-none cursor-pointer leading-normal">
                       I authorize the use of my child's image (photos/videos taken at the camp) on the website and brochures of Livingstone College *
@@ -796,7 +796,7 @@ export default function Register() {
                     type="text"
                     value={signatureName}
                     onChange={(e) => setAgreements({ signatureName: e.target.value })}
-                    className="w-full bg-white border-2 border-black/10 rounded-full px-5 py-3.5 font-body text-sm text-[#1A1A2E] focus:outline-none focus:border-[#5AC87A]"
+                    className="w-full bg-white border-2 border-black/10 rounded-full px-5 py-3.5 font-body text-sm text-[#241765] focus:outline-none focus:border-[#6CAB53]"
                     placeholder="Type your signature"
                   />
                   {signatureName && signatureName.trim().toLowerCase() !== parent.full_name.trim().toLowerCase() && (
@@ -827,7 +827,7 @@ export default function Register() {
                     (currentStep === 2 && !isStep2Valid()) ||
                     (currentStep === 3 && !isStep3Valid())
                   }
-                  className="px-6 py-2.5 bg-[#2D4589] text-white hover:bg-[#3b83cc] rounded-full font-body font-extrabold text-sm inline-flex items-center gap-2 cursor-pointer shadow disabled:opacity-50 disabled:cursor-not-allowed hover:scale-105 active:scale-95 transition-all"
+                  className="px-6 py-2.5 bg-[#241765] text-white hover:bg-[#3b83cc] rounded-full font-body font-extrabold text-sm inline-flex items-center gap-2 cursor-pointer shadow disabled:opacity-50 disabled:cursor-not-allowed hover:scale-105 active:scale-95 transition-all"
                 >
                   Continue
                   <ChevronRight className="w-5 h-5 stroke-[2.5]" />
@@ -837,7 +837,7 @@ export default function Register() {
                   type="button"
                   onClick={handleFinalSubmit}
                   disabled={!isStep4Valid() || submitStatus === 'submitting'}
-                  className="px-7 py-3 bg-[#5AC87A] text-white hover:bg-[#4eb96d] rounded-full font-body font-extrabold text-sm inline-flex items-center gap-2 cursor-pointer shadow disabled:opacity-50 disabled:cursor-not-allowed hover:scale-105 active:scale-95 transition-all"
+                  className="px-7 py-3 bg-[#6CAB53] text-white hover:bg-[#4eb96d] rounded-full font-body font-extrabold text-sm inline-flex items-center gap-2 cursor-pointer shadow disabled:opacity-50 disabled:cursor-not-allowed hover:scale-105 active:scale-95 transition-all"
                 >
                   {submitStatus === 'submitting' ? 'Submitting...' : "Submit Registration"}
                   <CheckCircle2 className="w-5 h-5 stroke-[2.5]" />

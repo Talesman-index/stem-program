@@ -52,18 +52,18 @@ const TIERS: PartnershipTier[] = [
     color: '#FF7A3D',
     featured: false,
     perks: ['Logo displayed on the website', 'Full annual impact report', 'Recognition during the closing ceremony'],
-    impact: 'Covers daily nutritious snacks and learning materials for ten participants.',
+    impact: 'Covers daily balanced hot lunches for five participants.',
     image: '/assets/images/young-school-kids-eating-lunch-talking-at-a-table-2026-01-05-06-28-36-utc.jpg'
   },
   {
     id: 'silver',
     name: 'Silver Partner',
     amount: '$1,500 — $4,999',
-    color: '#2D4589',
+    color: '#241765',
     featured: false,
     perks: ['Bronze perks', 'Logo visibility on camp t-shirts', 'VIP invitation for 2 to the ceremony'],
     impact: 'Funds hardware kits (Robotics/VR) for an entire workgroup.',
-    image: '/assets/images/VR_stem.png'
+    image: '/assets/images/child-using-virtual-reality-headset-in-classroom-2026-03-25-01-35-09-utc.jpg'
   },
   {
     id: 'gold',
@@ -73,7 +73,7 @@ const TIERS: PartnershipTier[] = [
     featured: true,
     perks: ['Silver perks', 'Physical banner display at the camp', 'Round table with college leadership', 'Exclusive sponsorship of a STEM discipline'],
     impact: 'Provides full-immersion training resources, specialized lab experiments, and mentor stipends.',
-    image: '/assets/images/Labo_stem.png'
+    image: '/assets/images/enthusiastic-children-explore-chemistry-in-science-2026-03-25-10-42-26-utc.jpg'
   }
 ];
 
@@ -127,7 +127,7 @@ export default function Funding() {
       <main className="flex-grow pt-24 bg-[#FFF9F0]">
         
         {/* ── Funding Hero ── */}
-        <section className="bg-[#162248] text-white py-20 relative overflow-hidden border-b-2 border-black/10">
+        <section className="bg-[#241765] text-white py-20 relative overflow-hidden border-b-2 border-black/10">
           <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none" />
           <div className="absolute -right-12 -top-12 w-48 h-48 rounded-full bg-white/20 blur-lg pointer-events-none" />
           <div className="absolute -left-12 -bottom-12 w-48 h-48 rounded-full bg-[#FFE566]/25 blur-lg pointer-events-none" />
@@ -151,47 +151,47 @@ export default function Funding() {
             <span className="section-sticker mb-4">
               Our Impact
             </span>
-            <h2 className="font-display font-extrabold text-3xl sm:text-4.5xl text-[#1A1A2E]">
+            <h2 className="font-display font-extrabold text-3xl sm:text-4.5xl text-[#241765]">
               What your support helps fund
             </h2>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="camp-card bg-white border border-black/5 p-8 text-center flex flex-col items-center gap-4">
-              <div className="w-14 h-14 rounded-2xl bg-[#8CB97A]/15 text-[#8CB97A] flex items-center justify-center shadow-inner">
+              <div className="w-14 h-14 rounded-2xl bg-[#6CAB53]/15 text-[#6CAB53] flex items-center justify-center shadow-inner">
                 <Heart className="w-7 h-7 stroke-[2.5]" />
               </div>
-              <h3 className="font-display font-extrabold text-xl text-[#1A1A2E]">1 Week of Camp</h3>
+              <h3 className="font-display font-extrabold text-xl text-[#241765]">1 Week of Camp</h3>
               <p className="font-body text-sm text-[#3D3D5C] leading-relaxed">
                 Allows a child to explore the 7 STEM disciplines daily without financial burden.
               </p>
             </div>
             
             <div className="camp-card bg-white border border-black/5 p-8 text-center flex flex-col items-center gap-4">
-              <div className="w-14 h-14 rounded-2xl bg-[#2D4589]/15 text-[#2D4589] flex items-center justify-center shadow-inner">
+              <div className="w-14 h-14 rounded-2xl bg-[#241765]/15 text-[#241765] flex items-center justify-center shadow-inner">
                 <ShieldCheck className="w-7 h-7 stroke-[2.5]" />
               </div>
-              <h3 className="font-display font-extrabold text-xl text-[#1A1A2E]">100% Free</h3>
+              <h3 className="font-display font-extrabold text-xl text-[#241765]">100% Free</h3>
               <p className="font-body text-sm text-[#3D3D5C] leading-relaxed">
                 Guarantees absolute equality of opportunity for all families in Rowan County and surrounding areas.
               </p>
             </div>
             
             <div className="camp-card bg-white border border-black/5 p-8 text-center flex flex-col items-center gap-4">
-              <div className="w-14 h-14 rounded-2xl bg-[#162248]/15 text-[#162248] flex items-center justify-center shadow-inner">
+              <div className="w-14 h-14 rounded-2xl bg-[#241765]/15 text-[#241765] flex items-center justify-center shadow-inner">
                 <Award className="w-7 h-7 stroke-[2.5]" />
               </div>
-              <h3 className="font-display font-extrabold text-xl text-[#1A1A2E]">1 Official Certificate</h3>
+              <h3 className="font-display font-extrabold text-xl text-[#241765]">1 Official Certificate</h3>
               <p className="font-body text-sm text-[#3D3D5C] leading-relaxed">
                 Recognizes student commitment and encourages them in their future educational and academic path.
               </p>
             </div>
             
             <div className="camp-card bg-white border border-black/5 p-8 text-center flex flex-col items-center gap-4">
-              <div className="w-14 h-14 rounded-2xl bg-[#2D4589]/15 text-[#2D4589] flex items-center justify-center shadow-inner">
+              <div className="w-14 h-14 rounded-2xl bg-[#241765]/15 text-[#241765] flex items-center justify-center shadow-inner">
                 <TrendingUp className="w-7 h-7 stroke-[2.5]" />
               </div>
-              <h3 className="font-display font-extrabold text-xl text-[#1A1A2E]">Quality Mentoring</h3>
+              <h3 className="font-display font-extrabold text-xl text-[#241765]">Quality Mentoring</h3>
               <p className="font-body text-sm text-[#3D3D5C] leading-relaxed">
                 Offers educational workshops led by teachers and professionals from the innovation sector.
               </p>
@@ -201,27 +201,27 @@ export default function Funding() {
 
         {/* ── Why Support Block ── */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
-          <div className="camp-card text-[#1A1A2E] border-2 border-black/10 p-8 sm:p-14 text-center flex flex-col items-center gap-6" style={{ backgroundColor: '#FFE566' }}>
+          <div className="camp-card text-[#241765] border-2 border-black/10 p-8 sm:p-14 text-center flex flex-col items-center gap-6" style={{ backgroundColor: '#FFE566' }}>
             <h2 className="font-display font-extrabold text-2xl sm:text-4xl">
               A program of community impact
             </h2>
-            <p className="font-body text-[#1A1A2E]/90 text-base sm:text-lg leading-relaxed max-w-4xl">
-              The Livingstone College Summer STEM Camp is not an ordinary summer camp. It is a real lever for social equality. Your funding allows for the purchase of laboratory equipment, reusable robotics kits, virtual reality headsets, as well as covering daily complimentary snacks, learning materials, and transportation for young participants.
+            <p className="font-body text-[#241765]/90 text-base sm:text-lg leading-relaxed max-w-4xl">
+              The Livingstone College Summer STEM Camp is not an ordinary summer camp. It is a real lever for social equality. Your funding allows for the purchase of laboratory equipment, reusable robotics kits, virtual reality headsets, as well as covering daily balanced lunches and transportation for young participants.
             </p>
           </div>
         </section>
 
         {/* ── Partnership Tiers ── */}
-        <section className="py-24 bg-[#F1F6EF] border-y-3 border-[#162248]">
+        <section className="py-24 bg-[#F1F6EF] border-y-3 border-[#241765]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16 flex flex-col items-center">
-              <span className="inline-block bg-[#FFD15C] text-[#162248] font-accent text-xs px-3.5 py-1.5 uppercase tracking-widest rounded-md shadow-[2px_2px_0px_0px_#162248] transform -rotate-2 border-2 border-[#162248] mb-5 select-none">
+              <span className="inline-block bg-[#FFD15C] text-[#241765] font-accent text-xs px-3.5 py-1.5 uppercase tracking-widest rounded-md shadow-[2px_2px_0px_0px_#241765] transform -rotate-2 border-2 border-[#241765] mb-5 select-none">
                 Sponsorship Tiers
               </span>
-              <h2 className="font-accent text-4xl sm:text-5.5xl md:text-6.5xl text-[#162248] tracking-wide leading-none max-w-4xl mx-auto">
+              <h2 className="font-accent text-4xl sm:text-5.5xl md:text-6.5xl text-[#241765] tracking-wide leading-none max-w-4xl mx-auto">
                 CHOOSE YOUR IMPACT PATHWAY
               </h2>
-              <p className="font-body text-[#162248]/85 text-base sm:text-lg mt-5 max-w-2xl mx-auto font-semibold leading-relaxed">
+              <p className="font-body text-[#241765]/85 text-base sm:text-lg mt-5 max-w-2xl mx-auto font-semibold leading-relaxed">
                 Click on a pathway below to select that level. Your investment goes directly to supporting Rowan County youth.
               </p>
             </div>
@@ -231,12 +231,12 @@ export default function Funding() {
                 <div
                   key={tier.id}
                   onClick={() => selectTierAndScroll(tier.id)}
-                  className={`w-full md:w-[calc(50%-16px)] lg:w-[calc(33.33%-22px)] flex flex-col justify-between bg-[#FFF9F0] border-3 border-[#162248] rounded-[32px] overflow-hidden shadow-[6px_6px_0px_0px_#162248] hover:-translate-y-2 hover:translate-x-[-2px] hover:shadow-[8px_8px_0px_0px_#162248] cursor-pointer transition-all duration-300 relative group ${
-                    tier.featured ? 'border-4 border-[#2D4589] shadow-[6px_6px_0px_0px_#2D4589] hover:shadow-[8px_8px_0px_0px_#2D4589]' : ''
+                  className={`w-full md:w-[calc(50%-16px)] lg:w-[calc(33.33%-22px)] flex flex-col justify-between bg-[#FFF9F0] border-3 border-[#241765] rounded-[32px] overflow-hidden shadow-[6px_6px_0px_0px_#241765] hover:-translate-y-2 hover:translate-x-[-2px] hover:shadow-[8px_8px_0px_0px_#241765] cursor-pointer transition-all duration-300 relative group ${
+                    tier.featured ? 'border-4 border-[#241765] shadow-[6px_6px_0px_0px_#241765] hover:shadow-[8px_8px_0px_0px_#241765]' : ''
                   }`}
                 >
                   {/* Top Image block */}
-                  <div className="relative h-52 w-full overflow-hidden border-b-3 border-[#162248] bg-[#F1F6EF]">
+                  <div className="relative h-52 w-full overflow-hidden border-b-3 border-[#241765] bg-[#F1F6EF]">
                     <img
                       src={tier.image}
                       alt={tier.name}
@@ -244,14 +244,14 @@ export default function Funding() {
                     />
                     {/* Amount sticker overlay */}
                     <div 
-                      className="absolute top-4 left-4 text-white font-accent text-sm md:text-base px-4 py-1.5 rounded-xl uppercase tracking-wider border-2 border-[#162248] shadow-[2.5px_2.5px_0px_0px_#162248] transform -rotate-3 select-none"
-                      style={{ backgroundColor: tier.featured ? '#FFD15C' : '#2D4589', color: tier.featured ? '#162248' : '#FFFFFF' }}
+                      className="absolute top-4 left-4 text-white font-accent text-sm md:text-base px-4 py-1.5 rounded-xl uppercase tracking-wider border-2 border-[#241765] shadow-[2.5px_2.5px_0px_0px_#241765] transform -rotate-3 select-none"
+                      style={{ backgroundColor: tier.featured ? '#FFD15C' : '#241765', color: tier.featured ? '#241765' : '#FFFFFF' }}
                     >
                       {tier.amount}
                     </div>
                     
                     {tier.featured && (
-                      <div className="absolute top-4 right-4 bg-[#162248] text-[#FFD15C] font-display font-extrabold text-[10px] px-3 py-1 rounded-full uppercase tracking-widest border border-white/10 shadow-sm animate-pulse">
+                      <div className="absolute top-4 right-4 bg-[#241765] text-[#FFD15C] font-display font-extrabold text-[10px] px-3 py-1 rounded-full uppercase tracking-widest border border-white/10 shadow-sm animate-pulse">
                         ⭐ Popular
                       </div>
                     )}
@@ -261,32 +261,32 @@ export default function Funding() {
                   <div className="p-6 flex-grow flex flex-col justify-between gap-6">
                     <div className="space-y-4">
                       {/* Title */}
-                      <h3 className="font-display font-extrabold text-2xl text-[#162248] leading-tight">
+                      <h3 className="font-display font-extrabold text-2xl text-[#241765] leading-tight">
                         {tier.name}
                       </h3>
 
                       {/* Direct Impact */}
-                      <div className="bg-[#F1F6EF]/50 rounded-2xl p-4 border border-[#162248]/10">
-                        <span className="text-[10px] font-mono font-extrabold text-[#2D4589] uppercase tracking-wider block mb-1">
+                      <div className="bg-[#F1F6EF]/50 rounded-2xl p-4 border border-[#241765]/10">
+                        <span className="text-[10px] font-mono font-extrabold text-[#241765] uppercase tracking-wider block mb-1">
                           Community Impact
                         </span>
-                        <p className="font-body text-[#162248]/90 text-sm font-semibold leading-relaxed">
+                        <p className="font-body text-[#241765]/90 text-sm font-semibold leading-relaxed">
                           {tier.impact}
                         </p>
                       </div>
 
                       {/* Perks list */}
                       <div className="space-y-2">
-                        <span className="text-[10px] font-mono font-extrabold text-[#162248]/50 uppercase tracking-wider block">
+                        <span className="text-[10px] font-mono font-extrabold text-[#241765]/50 uppercase tracking-wider block">
                           Partner Perks
                         </span>
                         <div className="flex flex-wrap gap-2">
                           {tier.perks.map((perk, perkIdx) => (
                             <span
                               key={perkIdx}
-                              className="inline-flex items-center gap-1 bg-white border border-[#162248]/10 px-2.5 py-1 rounded-lg text-xs font-body font-semibold text-[#162248] shadow-[1px_1px_0px_0px_rgba(19,48,37,0.15)] hover:bg-[#F1F6EF]/30 transition-colors"
+                              className="inline-flex items-center gap-1 bg-white border border-[#241765]/10 px-2.5 py-1 rounded-lg text-xs font-body font-semibold text-[#241765] shadow-[1px_1px_0px_0px_rgba(36,23,101,0.15)] hover:bg-[#F1F6EF]/30 transition-colors"
                             >
-                              <CheckCircle2 className="w-3.5 h-3.5 text-[#2D4589] shrink-0 stroke-[2.5]" />
+                              <CheckCircle2 className="w-3.5 h-3.5 text-[#241765] shrink-0 stroke-[2.5]" />
                               {perk}
                             </span>
                           ))}
@@ -297,10 +297,10 @@ export default function Funding() {
                     {/* CTA Button */}
                     <div className="pt-2">
                       <button
-                        className={`w-full py-3.5 px-6 rounded-2xl font-accent text-sm uppercase tracking-wider border-2 border-[#162248] shadow-[3px_3px_0px_0px_#162248] transition-all duration-150 group-hover:translate-x-[2px] group-hover:translate-y-[2px] group-hover:shadow-[1px_1px_0px_0px_#162248] active:translate-x-[3px] active:translate-y-[3px] active:shadow-[0px_0px_0px_0px_#162248] cursor-pointer ${
+                        className={`w-full py-3.5 px-6 rounded-2xl font-accent text-sm uppercase tracking-wider border-2 border-[#241765] shadow-[3px_3px_0px_0px_#241765] transition-all duration-150 group-hover:translate-x-[2px] group-hover:translate-y-[2px] group-hover:shadow-[1px_1px_0px_0px_#241765] active:translate-x-[3px] active:translate-y-[3px] active:shadow-[0px_0px_0px_0px_#241765] cursor-pointer ${
                           tier.featured
-                            ? 'bg-[#2D4589] text-white'
-                            : 'bg-[#162248] text-white'
+                            ? 'bg-[#241765] text-white'
+                            : 'bg-[#241765] text-white'
                         }`}
                       >
                         Select Pathway
@@ -316,22 +316,22 @@ export default function Funding() {
         {/* ── Resources Downloads ── */}
         <section className="py-16 bg-[#FFF9F0]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="font-display font-extrabold text-2xl text-[#1A1A2E] mb-8">
+            <h2 className="font-display font-extrabold text-2xl text-[#241765] mb-8">
               Resources for your administrative records
             </h2>
             <div className="flex flex-wrap justify-center items-center gap-4">
               <a
                 href="#"
-                className="camp-card bg-white border border-black/5 px-6 py-4 flex items-center gap-3 font-body font-extrabold text-sm text-[#1A1A2E] hover:scale-105 transition-all shadow-sm"
+                className="camp-card bg-white border border-black/5 px-6 py-4 flex items-center gap-3 font-body font-extrabold text-sm text-[#241765] hover:scale-105 transition-all shadow-sm"
               >
-                <Download className="w-5 h-5 text-[#2D4589] stroke-[2.5]" />
+                <Download className="w-5 h-5 text-[#241765] stroke-[2.5]" />
                 Camp Presentation Document (PDF)
               </a>
               <a
                 href="#"
-                className="camp-card bg-white border border-black/5 px-6 py-4 flex items-center gap-3 font-body font-extrabold text-sm text-[#1A1A2E] hover:scale-105 transition-all shadow-sm"
+                className="camp-card bg-white border border-black/5 px-6 py-4 flex items-center gap-3 font-body font-extrabold text-sm text-[#241765] hover:scale-105 transition-all shadow-sm"
               >
-                <Download className="w-5 h-5 text-[#2D4589] stroke-[2.5]" />
+                <Download className="w-5 h-5 text-[#241765] stroke-[2.5]" />
                 2024 Edition Impact Report (PDF)
               </a>
             </div>
@@ -342,15 +342,15 @@ export default function Funding() {
         <section ref={formRef} className="py-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="camp-card bg-white border border-black/5 p-8 sm:p-14">
             <div className="text-center mb-10">
-              <h2 className="font-display font-extrabold text-3xl text-[#1A1A2E]">Partner Form</h2>
+              <h2 className="font-display font-extrabold text-3xl text-[#241765]">Partner Form</h2>
               <p className="font-body text-[#7B7B9E] text-base mt-3 max-w-2xl mx-auto">
                 Whether you are a corporation, a foundation, or an individual donor, let&apos;s discuss your support project.
               </p>
             </div>
 
             {submitStatus === 'success' && (
-              <div className="mb-8 p-6 bg-[#DFFBE8] border-2 border-[#5AC87A] rounded-3xl text-green-900 flex items-start gap-4 animate-bounce-in">
-                <CheckCircle2 className="w-6 h-6 text-[#5AC87A] shrink-0 mt-0.5 stroke-[2.5]" />
+              <div className="mb-8 p-6 bg-[#DFFBE8] border-2 border-[#6CAB53] rounded-3xl text-green-900 flex items-start gap-4 animate-bounce-in">
+                <CheckCircle2 className="w-6 h-6 text-[#6CAB53] shrink-0 mt-0.5 stroke-[2.5]" />
                 <div>
                   <span className="font-display font-extrabold block text-base">Form sent!</span>
                   <span className="font-body text-sm mt-1.5 block">Your partnership request has been registered. Our team will contact you within 48 hours.</span>
@@ -379,7 +379,7 @@ export default function Funding() {
                     <select
                       id="requestType"
                       {...register('requestType')}
-                      className={`w-full bg-white border-2 rounded-full px-5 py-3.5 font-body text-sm text-[#1A1A2E] focus:outline-none focus:ring-2 focus:ring-[#162248]/20 appearance-none bg-[url('data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%234B5563%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E')] bg-[length:1.25em] bg-[right_1.25rem_center] bg-no-repeat ${
+                      className={`w-full bg-white border-2 rounded-full px-5 py-3.5 font-body text-sm text-[#241765] focus:outline-none focus:ring-2 focus:ring-[#241765]/20 appearance-none bg-[url('data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%234B5563%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E')] bg-[length:1.25em] bg-[right_1.25rem_center] bg-no-repeat ${
                         errors.requestType ? 'border-[#FF6B6B]' : 'border-black/10'
                       }`}
                     >
@@ -405,7 +405,7 @@ export default function Funding() {
                     id="orgName"
                     type="text"
                     {...register('orgName')}
-                    className={`w-full bg-white border-2 rounded-full px-5 py-3.5 font-body text-sm text-[#1A1A2E] focus:outline-none focus:ring-2 focus:ring-[#162248]/20 ${
+                    className={`w-full bg-white border-2 rounded-full px-5 py-3.5 font-body text-sm text-[#241765] focus:outline-none focus:ring-2 focus:ring-[#241765]/20 ${
                       errors.orgName ? 'border-[#FF6B6B]' : 'border-black/10'
                     }`}
                     placeholder="Company, association name..."
@@ -426,7 +426,7 @@ export default function Funding() {
                     id="contactName"
                     type="text"
                     {...register('contactName')}
-                    className={`w-full bg-white border-2 rounded-full px-5 py-3.5 font-body text-sm text-[#1A1A2E] focus:outline-none focus:ring-2 focus:ring-[#162248]/20 ${
+                    className={`w-full bg-white border-2 rounded-full px-5 py-3.5 font-body text-sm text-[#241765] focus:outline-none focus:ring-2 focus:ring-[#241765]/20 ${
                       errors.contactName ? 'border-[#FF6B6B]' : 'border-black/10'
                     }`}
                     placeholder="e.g. Sarah Smith"
@@ -445,7 +445,7 @@ export default function Funding() {
                     id="email"
                     type="email"
                     {...register('email')}
-                    className={`w-full bg-white border-2 rounded-full px-5 py-3.5 font-body text-sm text-[#1A1A2E] focus:outline-none focus:ring-2 focus:ring-[#162248]/20 ${
+                    className={`w-full bg-white border-2 rounded-full px-5 py-3.5 font-body text-sm text-[#241765] focus:outline-none focus:ring-2 focus:ring-[#241765]/20 ${
                       errors.email ? 'border-[#FF6B6B]' : 'border-black/10'
                     }`}
                     placeholder="e.g. contact@company.com"
@@ -466,7 +466,7 @@ export default function Funding() {
                     id="phone"
                     type="text"
                     {...register('phone')}
-                    className="w-full bg-white border-2 border-black/10 rounded-full px-5 py-3.5 font-body text-sm text-[#1A1A2E] focus:outline-none focus:ring-2 focus:ring-[#162248]/20"
+                    className="w-full bg-white border-2 border-black/10 rounded-full px-5 py-3.5 font-body text-sm text-[#241765] focus:outline-none focus:ring-2 focus:ring-[#241765]/20"
                     placeholder="e.g. 704-555-0100"
                   />
                 </div>
@@ -480,7 +480,7 @@ export default function Funding() {
                     <select
                       id="tierInterest"
                       {...register('tierInterest')}
-                      className={`w-full bg-white border-2 rounded-full px-5 py-3.5 font-body text-sm text-[#1A1A2E] focus:outline-none focus:ring-2 focus:ring-[#162248]/20 appearance-none bg-[url('data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%234B5563%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E')] bg-[length:1.25em] bg-[right_1.25rem_center] bg-no-repeat ${
+                      className={`w-full bg-white border-2 rounded-full px-5 py-3.5 font-body text-sm text-[#241765] focus:outline-none focus:ring-2 focus:ring-[#241765]/20 appearance-none bg-[url('data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%234B5563%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E')] bg-[length:1.25em] bg-[right_1.25rem_center] bg-no-repeat ${
                         errors.tierInterest ? 'border-[#FF6B6B]' : 'border-black/10'
                       }`}
                     >
@@ -502,7 +502,7 @@ export default function Funding() {
                   id="message"
                   rows={4}
                   {...register('message')}
-                  className={`w-full bg-white border-2 rounded-[24px] px-5 py-4 font-body text-sm text-[#1A1A2E] focus:outline-none focus:ring-2 focus:ring-[#162248]/20 ${
+                  className={`w-full bg-white border-2 rounded-[24px] px-5 py-4 font-body text-sm text-[#241765] focus:outline-none focus:ring-2 focus:ring-[#241765]/20 ${
                     errors.message ? 'border-[#FF6B6B]' : 'border-black/10'
                   }`}
                   placeholder="Explain how you or your company would like to support the camp (hardware donations, financial sponsorship, scholarships...)"
@@ -518,7 +518,7 @@ export default function Funding() {
                   id="wantsDossier"
                   type="checkbox"
                   {...register('wantsDossier')}
-                  className="rounded border-black/15 text-[#162248] focus:ring-[#162248] w-4.5 h-4.5 mt-1 cursor-pointer"
+                  className="rounded border-black/15 text-[#241765] focus:ring-[#241765] w-4.5 h-4.5 mt-1 cursor-pointer"
                 />
                 <label htmlFor="wantsDossier" className="font-body text-sm text-[#3D3D5C] font-semibold select-none cursor-pointer leading-normal">
                   I wish to receive the complete presentation pack and detailed estimated budget by email.
@@ -529,7 +529,7 @@ export default function Funding() {
               <button
                 type="submit"
                 disabled={submitStatus === 'loading'}
-                className="w-full bg-[#5AC87A] text-white hover:bg-[#4eb96d] font-body font-extrabold py-4 rounded-full flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer shadow-md disabled:opacity-50"
+                className="w-full bg-[#6CAB53] text-white hover:bg-[#4eb96d] font-body font-extrabold py-4 rounded-full flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer shadow-md disabled:opacity-50"
               >
                 {submitStatus === 'loading' ? (
                   <>

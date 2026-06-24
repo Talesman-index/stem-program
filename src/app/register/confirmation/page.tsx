@@ -62,13 +62,13 @@ export default function Confirmation() {
       <main className="flex-grow pt-28 bg-[#FFF9F0] flex items-center justify-center py-16 px-4 sm:px-6 relative overflow-hidden">
         {/* Playful background blobs */}
         <div className="absolute top-10 left-10 w-32 h-32 bg-[#FFE566] opacity-30 blob animate-float pointer-events-none" />
-        <div className="absolute bottom-10 right-10 w-40 h-40 bg-[#9795CE] opacity-20 blob animate-float pointer-events-none" style={{ animationDelay: '2s' }} />
+        <div className="absolute bottom-10 right-10 w-40 h-40 bg-[#AB80FF] opacity-20 blob animate-float pointer-events-none" style={{ animationDelay: '2s' }} />
         
         <section className="max-w-2xl w-full relative z-10">
           <div className="camp-card bg-white border-2 border-black/15 shadow-[8px_8px_0px_0px_rgba(26,26,46,1)] p-8 sm:p-12 text-center flex flex-col items-center gap-8 rounded-[32px]">
             
             {/* Animated Success Check Circle with Playful Styling */}
-            <div className="w-24 h-24 rounded-full bg-[#5AC87A] text-white flex items-center justify-center shadow-md border-4 border-white animate-bounce-in">
+            <div className="w-24 h-24 rounded-full bg-[#6CAB53] text-white flex items-center justify-center shadow-md border-4 border-white animate-bounce-in">
               <CheckCircle2 className="w-12 h-12 stroke-[2.5]" />
             </div>
 
@@ -77,12 +77,12 @@ export default function Confirmation() {
               <span className="section-sticker mb-4">
                 CONGRATULATIONS!
               </span>
-              <h1 className="font-accent text-3xl sm:text-5xl text-[#1A1A2E] mt-3 leading-none">
+              <h1 className="font-accent text-3xl sm:text-5xl text-[#241765] mt-3 leading-none">
                 Registration Confirmed!
               </h1>
               <p className="font-body text-[#7B7B9E] text-base mt-4 max-w-md mx-auto">
                 A confirmation email containing your welcome pack has been sent to:
-                <span className="block font-bold text-[#1A1A2E] mt-1 text-sm sm:text-base font-mono bg-[#FFF9F0] border border-black/5 rounded-full py-1.5 px-4 inline-block mt-2">
+                <span className="block font-bold text-[#241765] mt-1 text-sm sm:text-base font-mono bg-[#FFF9F0] border border-black/5 rounded-full py-1.5 px-4 inline-block mt-2">
                   {parent.email}
                 </span>
               </p>
@@ -92,17 +92,17 @@ export default function Confirmation() {
             <div className="bg-[#FFF9F0] rounded-[24px] p-6 border-2 border-black/10 w-full text-left font-body text-sm space-y-3 shadow-inner">
               <div className="flex justify-between border-b border-black/5 pb-2">
                 <span className="text-[#7B7B9E] font-semibold">Student:</span>
-                <span className="font-extrabold text-[#1A1A2E]">{student.first_name} {student.last_name}</span>
+                <span className="font-extrabold text-[#241765]">{student.first_name} {student.last_name}</span>
               </div>
               <div className="flex justify-between border-b border-black/5 pb-2">
                 <span className="text-[#7B7B9E] font-semibold">Level:</span>
-                <span className="font-extrabold text-[#1A1A2E]">
+                <span className="font-extrabold text-[#241765]">
                   {student.school_level === 'middle' ? 'Middle School' : 'High School'}
                 </span>
               </div>
               <div className="flex justify-between">
                 <span className="text-[#7B7B9E] font-semibold">Camp Session:</span>
-                <span className="font-extrabold text-[#5AC87A]">
+                <span className="font-extrabold text-[#6CAB53]">
                   {student.school_level === 'middle' 
                     ? 'June 15 — 19, 2026' 
                     : 'June 22 — 26, 2026'
@@ -119,14 +119,14 @@ export default function Confirmation() {
             <div className="flex flex-col sm:flex-row gap-4 w-full mt-2">
               <button
                 onClick={handleReturnHome}
-                className="flex-grow btn-primary bg-[#5AC87A] text-white font-body font-bold py-3.5 px-6 rounded-full flex items-center justify-center gap-2 hover:scale-[1.03] active:scale-[0.97] transition-all cursor-pointer shadow-md text-sm border-2 border-transparent"
+                className="flex-grow btn-primary bg-[#6CAB53] text-white font-body font-bold py-3.5 px-6 rounded-full flex items-center justify-center gap-2 hover:scale-[1.03] active:scale-[0.97] transition-all cursor-pointer shadow-md text-sm border-2 border-transparent"
               >
                 <Home className="w-4 h-4 stroke-[2.5]" />
                 Return to Home
               </button>
               <button
                 onClick={handleShare}
-                className="flex-grow btn-outline border-2 border-[#1A1A2E] bg-transparent hover:bg-[#1A1A2E] hover:text-white text-[#1A1A2E] font-body font-bold py-3 px-6 rounded-full flex items-center justify-center gap-2 transition-all cursor-pointer text-sm"
+                className="flex-grow btn-outline border-2 border-[#241765] bg-transparent hover:bg-[#241765] hover:text-white text-[#241765] font-body font-bold py-3 px-6 rounded-full flex items-center justify-center gap-2 transition-all cursor-pointer text-sm"
               >
                 <Share2 className="w-4 h-4 stroke-[2.5]" />
                 Share the Program

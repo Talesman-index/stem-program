@@ -43,7 +43,7 @@ export default function News() {
       <main className="flex-grow pt-24 bg-[#FFF9F0]">
         
         {/* ── News Hero ── */}
-        <section className="bg-[#162248] text-white py-20 text-center relative overflow-hidden border-b-2 border-black/10">
+        <section className="bg-[#241765] text-white py-20 text-center relative overflow-hidden border-b-2 border-black/10">
           <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none" />
           <div className="absolute -right-12 -top-12 w-48 h-48 rounded-full bg-white/20 blur-lg pointer-events-none" />
           <div className="absolute -left-12 -bottom-12 w-48 h-48 rounded-full bg-black/15 blur-lg pointer-events-none" />
@@ -80,16 +80,16 @@ export default function News() {
                     {/* Meta */}
                     <div className="flex items-center gap-4 text-xs font-body font-bold text-[#7B7B9E] mb-4">
                       <div className="flex items-center gap-1.5">
-                        <Calendar className="w-4 h-4 text-[#5AC87A]" />
+                        <Calendar className="w-4 h-4 text-[#6CAB53]" />
                         <span>{article.date}</span>
                       </div>
                       <div className="flex items-center gap-1.5">
-                        <User className="w-4 h-4 text-[#2D4589]" />
+                        <User className="w-4 h-4 text-[#241765]" />
                         <span>{article.author}</span>
                       </div>
                     </div>
                     
-                    <h2 className="font-display font-extrabold text-xl sm:text-2xl text-[#1A1A2E] leading-snug hover:text-[#2D4589] transition-colors">
+                    <h2 className="font-display font-extrabold text-xl sm:text-2xl text-[#241765] leading-snug hover:text-[#241765] transition-colors">
                       {article.title}
                     </h2>
                     
@@ -100,7 +100,7 @@ export default function News() {
 
                   <div className="mt-8 pt-6 border-t border-black/5">
                     <span
-                      className="font-body font-extrabold text-sm text-[#2D4589] flex items-center gap-2 hover:scale-105 transition-transform w-fit cursor-pointer"
+                      className="font-body font-extrabold text-sm text-[#241765] flex items-center gap-2 hover:scale-105 transition-transform w-fit cursor-pointer"
                     >
                       Read more
                       <ArrowRight className="w-4 h-4 stroke-[2.5]" />

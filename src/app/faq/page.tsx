@@ -14,7 +14,7 @@ interface FAQItem {
 const faqs: FAQItem[] = [
   {
     q: "Is the camp really free?",
-    r: "Yes, completely. Registration fees, materials, laboratory equipment, robotics kits, and complimentary daily snacks are all fully covered. There are no hidden fees for families.",
+    r: "Yes, completely. Registration fees, materials, laboratory equipment, robotics kits, and daily hot lunch are all fully covered. There are no hidden fees for families.",
     category: "general"
   },
   {
@@ -29,12 +29,7 @@ const faqs: FAQItem[] = [
   },
   {
     q: "What is the daily schedule?",
-    r: "Activities run from 9:00 AM to 3:15 PM, Monday through Friday. Drop-off begins at 8:30 AM. Each day includes hands-on STEM activities, projects, and interactive challenges.",
-    category: "practical"
-  },
-  {
-    q: "Are meals provided?",
-    r: "Lunch is held at 12:00 PM. Families are encouraged to pack a lunch for their child. Complimentary snacks are provided throughout the day.",
+    r: "Activities run from 9:00 AM to 3:15 PM, Monday through Friday. Drop-off starts at 8:30 AM. A hot, balanced lunch is offered free of charge every day.",
     category: "practical"
   },
   {
@@ -48,14 +43,9 @@ const faqs: FAQItem[] = [
     category: "general"
   },
   {
-    q: "How many participants?",
-    r: "Enrollment capacity is determined annually based on available funding, staffing, and program resources to ensure a high-quality experience for all participants.",
+    q: "How many participants are there per session?",
+    r: "Capacity is limited to 30 participants per session (with sub-groups of 10 to 15 students maximum per workshop) to ensure quality mentoring by our professors.",
     category: "admission"
-  },
-  {
-    q: "Are there prizes or awards?",
-    r: "Yes! Students have opportunities to win prizes every day through STEM knowledge competitions, challenges, and participation activities. All participants also receive a certificate of completion at the end of the program.",
-    category: "general"
   },
   {
     q: "Is a certificate of participation awarded?",
@@ -92,7 +82,7 @@ export default function FAQ() {
       <main className="flex-grow pt-24 bg-[#FFF9F0]">
         
         {/* ── FAQ Header ── */}
-        <section className="bg-[#162248] text-white py-20 text-center relative overflow-hidden border-b-2 border-black/10">
+        <section className="bg-[#241765] text-white py-20 text-center relative overflow-hidden border-b-2 border-black/10">
           <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none" />
           <div className="absolute -right-12 -top-12 w-48 h-48 rounded-full bg-white/20 blur-lg pointer-events-none" />
           <div className="absolute -left-12 -bottom-12 w-48 h-48 rounded-full bg-black/15 blur-lg pointer-events-none" />
@@ -124,7 +114,7 @@ export default function FAQ() {
                 placeholder="Search for a question or keyword..."
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                className="w-full bg-white border-2 border-black/10 rounded-full pl-12 pr-6 py-3.5 font-body text-sm text-[#1A1A2E] focus:outline-none focus:border-[#162248] transition-all shadow-inner"
+                className="w-full bg-white border-2 border-black/10 rounded-full pl-12 pr-6 py-3.5 font-body text-sm text-[#241765] focus:outline-none focus:border-[#241765] transition-all shadow-inner"
               />
             </div>
             
@@ -134,8 +124,8 @@ export default function FAQ() {
                 onClick={() => setCategoryFilter('all')}
                 className={`px-5 py-2.5 rounded-full font-body font-extrabold text-xs sm:text-sm border-2 transition-all whitespace-nowrap cursor-pointer hover:scale-105 active:scale-95 ${
                   categoryFilter === 'all'
-                    ? 'bg-[#162248] border-[#162248] text-white shadow-md'
-                    : 'bg-white border-[#162248]/15 text-[#162248]/80 hover:bg-[#F1F6EF]/30 hover:border-[#162248]/30 hover:text-[#162248]'
+                    ? 'bg-[#241765] border-[#241765] text-white shadow-md'
+                    : 'bg-white border-[#241765]/15 text-[#241765]/80 hover:bg-[#F1F6EF]/30 hover:border-[#241765]/30 hover:text-[#241765]'
                 }`}
               >
                 All
@@ -144,8 +134,8 @@ export default function FAQ() {
                 onClick={() => setCategoryFilter('general')}
                 className={`px-5 py-2.5 rounded-full font-body font-extrabold text-xs sm:text-sm border-2 transition-all whitespace-nowrap cursor-pointer hover:scale-105 active:scale-95 ${
                   categoryFilter === 'general'
-                    ? 'bg-[#162248] border-[#162248] text-white shadow-md'
-                    : 'bg-white border-[#162248]/15 text-[#162248]/80 hover:bg-[#F1F6EF]/30 hover:border-[#162248]/30 hover:text-[#162248]'
+                    ? 'bg-[#241765] border-[#241765] text-white shadow-md'
+                    : 'bg-white border-[#241765]/15 text-[#241765]/80 hover:bg-[#F1F6EF]/30 hover:border-[#241765]/30 hover:text-[#241765]'
                 }`}
               >
                 General
@@ -154,8 +144,8 @@ export default function FAQ() {
                 onClick={() => setCategoryFilter('admission')}
                 className={`px-5 py-2.5 rounded-full font-body font-extrabold text-xs sm:text-sm border-2 transition-all whitespace-nowrap cursor-pointer hover:scale-105 active:scale-95 ${
                   categoryFilter === 'admission'
-                    ? 'bg-[#162248] border-[#162248] text-white shadow-md'
-                    : 'bg-white border-[#162248]/15 text-[#162248]/80 hover:bg-[#F1F6EF]/30 hover:border-[#162248]/30 hover:text-[#162248]'
+                    ? 'bg-[#241765] border-[#241765] text-white shadow-md'
+                    : 'bg-white border-[#241765]/15 text-[#241765]/80 hover:bg-[#F1F6EF]/30 hover:border-[#241765]/30 hover:text-[#241765]'
                 }`}
               >
                 Admissions
@@ -164,8 +154,8 @@ export default function FAQ() {
                 onClick={() => setCategoryFilter('practical')}
                 className={`px-5 py-2.5 rounded-full font-body font-extrabold text-xs sm:text-sm border-2 transition-all whitespace-nowrap cursor-pointer hover:scale-105 active:scale-95 ${
                   categoryFilter === 'practical'
-                    ? 'bg-[#162248] border-[#162248] text-white shadow-md'
-                    : 'bg-white border-[#162248]/15 text-[#162248]/80 hover:bg-[#F1F6EF]/30 hover:border-[#162248]/30 hover:text-[#162248]'
+                    ? 'bg-[#241765] border-[#241765] text-white shadow-md'
+                    : 'bg-white border-[#241765]/15 text-[#241765]/80 hover:bg-[#F1F6EF]/30 hover:border-[#241765]/30 hover:text-[#241765]'
                 }`}
               >
                 Practical Info
@@ -185,10 +175,10 @@ export default function FAQ() {
                   >
                     <button
                       onClick={() => toggleAccordion(idx)}
-                      className="w-full flex items-center justify-between p-6 sm:p-7 text-left font-display font-extrabold text-base sm:text-xl text-[#1A1A2E] hover:bg-gray-50/50 transition-colors focus:outline-none"
+                      className="w-full flex items-center justify-between p-6 sm:p-7 text-left font-display font-extrabold text-base sm:text-xl text-[#241765] hover:bg-gray-50/50 transition-colors focus:outline-none"
                     >
                       <span className="flex items-center gap-3.5 pr-4">
-                        <HelpCircle className="w-5.5 h-5.5 text-[#5AC87A] shrink-0" />
+                        <HelpCircle className="w-5.5 h-5.5 text-[#6CAB53] shrink-0" />
                         {faq.q}
                       </span>
                       {isOpen ? (

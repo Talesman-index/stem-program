@@ -43,7 +43,7 @@ export default function DisciplineDetailClient({ data }: ClientProps) {
       <main className="flex-grow pt-24 bg-[#FFF9F0]">
         
         {/* ── Dynamic Header / Hero ── */}
-        <section className="relative text-white py-20 overflow-hidden bg-[#1A1A2E] rounded-b-[48px] border-b-2 border-black/10">
+        <section className="relative text-white py-20 overflow-hidden bg-[#241765] rounded-b-[48px] border-b-2 border-black/10">
           <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none" />
           
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -87,7 +87,7 @@ export default function DisciplineDetailClient({ data }: ClientProps) {
                 
                 {/* Description */}
                 <div className="camp-card p-8 bg-white border border-black/5">
-                  <h2 className="font-display font-extrabold text-2xl text-[#1A1A2E] mb-4 pb-2 border-b border-black/5">
+                  <h2 className="font-display font-extrabold text-2xl text-[#241765] mb-4 pb-2 border-b border-black/5">
                     General Overview
                   </h2>
                   <p className="font-body text-base text-[#3D3D5C] leading-relaxed">
@@ -97,7 +97,7 @@ export default function DisciplineDetailClient({ data }: ClientProps) {
 
                 {/* Activities List */}
                 <div>
-                  <h2 className="font-display font-extrabold text-2.5xl text-[#1A1A2E] mb-6 flex items-center gap-2.5">
+                  <h2 className="font-display font-extrabold text-2.5xl text-[#241765] mb-6 flex items-center gap-2.5">
                     <Activity className="w-6 h-6 stroke-[2.5]" style={{ color: data.color }} />
                     Hands-on Workshops & Activities
                   </h2>
@@ -105,7 +105,7 @@ export default function DisciplineDetailClient({ data }: ClientProps) {
                     {data.activities.map((act, idx) => (
                       <div key={idx} className="camp-card p-6 bg-white border border-black/5 flex items-start gap-3.5">
                         <CheckCircle2 className="w-5 h-5 shrink-0 mt-0.5" style={{ color: data.color }} />
-                        <span className="font-body text-sm text-[#1A1A2E] font-semibold leading-normal">{act}</span>
+                        <span className="font-body text-sm text-[#241765] font-semibold leading-normal">{act}</span>
                       </div>
                     ))}
                   </div>
@@ -122,7 +122,7 @@ export default function DisciplineDetailClient({ data }: ClientProps) {
 
                 {/* Skills gained */}
                 <div className="camp-card p-8 bg-white border border-black/5">
-                  <h3 className="font-display font-extrabold text-xl text-[#1A1A2E] mb-4 flex items-center gap-2 border-b border-black/5 pb-2">
+                  <h3 className="font-display font-extrabold text-xl text-[#241765] mb-4 flex items-center gap-2 border-b border-black/5 pb-2">
                     <Award className="w-5 h-5 stroke-[2.5]" style={{ color: data.color }} />
                     Skills Gained
                   </h3>
@@ -143,7 +143,7 @@ export default function DisciplineDetailClient({ data }: ClientProps) {
                     style={{ borderLeftColor: data.color, backgroundColor: `${data.color}05` }}
                   >
                     <span className="font-serif text-6xl absolute top-1 right-5 leading-none opacity-20" style={{ color: data.color }}>&rdquo;</span>
-                    <p className="font-body text-sm text-[#1A1A2E] font-semibold italic leading-relaxed relative z-10 pr-6">
+                    <p className="font-body text-sm text-[#241765] font-semibold italic leading-relaxed relative z-10 pr-6">
                       &ldquo;{data.quote.text}&rdquo;
                     </p>
                     <span className="block font-display font-extrabold text-xs text-[#7B7B9E] mt-4">
@@ -157,7 +157,7 @@ export default function DisciplineDetailClient({ data }: ClientProps) {
 
             {/* Bottom Register Call to Action */}
             <div className="mt-20">
-              <div className="camp-card relative overflow-hidden text-white p-8 md:p-12 border-2 border-black/10 flex flex-col md:flex-row items-center justify-between gap-8" style={{ backgroundColor: '#9795CE' }}>
+              <div className="camp-card relative overflow-hidden text-white p-8 md:p-12 border-2 border-black/10 flex flex-col md:flex-row items-center justify-between gap-8" style={{ backgroundColor: '#AB80FF' }}>
                 <div className="absolute -top-16 -right-16 w-48 h-48 rounded-full bg-white/10 blur-xl pointer-events-none" />
                 
                 <div className="relative z-10 text-center md:text-left">
@@ -172,7 +172,7 @@ export default function DisciplineDetailClient({ data }: ClientProps) {
                 <div className="relative z-10 w-full md:w-auto shrink-0">
                   <Link
                     href="/register"
-                    className="w-full md:w-auto text-center bg-[#FFE566] text-[#1A1A2E] hover:bg-[#fff099] font-body font-extrabold px-8 py-4 rounded-full flex items-center justify-center gap-2 transition-all shadow-md hover:scale-105 active:scale-95 text-base"
+                    className="w-full md:w-auto text-center bg-[#FFE566] text-[#241765] hover:bg-[#fff099] font-body font-extrabold px-8 py-4 rounded-full flex items-center justify-center gap-2 transition-all shadow-md hover:scale-105 active:scale-95 text-base"
                   >
                     Register for free
                     <ArrowRight className="w-5 h-5 stroke-[2.5]" />

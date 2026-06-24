@@ -20,7 +20,7 @@ const programsList = [
     slug: 'biology',
     title: 'Biology',
     iconName: 'Leaf',
-    color: '#8CB97A', // Sage Green
+    color: '#6CAB53', // Sage Green
     image: '/assets/images/children-studying-science-using-microscope-in-clas-2026-04-13-23-13-15-utc.jpg',
     desc: "Dive deep into the study of life. Participants learn to operate professional microscopes, study biological specimens, and analyze local ecosystems."
   },
@@ -36,7 +36,7 @@ const programsList = [
     slug: 'mathematics',
     title: 'Mathematics',
     iconName: 'Sigma',
-    color: '#2D4589', // Brand Blue
+    color: '#241765', // Brand Blue
     image: '/assets/images/girl-writing-math-problems-on-a-whiteboard-2026-01-07-02-11-58-utc.jpg',
     desc: "Develop logic and applied reasoning. Forget abstract theories: mathematics is presented through brain teasers, secret codes, and complex puzzles."
   },
@@ -44,7 +44,7 @@ const programsList = [
     slug: 'robotics',
     title: 'Robotics',
     iconName: 'Cpu',
-    color: '#9795CE', // Brand Lavender
+    color: '#AB80FF', // Brand Lavender
     image: '/assets/images/children-learn-about-robotics-with-robotics-kit-2026-03-05-11-56-52-utc.jpg',
     desc: "Get introduced to the basics of modern engineering. In teams, students design, assemble, and program autonomous mobile robots using sensors and visual code interfaces."
   },
@@ -52,7 +52,7 @@ const programsList = [
     slug: 'virtual-reality',
     title: 'Virtual Reality',
     iconName: 'Tv',
-    color: '#9795CE', // Use Lavender for VR too as per brand colors or another matching color
+    color: '#AB80FF', // Use Lavender for VR too as per brand colors or another matching color
     image: '/assets/images/VR_stem.png',
     desc: "Explore the frontiers of the virtual. Students learn the basics of 3D modeling and use VR headsets to explore the universe or travel inside the human body."
   },
@@ -60,7 +60,7 @@ const programsList = [
     slug: 'greenhouse-science',
     title: 'Greenhouse Science',
     iconName: 'Sprout',
-    color: '#8CB97A', // Sage Green
+    color: '#6CAB53', // Sage Green
     image: '/assets/images/children-studying-a-model-solar-system-at-school-2026-03-25-01-24-35-utc.jpg',
     desc: "Combine agricultural sciences and connected technologies. Students study smart irrigation, photosynthesis, and the design of modern hydroponic systems."
   },
@@ -82,7 +82,7 @@ export default function ProgramsClient() {
       <main className="flex-grow pt-24 bg-[#FFF9F0]">
         
         {/* ── Programs Hero ── */}
-        <section className="bg-[#162248] text-white py-20 relative overflow-hidden border-b-2 border-black/10">
+        <section className="bg-[#241765] text-white py-20 relative overflow-hidden border-b-2 border-black/10">
           <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none" />
           <div className="absolute -right-12 -top-12 w-48 h-48 rounded-full bg-white/20 blur-lg pointer-events-none" />
           <div className="absolute -left-12 -bottom-12 w-48 h-48 rounded-full bg-[#FFE566]/20 blur-lg pointer-events-none" />
@@ -125,7 +125,7 @@ export default function ProgramsClient() {
                     {/* Content */}
                     <div className="p-8 flex-grow flex flex-col justify-between">
                       <div>
-                        <h2 className="font-display font-extrabold text-2.5xl text-[#1A1A2E] mb-3">
+                        <h2 className="font-display font-extrabold text-2.5xl text-[#241765] mb-3">
                           {prog.title}
                         </h2>
                         <p className="font-body text-sm text-[#3D3D5C] leading-relaxed">

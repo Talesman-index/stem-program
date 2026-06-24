@@ -9,29 +9,29 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        /* ── Starlight-Camp-inspired palette ── */
-        "stem-green":  "#5AC87A",
-        "stem-blue":   "#4A90D9",
-        "stem-orange": "#FF7A3D",
+        /* ── Starlight-Camp-inspired palette updated to brand guidelines ── */
+        "stem-green":  "#6CAB53",
+        "stem-blue":   "#241765",
+        "stem-orange": "#AB80FF",
         "stem-yellow": "#FFE566",
-        "stem-purple": "#8B6FE8",
-        "stem-coral":  "#FF6B6B",
+        "stem-purple": "#AB80FF",
+        "stem-coral":  "#AB80FF",
         /* Legacy aliases kept for admin pages */
         stem: {
-          green:       "#5AC87A",
-          "blue-mid":  "#4A90D9",
-          "blue-deep": "#2D4E8A",
-          purple:      "#8B6FE8",
+          green:       "#6CAB53",
+          "blue-mid":  "#241765",
+          "blue-deep": "#1a1147",
+          purple:      "#AB80FF",
         },
-        dark:      "#1A1A2E",
-        "bg-base": "#FFF9F0",
-        "bg-alt":  "#F5F0E8",
+        dark:      "#241765",
+        "bg-base": "#FCF9F2",
+        "bg-alt":  "#F1F6EF",
         background: "var(--bg-cream)",
         foreground: "var(--text-dark)",
       },
       fontFamily: {
-        display: ["var(--font-display)", "Gabarito", "sans-serif"],
-        body:    ["var(--font-body)",    "Nunito",   "sans-serif"],
+        display: ["var(--font-display)", "Poppins", "sans-serif"],
+        body:    ["var(--font-body)",    "Poppins",   "sans-serif"],
         accent:  ["var(--font-accent)",  "Luckiest Guy", "cursive"],
         mono:    ["monospace"],
       },

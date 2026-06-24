@@ -72,7 +72,7 @@ export default function Testimonials() {
       <main className="flex-grow pt-24 bg-[#FFF9F0]">
         
         {/* ── Testimonials Header ── */}
-        <section className="bg-[#162248] text-white py-20 text-center relative overflow-hidden border-b-2 border-black/10">
+        <section className="bg-[#241765] text-white py-20 text-center relative overflow-hidden border-b-2 border-black/10">
           <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none" />
           <div className="absolute -right-12 -top-12 w-48 h-48 rounded-full bg-white/20 blur-lg pointer-events-none" />
           <div className="absolute -left-12 -bottom-12 w-48 h-48 rounded-full bg-black/15 blur-lg pointer-events-none" />
@@ -94,13 +94,13 @@ export default function Testimonials() {
         <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           {/* Tabs Filter */}
-          <div className="flex justify-center items-center gap-2 mb-16 bg-white p-2 rounded-full border border-[#162248]/10 max-w-md mx-auto shadow-inner">
+          <div className="flex justify-center items-center gap-2 mb-16 bg-white p-2 rounded-full border border-[#241765]/10 max-w-md mx-auto shadow-inner">
             <button
               onClick={() => setActiveTab('all')}
               className={`flex-1 text-center font-body font-extrabold text-sm py-3 rounded-full transition-all cursor-pointer ${
                 activeTab === 'all' 
-                  ? 'bg-[#162248] text-white shadow-sm' 
-                  : 'text-[#162248]/60 hover:text-[#162248]'
+                  ? 'bg-[#241765] text-white shadow-sm' 
+                  : 'text-[#241765]/60 hover:text-[#241765]'
               }`}
             >
               All
@@ -109,8 +109,8 @@ export default function Testimonials() {
               onClick={() => setActiveTab('participant')}
               className={`flex-1 text-center font-body font-extrabold text-sm py-3 rounded-full transition-all cursor-pointer ${
                 activeTab === 'participant' 
-                  ? 'bg-[#162248] text-white shadow-sm' 
-                  : 'text-[#162248]/60 hover:text-[#162248]'
+                  ? 'bg-[#241765] text-white shadow-sm' 
+                  : 'text-[#241765]/60 hover:text-[#241765]'
               }`}
             >
               Participants
@@ -119,8 +119,8 @@ export default function Testimonials() {
               onClick={() => setActiveTab('parent')}
               className={`flex-1 text-center font-body font-extrabold text-sm py-3 rounded-full transition-all cursor-pointer ${
                 activeTab === 'parent' 
-                  ? 'bg-[#162248] text-white shadow-sm' 
-                  : 'text-[#162248]/60 hover:text-[#162248]'
+                  ? 'bg-[#241765] text-white shadow-sm' 
+                  : 'text-[#241765]/60 hover:text-[#241765]'
               }`}
             >
               Parents
@@ -130,21 +130,21 @@ export default function Testimonials() {
           {/* Testimonials Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filtered.map((t, idx) => {
-              const accentColor = ['#9795CE', '#8CB97A', '#2D4589', '#FFE566'][idx % 4];
+              const accentColor = ['#AB80FF', '#6CAB53', '#241765', '#FFE566'][idx % 4];
               const isParent = t.category === 'parent';
               
               return (
                 <div 
                   key={idx} 
-                  className="relative bg-white p-7 flex flex-col justify-between gap-6 border-2 border-[#162248] rounded-[24px] transition-all duration-300 hover:-translate-y-1 hover:shadow-[7px_7px_0px_0px_var(--hover-shadow)] shadow-[4px_4px_0px_0px_var(--init-shadow)]"
+                  className="relative bg-white p-7 flex flex-col justify-between gap-6 border-2 border-[#241765] rounded-[24px] transition-all duration-300 hover:-translate-y-1 hover:shadow-[7px_7px_0px_0px_var(--hover-shadow)] shadow-[4px_4px_0px_0px_var(--init-shadow)]"
                   style={{ 
                     ['--init-shadow' as any]: accentColor,
-                    ['--hover-shadow' as any]: '#162248'
+                    ['--hover-shadow' as any]: '#241765'
                   }}
                 >
                   {/* Quote Mark background decoration */}
                   <div 
-                    className="absolute -top-2 right-6 font-serif text-8xl select-none pointer-events-none opacity-[0.06] text-[#162248]"
+                    className="absolute -top-2 right-6 font-serif text-8xl select-none pointer-events-none opacity-[0.06] text-[#241765]"
                   >
                     “
                   </div>
@@ -153,10 +153,10 @@ export default function Testimonials() {
                     {/* Card Top Label & Stars */}
                     <div className="flex items-center justify-between gap-2">
                       <span 
-                        className="px-2.5 py-1 text-[9px] font-accent uppercase tracking-wider rounded-md border border-[#162248] shadow-[1px_1px_0px_0px_#162248] font-normal"
+                        className="px-2.5 py-1 text-[9px] font-accent uppercase tracking-wider rounded-md border border-[#241765] shadow-[1px_1px_0px_0px_#241765] font-normal"
                         style={{ 
                           backgroundColor: isParent ? '#F0EBFF' : '#E8F3FF',
-                          color: '#162248'
+                          color: '#241765'
                         }}
                       >
                         {isParent ? 'Parent Note' : 'Camper Story'}
@@ -168,17 +168,17 @@ export default function Testimonials() {
                     </div>
 
                     {/* Quote Content */}
-                    <p className="font-body text-base text-[#162248] leading-relaxed italic font-bold">
+                    <p className="font-body text-base text-[#241765] leading-relaxed italic font-bold">
                       &ldquo;{t.quote}&rdquo;
                     </p>
                   </div>
 
                   {/* Author Info */}
-                  <div className="flex items-center gap-3 pt-4 border-t border-[#162248]/10 mt-1 relative z-10 justify-between">
+                  <div className="flex items-center gap-3 pt-4 border-t border-[#241765]/10 mt-1 relative z-10 justify-between">
                     <div className="flex items-center gap-3">
                       {/* Letter Avatar - styled as squircle */}
                       <div
-                        className="w-10 h-10 rounded-xl flex items-center justify-center font-display font-black text-[#162248] text-base border-2 border-[#162248] shadow-[2px_2px_0px_0px_#162248]"
+                        className="w-10 h-10 rounded-xl flex items-center justify-center font-display font-black text-[#241765] text-base border-2 border-[#241765] shadow-[2px_2px_0px_0px_#241765]"
                         style={{ backgroundColor: accentColor }}
                       >
                         {t.name[0]}
@@ -186,14 +186,14 @@ export default function Testimonials() {
                       
                       <div>
                         <div className="flex items-center gap-1.5">
-                          <span className="font-display font-extrabold text-sm text-[#162248]">{t.name}</span>
-                          <BadgeCheck className="w-4 h-4 text-[#2D4589] fill-[#E8F3FF] shrink-0" />
+                          <span className="font-display font-extrabold text-sm text-[#241765]">{t.name}</span>
+                          <BadgeCheck className="w-4 h-4 text-[#241765] fill-[rgba(36,23,101,0.08)] shrink-0" />
                         </div>
                         <div className="font-body text-xs text-[#6D7B9E] font-semibold">{t.role}</div>
                       </div>
                     </div>
 
-                    <span className="pill bg-[#FCF9F2] text-[#162248] text-[9px] font-accent uppercase border-2 border-[#162248] shadow-[2px_2px_0px_0px_#162248] font-normal shrink-0">
+                    <span className="pill bg-[#FCF9F2] text-[#241765] text-[9px] font-accent uppercase border-2 border-[#241765] shadow-[2px_2px_0px_0px_#241765] font-normal shrink-0">
                       {t.edition}
                     </span>
                   </div>
